@@ -1,6 +1,9 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Zea"
+order: 3
+mark: zea
+mark_group: lang
+---
 *Lenguaje de sistemas*
 
 # Zea
@@ -49,7 +52,7 @@ Zea es el lenguaje de sistemas de la familia: imperativo, con ownership y prést
 
 ## <a id="zea-concurrencia"></a>Concurrencia y E/S
 
-<a id="zea-concurrencia-1"></a>Zea usa directamente los ámbitos, las tareas y la E/S de la plataforma ([Entrada y salida](19-es.md)) y los atómicos del [modelo de memoria](10-stela.md#stx-memoria), con orden explícito en cada operación. `zea-concurrencia-1`
+<a id="zea-concurrencia-1"></a>Zea usa directamente los ámbitos, las tareas y la E/S de la plataforma ([Entrada y salida](23-es.md)) y los atómicos del [modelo de memoria](10-stela.md#stx-memoria), con orden explícito en cada operación. `zea-concurrencia-1`
 
 ---
 

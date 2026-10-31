@@ -1,6 +1,7 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Fundamentos de diseño"
+order: 34
+---
 *Referencia · anexo B*
 
 # Fundamentos de diseño
@@ -75,4 +76,4 @@
 
 ---
 
-← [Anexo A](27-anexo-a.md) · [Índice](README.md) · [Glosario](29-glosario.md) →
+← [Anexo A](33-anexo-a.md) · [Índice](README.md) · [Glosario](35-glosario.md) →

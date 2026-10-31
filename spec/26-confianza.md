@@ -1,6 +1,7 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Modelo de confianza"
+order: 26
+---
 *Plataforma*
 
 # Modelo de confianza
@@ -87,4 +88,4 @@ Ningún programa puede suspender sus garantías, pero todo programa se ejecuta s
 
 ---
 
-← [Destinos](13-destinos.md) · [Índice](README.md) · [Modelo de amenazas](15-amenazas.md) →
+← [Interoperabilidad](25-interop.md) · [Índice](README.md) · [Modelo de amenazas](27-amenazas.md) →

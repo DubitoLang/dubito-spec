@@ -1,6 +1,9 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Solsticio"
+order: 5
+mark: solsticio
+mark_group: lang
+---
 *Lenguaje funcional*
 
 # Solsticio

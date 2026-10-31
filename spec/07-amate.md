@@ -1,6 +1,9 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Amate"
+order: 7
+mark: amate
+mark_group: lang
+---
 *Lenguaje lógico*
 
 # Amate

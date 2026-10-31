@@ -1,6 +1,7 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Núcleo común"
+order: 2
+---
 *Introducción*
 
 # Núcleo común
@@ -92,7 +93,7 @@ Lo que los seis lenguajes comparten no pertenece a ninguno de ellos. Aquí se de
 
 - <a id="nuc-modulos-1"></a>Un módulo es un conjunto de archivos que comparten espacio de nombres; un paquete es un conjunto de módulos con un manifiesto. `nuc-modulos-1`
 - <a id="nuc-modulos-2"></a>Los imports nombran cada símbolo, sin comodines, y pueden renombrarlo. Dos imports que introducen el mismo nombre, o un import con el nombre de una declaración del módulo, son un error. `nuc-modulos-2`
-- <a id="nuc-modulos-3"></a>Un archivo puede condicionarse a un destino y convertirse en [variante por destino](13-destinos.md#dst-variantes). `nuc-modulos-3`
+- <a id="nuc-modulos-3"></a>Un archivo puede condicionarse a un destino y convertirse en [variante por destino](20-destinos.md#dst-variantes). `nuc-modulos-3`
 
 | Visibilidad                              | Visible en                       | Parte de la interfaz pública                                        |
 |------------------------------------------|----------------------------------|---------------------------------------------------------------------|

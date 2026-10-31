@@ -1,6 +1,7 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Estándares adoptados"
+order: 32
+---
 *Referencia*
 
 # Estándares adoptados
@@ -69,4 +70,4 @@ Estos elementos son propios de Dubito porque ningún estándar cubre lo que nece
 
 ---
 
-← [Conformidad](25-conformidad.md) · [Índice](README.md) · [Anexo A](27-anexo-a.md) →
+← [Conformidad](31-conformidad.md) · [Índice](README.md) · [Anexo A](33-anexo-a.md) →

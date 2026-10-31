@@ -1,6 +1,9 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Stela"
+order: 10
+mark: stela
+mark_group: plat
+---
 *Plataforma · representación intermedia*
 
 # Stela
@@ -100,4 +103,4 @@ Stela es la representación intermedia de la plataforma: tipada, con control est
 
 ---
 
-← [dubito](09-compilador.md) · [Índice](README.md) · [Dintel](11-dintel.md) →
+← [dubito](09-compilador.md) · [Índice](README.md) · [Sillar](11-sillar.md) →

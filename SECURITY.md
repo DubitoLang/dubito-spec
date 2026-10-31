@@ -5,7 +5,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 # Seguridad
 
-La gestión de vulnerabilidades sigue ISO/IEC 29147:2018 (divulgación) e ISO/IEC 30111:2019 (tratamiento). El texto normativo está en [Seguridad y vulnerabilidades](spec/24-proyecto.md#pro-seguridad).
+La gestión de vulnerabilidades sigue ISO/IEC 29147:2018 (divulgación) e ISO/IEC 30111:2019 (tratamiento). El texto normativo está en [Seguridad y vulnerabilidades](spec/30-proyecto.md#pro-seguridad).
 
 ## Cómo reportar
 

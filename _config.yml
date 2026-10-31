@@ -1,0 +1,30 @@
+title: Especificación de Dubito
+description: Especificación conceptual de Dubito, fase 0.
+version: 0.1.0
+lang: es
+baseurl: /dubito-spec
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: false
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+relative_links:
+  enabled: true
+  collections: false
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: spec
+exclude:
+  - LICENSES
+  - REUSE.toml
+  - CITATION.cff
+  - Gemfile
+  - Gemfile.lock
+  - vendor

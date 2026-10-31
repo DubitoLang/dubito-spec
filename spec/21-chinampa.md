@@ -1,6 +1,9 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Chinampa"
+order: 21
+mark: libs
+mark_group: plat
+---
 *Plataforma · biblioteca estándar*
 
 # Chinampa
@@ -38,4 +41,4 @@ Chinampa, la biblioteca estándar, se divide en tres capas según lo que exige d
 
 ---
 
-← [Estuco](16-estuco.md) · [Índice](README.md) · [Errores y aborto](18-errores.md) →
+← [Destinos](20-destinos.md) · [Índice](README.md) · [Errores y aborto](22-errores.md) →

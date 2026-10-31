@@ -1,9 +1,10 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+---
+title: "Índice"
+---
 
 # Especificación de Dubito 0.1.0
 
-Borrador de concepto (fase 0). Esta carpeta contiene el texto normativo, una página por archivo.
+Borrador de concepto (fase 0). El texto normativo, una página por archivo.
 
 ## Introducción
 
@@ -13,39 +14,51 @@ Borrador de concepto (fase 0). Esta carpeta contiene el texto normativo, una pá
 
 ## Lenguajes
 
-- [Zea (sistemas)](03-zea.md)
-- [Talud (objetos)](04-talud.md)
-- [Solsticio (funcional)](05-solsticio.md)
-- [Voluta (simbólico)](06-voluta.md)
-- [Amate (lógico)](07-amate.md)
-- [Relevo (actores)](08-relevo.md)
+- [Zea](03-zea.md) (sistemas)
+- [Talud](04-talud.md) (objetos)
+- [Solsticio](05-solsticio.md) (funcional)
+- [Voluta](06-voluta.md) (simbólico)
+- [Amate](07-amate.md) (lógico)
+- [Relevo](08-relevo.md) (actores)
 
-## Plataforma
+## Cadena de herramientas
 
-- [dubito (cadena)](09-compilador.md)
-- [Stela (IR)](10-stela.md)
-- [Dintel (verificador)](11-dintel.md)
-- [Speculum (mutación)](12-speculum.md)
-- [Destinos](13-destinos.md)
-- [Modelo de confianza](14-confianza.md)
-- [Modelo de amenazas](15-amenazas.md)
-- [Estuco (formateador)](16-estuco.md)
-- [Chinampa (biblioteca)](17-bibliotecas.md)
-- [Errores y aborto](18-errores.md)
-- [Entrada y salida](19-es.md)
-- [Observabilidad](20-observabilidad.md)
-- [Interoperabilidad](21-interop.md)
+- [dubito](09-compilador.md) (cadena)
+- [Stela](10-stela.md) (IR)
+- [Sillar](11-sillar.md) (IR baja)
+- [Dintel](12-dintel.md) (verificador)
+- [Plomada](13-plomada.md) (validador)
+- [Speculum](14-speculum.md) (mutación)
+- [Pulido](15-pulido.md) (optimizador)
+- [Cincel](16-cincel.md) (backend)
+- [Estuco](17-estuco.md) (formateador)
+- [Glosa](18-glosa.md) (revisión)
+
+## Destinos y biblioteca
+
+- [Rumbo](19-rumbo.md) (destinos)
+- [Destinos y perfiles](20-destinos.md)
+- [Chinampa](21-chinampa.md) (biblioteca)
+- [Errores y aborto](22-errores.md)
+- [Entrada y salida](23-es.md)
+- [Observabilidad](24-observabilidad.md)
+- [Interoperabilidad](25-interop.md)
+
+## Confianza
+
+- [Modelo de confianza](26-confianza.md)
+- [Modelo de amenazas](27-amenazas.md)
 
 ## Ecosistema
 
-- [Ceiba (paquetes)](22-ceiba.md)
-- [Pochteca (registro)](23-pochteca.md)
+- [Ceiba](28-ceiba.md) (paquetes)
+- [Pochteca](29-pochteca.md) (registro)
 
 ## Referencia
 
-- [Proyecto e identidad](24-proyecto.md)
-- [Conformidad](25-conformidad.md)
-- [Estándares adoptados](26-estandares.md)
-- [Anexo A (definido)](27-anexo-a.md)
-- [Fundamentos (anexo B)](28-fundamentos.md)
-- [Glosario](29-glosario.md)
+- [Proyecto e identidad](30-proyecto.md)
+- [Conformidad](31-conformidad.md)
+- [Estándares adoptados](32-estandares.md)
+- [Anexo A](33-anexo-a.md) (definido)
+- [Fundamentos](34-fundamentos.md) (anexo B)
+- [Glosario](35-glosario.md)

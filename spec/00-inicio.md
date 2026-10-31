@@ -1,6 +1,7 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Visión general"
+order: 0
+---
 *Fase 0 · Etapa de concepto*
 
 # Dubito
@@ -20,9 +21,9 @@ La plataforma está formada por una representación intermedia (Stela), un verif
 | Fecha             | 2026-10-28                                                                                                                                                                                                             |
 | Editor            | Ing. Xhunik Nikol Miguel Mutzutz                                                                                                                                                                                       |
 | Derechos de autor | © 2026 el editor y los colaboradores de Dubito                                                                                                                                                                         |
-| Licencia          | CC BY-SA 4.0 ([Licencias](24-proyecto.md#pro-licencias))                                                                                                                                                               |
+| Licencia          | CC BY-SA 4.0 ([Licencias](30-proyecto.md#pro-licencias))                                                                                                                                                               |
 | Versión normativa | Español                                                                                                                                                                                                                |
-| Comentarios       | Propuestas públicas según el [proceso de gobierno](24-proyecto.md#pro-gobierno)                                                                                                                                        |
+| Comentarios       | Propuestas públicas según el [proceso de gobierno](30-proyecto.md#pro-gobierno)                                                                                                                                        |
 | Versionado        | Semantic Versioning 2.0.0. Mientras la versión sea 0.y.z, cualquier versión puede cambiar cualquier parte de la especificación. Desde la 1.0.0, solo una versión mayor puede invalidar una declaración de conformidad. |
 
 ## <a id="inicio-fase"></a>Fase del proyecto *(Informativa)*
@@ -31,7 +32,7 @@ Dubito está en su **fase 0, la etapa de concepto** (*concept stage* en el ciclo
 
 Este documento es la **especificación conceptual**: define por completo el modelo abstracto (la filosofía, las garantías, la semántica y las reglas que toda implementación debe cumplir) y no inventa nada concreto. Donde la industria ya tiene un estándar, se adopta por referencia. Lo concreto que no está estandarizado (la sintaxis de los lenguajes, los formatos propios, las herramientas y sus comandos, las extensiones de archivo, los códigos de diagnóstico y los valores numéricos) se decidirá en las etapas siguientes, siempre dentro de lo que aquí se fija.
 
-Donde ya existe un estándar de la industria, se adopta: la especificación lo cita en [Estándares adoptados](26-estandares.md) y nunca redefine algo estandarizado.
+Donde ya existe un estándar de la industria, se adopta: la especificación lo cita en [Estándares adoptados](32-estandares.md) y nunca redefine algo estandarizado.
 
 ## <a id="inicio-convenciones"></a>Convenciones
 
@@ -47,9 +48,9 @@ Las palabras clave de BCP 14 se escriben en español con esta correspondencia:
 - La especificación no usa los niveles SHOULD ni RECOMMENDED: cada requisito es una obligación o un permiso, sin término medio.
 - **Normativo e informativo.** Todo el contenido es normativo salvo la introducción de esta página, el anexo B, las secciones marcadas *(Informativa)*, las figuras y sus leyendas, y los ejemplos. En las secciones normativas, los enunciados en indicativo (por ejemplo, «el verificador rechaza el módulo») también son requisitos; las palabras clave marcan las obligaciones y los permisos explícitos.
 - **Identificadores de requisitos.** Cada requisito de una sección normativa lleva un identificador formado por el ancla de su sección y su número de orden (por ejemplo, `nuc-tipos-3`), según ISO/IEC/IEEE 29148:2018. Las pruebas y las declaraciones de conformidad citan esos identificadores. Mientras la versión sea 0.y.z pueden cambiar; desde la 1.0.0, un identificador nunca se reutiliza y un requisito retirado conserva el suyo, marcado como retirado.
-- **Referencias.** Cuando el texto cita un estándar sin indicar su edición, rige la edición indicada en [Estándares adoptados](26-estandares.md).
-- **Idioma.** La versión normativa es la española ([Idiomas](24-proyecto.md#pro-idiomas)).
-- **Conformidad.** Qué productos pueden declararse conformes y cómo se declara está en [Conformidad](25-conformidad.md).
+- **Referencias.** Cuando el texto cita un estándar sin indicar su edición, rige la edición indicada en [Estándares adoptados](32-estandares.md).
+- **Idioma.** La versión normativa es la española ([Idiomas](30-proyecto.md#pro-idiomas)).
+- **Conformidad.** Qué productos pueden declararse conformes y cómo se declara está en [Conformidad](31-conformidad.md).
 
 ## <a id="inicio-principios"></a>Principios de diseño *(Informativa)*
 
@@ -61,7 +62,7 @@ Las palabras clave de BCP 14 se escriben en español con esta correspondencia:
 
 ## <a id="inicio-invariantes"></a>Invariantes normativas
 
-Toda implementación conforme ([Conformidad](25-conformidad.md)) DEBE cumplir estas reglas. Ninguna característica de un lenguaje, de una biblioteca ni de una herramienta puede contradecirlas.
+Toda implementación conforme ([Conformidad](31-conformidad.md)) DEBE cumplir estas reglas. Ninguna característica de un lenguaje, de una biblioteca ni de una herramienta puede contradecirlas.
 
 | Regla   | Enunciado                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -79,17 +80,38 @@ Toda implementación conforme ([Conformidad](25-conformidad.md)) DEBE cumplir es
 
 ## <a id="inicio-pipeline"></a>De la fuente al binario *(Informativa)*
 
-*Figura: diagrama de la cadena de compilación (ver el sitio).* Solo lo que está dentro del recuadro punteado necesita confianza: Dintel, el núcleo de Cincel con Plomada y la especificación del destino (Rumbo). Las pasadas de Pulido sin validación, si se usan, se suman al inventario de confianza. Si un frontend o el código generado contienen errores, Dintel rechaza el módulo antes de que llegue a Cincel.
+*Figura: diagrama de la cadena de compilación.* Solo lo que está dentro del recuadro punteado necesita confianza: Dintel, el núcleo de Cincel con Plomada y la especificación del destino (Rumbo). Las pasadas de Pulido sin validación, si se usan, se suman al inventario de confianza. Si un frontend o el código generado contienen errores, Dintel rechaza el módulo antes de que llegue a Cincel.
 
 ## <a id="inicio-familia"></a>Lenguajes *(Informativa)*
 
 Seis lenguajes independientes y del mismo rango emiten la misma representación intermedia. Cada uno tiene su paradigma; todos comparten tipos, efectos, contratos y procedencia, así que un mismo proyecto puede combinarlos.
 
-<a href="03-zea.md" class="card"><strong>Zea</strong><span>Sistemas: imperativo y funcional, con ownership.</span></a> <a href="04-talud.md" class="card"><strong>Talud</strong><span>Orientado a objetos con herencia y diseño por contrato.</span></a> <a href="05-solsticio.md" class="card"><strong>Solsticio</strong><span>Funcional puro: expresiones, recursión, efectos algebraicos.</span></a> <a href="06-voluta.md" class="card"><strong>Voluta</strong><span>Simbólico: código como dato, macros en compilación, tipos explícitos.</span></a> <a href="07-amate.md" class="card"><strong>Amate</strong><span>Lógico: hechos y reglas, con explicación de cada conclusión.</span></a> <a href="08-relevo.md" class="card"><strong>Relevo</strong><span>Actores aislados que se comunican por mensajes, con supervisión.</span></a>
+- [**Zea**](03-zea.md): Sistemas: imperativo y funcional, con ownership.
+- [**Talud**](04-talud.md): Orientado a objetos con herencia y diseño por contrato.
+- [**Solsticio**](05-solsticio.md): Funcional puro: expresiones, recursión, efectos algebraicos.
+- [**Voluta**](06-voluta.md): Simbólico: código como dato, macros en compilación, tipos explícitos.
+- [**Amate**](07-amate.md): Lógico: hechos y reglas, con explicación de cada conclusión.
+- [**Relevo**](08-relevo.md): Actores aislados que se comunican por mensajes, con supervisión.
 
 ## <a id="inicio-componentes"></a>Componentes de la plataforma *(Informativa)*
 
-<a href="09-compilador.md" class="card"><strong>dubito</strong><span>Cadena de herramientas: frontends, generación de VC y coordinación.</span></a> <a href="10-stela.md" class="card"><strong>Stela</strong><span>Representación intermedia que lleva su propia evidencia.</span></a> <a href="11-dintel.md" class="card"><strong>Dintel</strong><span>Verificador de la IR y emisor de atestaciones.</span></a> <a href="12-speculum.md" class="card"><strong>Speculum</strong><span>Pruebas de mutación de contratos.</span></a> <a href="16-estuco.md" class="card"><strong>Estuco</strong><span>Formateador de forma canónica.</span></a> <a href="22-ceiba.md" class="card"><strong>Ceiba</strong><span>Gestor de paquetes con dependencias por hash.</span></a> <a href="23-pochteca.md" class="card"><strong>Pochteca</strong><span>Registro público de paquetes y atestaciones.</span></a> <a href="13-destinos.md" class="card"><strong>Destinos</strong><span>Rumbo, las especificaciones de destino, y Cincel, el backend.</span></a> <a href="14-confianza.md" class="card"><strong>Modelo de confianza</strong><span>Qué se confía en cada destino, cómo se reduce y cómo queda enumerado.</span></a> <a href="17-bibliotecas.md" class="card"><strong>Chinampa</strong><span>Biblioteca estándar en tres capas.</span></a> <a href="09-compilador.md#niveles" class="card"><strong>Sillar</strong><span>IR de bajo nivel en forma SSA, entre Stela y el código del destino.</span></a> <a href="09-compilador.md#optimizacion" class="card"><strong>Pulido</strong><span>Optimizador que no cambia el significado.</span></a> <a href="09-compilador.md#optimizacion" class="card"><strong>Plomada</strong><span>Validador de traducción de cada pasada.</span></a> <a href="13-destinos.md#dst-backend" class="card"><strong>Cincel</strong><span>Backend: de la IR verificada al código del destino.</span></a> <a href="09-compilador.md#review" class="card"><strong>Glosa</strong><span>Diff de significado para la revisión.</span></a> <a href="13-destinos.md#dst-spec" class="card"><strong>Rumbo</strong><span>Especificaciones de destino.</span></a> <a href="15-amenazas.md" class="card"><strong>Modelo de amenazas</strong><span>Contra quién se defiende la plataforma.</span></a>
+- [**dubito**](09-compilador.md): Cadena de herramientas: frontends, generación de VC y coordinación.
+- [**Stela**](10-stela.md): Representación intermedia que lleva su propia evidencia.
+- [**Dintel**](12-dintel.md): Verificador de la IR y emisor de atestaciones.
+- [**Speculum**](14-speculum.md): Pruebas de mutación de contratos.
+- [**Estuco**](17-estuco.md): Formateador de forma canónica.
+- [**Ceiba**](28-ceiba.md): Gestor de paquetes con dependencias por hash.
+- [**Pochteca**](29-pochteca.md): Registro público de paquetes y atestaciones.
+- [**Destinos y perfiles**](20-destinos.md): Perfiles, disponibilidad y concurrencia en cada destino.
+- [**Modelo de confianza**](26-confianza.md): Qué se confía en cada destino, cómo se reduce y cómo queda enumerado.
+- [**Chinampa**](21-chinampa.md): Biblioteca estándar en tres capas.
+- [**Sillar**](11-sillar.md): IR de bajo nivel en forma SSA, entre Stela y el código del destino.
+- [**Pulido**](15-pulido.md): Optimizador que no cambia el significado.
+- [**Plomada**](13-plomada.md): Validador de traducción de cada pasada.
+- [**Cincel**](16-cincel.md): Backend: de la IR verificada al código del destino.
+- [**Glosa**](18-glosa.md): Diff de significado para la revisión.
+- [**Rumbo**](19-rumbo.md): Especificaciones de destino.
+- [**Modelo de amenazas**](27-amenazas.md): Contra quién se defiende la plataforma.
 
 ## <a id="inicio-aportes"></a>Aportes *(Informativa)*
 

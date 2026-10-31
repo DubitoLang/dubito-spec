@@ -1,6 +1,7 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Observabilidad"
+order: 24
+---
 *Plataforma*
 
 # Observabilidad
@@ -31,4 +32,4 @@ Lo que un programa reporta sobre sí mismo forma parte de su interfaz revisable.
 
 ---
 
-← [Entrada y salida](19-es.md) · [Índice](README.md) · [Interoperabilidad](21-interop.md) →
+← [Entrada y salida](23-es.md) · [Índice](README.md) · [Interoperabilidad](25-interop.md) →

@@ -1,6 +1,7 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Interoperabilidad"
+order: 25
+---
 *Plataforma*
 
 # Interoperabilidad
@@ -22,7 +23,7 @@ Hay cuatro relaciones posibles: entre lenguajes de la familia, con el resto del 
 - <a id="int-export-1"></a>Una función exportada usa la convención de llamada que declara el destino. Solo cruzan tipos de frontera: escalares, registros y arreglos con layout definido, y vistas como dirección y longitud. `int-export-1`
 - <a id="int-export-2"></a>Sus precondiciones se comprueban en la entrada, porque quien llama no está verificado, y todo lo que recibe es *external*. `int-export-2`
 - <a id="int-export-3"></a>Se genera una descripción de la interfaz (firmas, tipos de frontera y contratos como documentación) para que otros ecosistemas generen su lado. `int-export-3`
-- <a id="int-export-4"></a>Cargada en un proceso no verificado, su garantía es condicional al anfitrión; como servicio deja de serlo ([Bibliotecas exportadas](14-confianza.md#conf-exportadas)). `int-export-4`
+- <a id="int-export-4"></a>Cargada en un proceso no verificado, su garantía es condicional al anfitrión; como servicio deja de serlo ([Bibliotecas exportadas](26-confianza.md#conf-exportadas)). `int-export-4`
 
 ## <a id="int-nativo"></a>Código nativo importado
 
@@ -61,4 +62,4 @@ Hay cuatro relaciones posibles: entre lenguajes de la familia, con el resto del 
 
 ---
 
-← [Observabilidad](20-observabilidad.md) · [Índice](README.md) · [Ceiba](22-ceiba.md) →
+← [Observabilidad](24-observabilidad.md) · [Índice](README.md) · [Modelo de confianza](26-confianza.md) →

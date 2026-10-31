@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ site.description }}">
+{% include fonts.html %}
+<link rel="stylesheet" href="{{ '/assets/css/dubito.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/jekyll.css' | relative_url }}">
+</head>
+<body>
+{% include icons.html %}
+<header class="top">
+  <a class="brand" href="{{ '/spec/00-inicio.html' | relative_url }}" aria-label="Dubito, inicio">{% include logo.html %}<b>dubito</b></a>
+  <span class="ver">{{ site.version }} · borrador</span>
+  <span class="spacer"></span>
+  <span class="tag">Dubito, ergo compilo.</span>
+</header>
+<div class="shell">
+  <aside class="side" aria-label="Componentes">
+    <nav>
+{% for g in site.data.nav %}      <h4>{{ g.group }}</h4>
+      <ul>
+{% for it in g.items %}        <li><a href="{{ it.url | relative_url }}"{% if page.url == it.url %} aria-current="page"{% endif %}><svg><use href="#i-{{ it.icon }}"/></svg>{{ it.title }}{% if it.small %}<small>{{ it.small }}</small>{% endif %}</a></li>
+{% endfor %}      </ul>
+{% endfor %}    </nav>
+  </aside>
+  <main id="main">
+    <article class="page md">
+{% if page.mark %}      <svg class="mk mk-{{ page.mark_group }} pagemark" viewBox="0 0 64 64" aria-hidden="true"><path class="mk-b" d="M15 3 H49 L61 15 V49 L49 61 H15 L3 49 V15 Z"/><g class="mk-i" transform="translate(8 8) scale(2)"><use href="#i-{{ page.mark }}" width="24" height="24"/></g></svg>
+{% endif %}{{ content }}
+    </article>
+  </main>
+</div>
+</body>
+</html>

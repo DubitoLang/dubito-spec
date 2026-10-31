@@ -16,11 +16,11 @@ Gracias por tu interés en Dubito. El proyecto está en la fase 0: las contribuc
 
 ## Reglas del texto
 
-- Solo la versión final: la especificación no guarda historial ni alternativas descartadas en el cuerpo normativo; las decisiones y su justificación van en el [anexo B](spec/28-fundamentos.md).
-- Donde exista un estándar de la industria, se adopta por referencia y se registra en [Estándares adoptados](spec/26-estandares.md); nunca se redefine.
+- Solo la versión final: la especificación no guarda historial ni alternativas descartadas en el cuerpo normativo; las decisiones y su justificación van en el [anexo B](spec/34-fundamentos.md).
+- Donde exista un estándar de la industria, se adopta por referencia y se registra en [Estándares adoptados](spec/32-estandares.md); nunca se redefine.
 - Nada concreto sin estándar (sintaxis, formatos propios, herramientas, valores numéricos) se fija en la fase 0.
 - La especificación no nombra otros lenguajes de programación ni destinos concretos.
-- Cada archivo conserva su cabecera REUSE.
+- El texto se edita en `spec/`; el sitio se regenera solo. Los archivos de `spec/` están cubiertos por REUSE.toml; los demás archivos nuevos llevan cabecera REUSE.
 
 ## Developer Certificate of Origin
 

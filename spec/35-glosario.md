@@ -1,6 +1,7 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Glosario"
+order: 35
+---
 *Referencia*
 
 # Glosario
@@ -113,4 +114,4 @@
 
 ---
 
-← [Fundamentos de diseño](28-fundamentos.md) · [Índice](README.md)
+← [Fundamentos de diseño](34-fundamentos.md) · [Índice](README.md)

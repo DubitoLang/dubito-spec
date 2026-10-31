@@ -16,7 +16,7 @@ Dubito es un proyecto de lenguajes de programación verificados: una plataforma 
 | Ruta | Qué es |
 |---|---|
 | [`spec/`](spec/README.md) | La especificación, una página por archivo. Es la fuente normativa. |
-| [`docs/index.html`](docs/index.html) | Vista web de la misma versión, publicada con GitHub Pages. Si difiere de `spec/`, rige `spec/`. |
+| [Sitio](https://dubitolang.github.io/dubito-spec/) | GitHub Pages lo genera automáticamente desde `spec/` con Jekyll en cada cambio de `main`. |
 | [`CHANGELOG.md`](CHANGELOG.md) | Registro de cambios por versión. |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Cómo proponer cambios y el Developer Certificate of Origin. |
 | [`GOVERNANCE.md`](GOVERNANCE.md) | Quién decide y cómo se aprueban los cambios. |
@@ -28,7 +28,13 @@ Dubito es un proyecto de lenguajes de programación verificados: una plataforma 
 
 1. [Visión general](spec/00-inicio.md): fase, principios e invariantes R1–R11.
 2. [Familia de lenguajes](spec/01-familia.md) y [Núcleo común](spec/02-nucleo.md).
-3. [Conformidad](spec/25-conformidad.md): qué significa implementar esta especificación.
+3. [Conformidad](spec/31-conformidad.md): qué significa implementar esta especificación.
+
+## Editar y construir el sitio
+
+El texto vive solo en `spec/`, en Markdown. Cada archivo empieza con un bloque de metadatos (título y marca de componente) que no se edita a mano. Al integrar un cambio en `main`, GitHub Pages construye el sitio con Jekyll y lo publica.
+
+Para verlo en local: `bundle install` y luego `bundle exec jekyll serve`.
 
 ## Idioma
 
@@ -36,6 +42,6 @@ La especificación se publica en español, que es su versión normativa. Las pal
 
 ## Licencia
 
-El texto de la especificación se publica bajo [CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt). Implementar la especificación no es una obra derivada del texto. Las licencias de las futuras herramientas y bibliotecas están en [Licencias](spec/24-proyecto.md#pro-licencias). El repositorio sigue la especificación [REUSE](https://reuse.software).
+El texto de la especificación se publica bajo [CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt). Implementar la especificación no es una obra derivada del texto. Las licencias de las futuras herramientas y bibliotecas están en [Licencias](spec/30-proyecto.md#pro-licencias). El repositorio sigue la especificación [REUSE](https://reuse.software).
 
 Los nombres y logos del proyecto no están cubiertos por la licencia: ver [TRADEMARKS.md](TRADEMARKS.md).

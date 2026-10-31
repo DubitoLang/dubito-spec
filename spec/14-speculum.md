@@ -1,6 +1,9 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Speculum"
+order: 14
+mark: speculum
+mark_group: plat
+---
 *Plataforma · mutación*
 
 # Speculum
@@ -28,4 +31,4 @@ Speculum mide la adecuación de las especificaciones. Introduce mutaciones en el
 
 ---
 
-← [Dintel](11-dintel.md) · [Índice](README.md) · [Destinos](13-destinos.md) →
+← [Plomada](13-plomada.md) · [Índice](README.md) · [Pulido](15-pulido.md) →

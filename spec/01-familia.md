@@ -1,6 +1,7 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Familia de lenguajes"
+order: 1
+---
 *Introducción*
 
 # Familia de lenguajes
@@ -58,7 +59,7 @@ Seis lenguajes independientes y del mismo rango, cada uno con un paradigma propi
 
 ### <a id="fam-eleccion"></a>Elección de la sintaxis
 
-<a id="fam-objetivos-15"></a>La sintaxis concreta de cada lenguaje se elige en la etapa siguiente mediante una propuesta pública que incluye la gramática completa, el formateador de referencia y la traducción de un corpus de ejemplos común a los seis lenguajes. La propuesta se evalúa contra los criterios de arriba y se aprueba con el [proceso de gobierno](24-proyecto.md#pro-gobierno). La sintaxis aprobada es la primera edición del lenguaje. `fam-objetivos-15`
+<a id="fam-objetivos-15"></a>La sintaxis concreta de cada lenguaje se elige en la etapa siguiente mediante una propuesta pública que incluye la gramática completa, el formateador de referencia y la traducción de un corpus de ejemplos común a los seis lenguajes. La propuesta se evalúa contra los criterios de arriba y se aprueba con el [proceso de gobierno](30-proyecto.md#pro-gobierno). La sintaxis aprobada es la primera edición del lenguaje. `fam-objetivos-15`
 
 ## <a id="fam-admision"></a>Criterio de admisión
 
@@ -68,11 +69,11 @@ Seis lenguajes independientes y del mismo rango, cada uno con un paradigma propi
 2.  <a id="fam-admision-3"></a>No tiene ninguna construcción que suspenda garantías. `fam-admision-3`
 3.  <a id="fam-admision-4"></a>Toda característica implícita de su paradigma (despacho virtual, macros, manejo de efectos, planificación de actores) queda explícita en la representación intermedia y visible en el diff de significado. `fam-admision-4`
 4.  <a id="fam-admision-5"></a>Define su forma canónica y la aplica el formateador. `fam-admision-5`
-5.  <a id="fam-admision-6"></a>Está disponible en los tres perfiles, con sus capacidades adecuadas a cada uno (R11, [Disponibilidad de los lenguajes](13-destinos.md#dst-lenguajes)). `fam-admision-6`
+5.  <a id="fam-admision-6"></a>Está disponible en los tres perfiles, con sus capacidades adecuadas a cada uno (R11, [Disponibilidad de los lenguajes](20-destinos.md#dst-lenguajes)). `fam-admision-6`
 
 ## <a id="fam-interop"></a>Interoperabilidad
 
-<a id="fam-interop-1"></a>Los módulos de distintos lenguajes se importan entre sí como cualquier módulo. Los tipos se corresponden a través de la representación intermedia, así que no hay capa de traducción. La correspondencia está en [Interoperabilidad](21-interop.md#int-familia). `fam-interop-1`
+<a id="fam-interop-1"></a>Los módulos de distintos lenguajes se importan entre sí como cualquier módulo. Los tipos se corresponden a través de la representación intermedia, así que no hay capa de traducción. La correspondencia está en [Interoperabilidad](25-interop.md#int-familia). `fam-interop-1`
 
 ## <a id="fam-limites"></a>Lo que la familia no hace
 

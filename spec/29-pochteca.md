@@ -1,6 +1,9 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Pochteca"
+order: 29
+mark: pochteca
+mark_group: eco
+---
 *Ecosistema · registro*
 
 # Pochteca
@@ -24,4 +27,4 @@ Pochteca es el registro público de paquetes de la familia. Almacena las fuentes
 
 ---
 
-← [Ceiba](22-ceiba.md) · [Índice](README.md) · [Proyecto e identidad](24-proyecto.md) →
+← [Ceiba](28-ceiba.md) · [Índice](README.md) · [Proyecto e identidad](30-proyecto.md) →

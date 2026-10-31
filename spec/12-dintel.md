@@ -1,6 +1,9 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Dintel"
+order: 12
+mark: dintel
+mark_group: plat
+---
 *Plataforma · verificador*
 
 # Dintel
@@ -31,7 +34,7 @@ Dintel decide si un módulo puede convertirse en código máquina. Revisa la evi
 - <a id="dintel-atestacion-4"></a>El presupuesto del solucionador y de la evaluación en compilación. `dintel-atestacion-4`
 - <a id="dintel-atestacion-5"></a>Un resumen de la evidencia por clase y la lista de comprobaciones en ejecución. `dintel-atestacion-5`
 - <a id="dintel-atestacion-6"></a>El resultado de la mutación. `dintel-atestacion-6`
-- <a id="dintel-atestacion-7"></a>El [inventario de confianza](14-confianza.md#conf-inventario), las desclasificaciones de datos secretos y las protecciones de especulación aplicadas. `dintel-atestacion-7`
+- <a id="dintel-atestacion-7"></a>El [inventario de confianza](26-confianza.md#conf-inventario), las desclasificaciones de datos secretos y las protecciones de especulación aplicadas. `dintel-atestacion-7`
 
 **Regla**
 
@@ -53,4 +56,4 @@ Dintel decide si un módulo puede convertirse en código máquina. Revisa la evi
 
 ---
 
-← [Stela](10-stela.md) · [Índice](README.md) · [Speculum](12-speculum.md) →
+← [Sillar](11-sillar.md) · [Índice](README.md) · [Plomada](13-plomada.md) →

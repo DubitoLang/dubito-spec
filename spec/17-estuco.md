@@ -1,6 +1,9 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Estuco"
+order: 17
+mark: estuco
+mark_group: plat
+---
 *Plataforma · formateador*
 
 # Estuco
@@ -16,4 +19,4 @@ Estuco da su forma canónica (R7) al código fuente de los seis lenguajes.
 
 ---
 
-← [Modelo de amenazas](15-amenazas.md) · [Índice](README.md) · [Chinampa](17-bibliotecas.md) →
+← [Cincel](16-cincel.md) · [Índice](README.md) · [Glosa](18-glosa.md) →

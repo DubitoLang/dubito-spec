@@ -1,6 +1,6 @@
 version = 1
 
 [[annotations]]
-path = [".github/**", "REUSE.toml", ".gitignore"]
+path = ["spec/**", "_layouts/**", "_includes/**", "_data/**", "assets/**", "_config.yml", "index.html", "Gemfile", ".github/**", "REUSE.toml", ".gitignore"]
 SPDX-FileCopyrightText = "2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito"
 SPDX-License-Identifier = "CC-BY-SA-4.0"

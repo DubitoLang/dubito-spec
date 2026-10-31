@@ -1,0 +1,9 @@
+/* Ajustes para el contenido generado desde Markdown */
+.md .pagemark { display: block; width: 56px; height: 56px; margin-bottom: 14px; }
+.md > p:first-of-type em:only-child { font-style: normal; font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.md ul, .md ol { margin: 0 0 16px; padding-left: 22px; max-width: 68ch; }
+.md li { margin: 4px 0; }
+.md li > code:last-child, .md p > code:last-child, .md td > code:last-child { margin-left: 6px; background: none; padding: 0; font-size: 9.5px; color: var(--ink-muted); opacity: .6; white-space: nowrap; }
+.md table { display: block; overflow-x: auto; border-collapse: collapse; margin: 14px 0 22px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--bg-raised); }
+.md hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0 14px; }
+.md hr + p { font-family: var(--font-sans); font-size: 14px; }

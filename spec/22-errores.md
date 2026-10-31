@@ -1,6 +1,7 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Errores y aborto"
+order: 22
+---
 *Plataforma*
 
 # Errores y aborto
@@ -36,4 +37,4 @@ La plataforma distingue lo que puede salir mal en un programa correcto, que es u
 
 ---
 
-← [Chinampa](17-bibliotecas.md) · [Índice](README.md) · [Entrada y salida](19-es.md) →
+← [Chinampa](21-chinampa.md) · [Índice](README.md) · [Entrada y salida](23-es.md) →

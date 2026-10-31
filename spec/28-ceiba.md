@@ -1,6 +1,9 @@
-<!-- SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
+---
+title: "Ceiba"
+order: 28
+mark: ceiba
+mark_group: eco
+---
 *Ecosistema · paquetes*
 
 # Ceiba
@@ -34,4 +37,4 @@ Ceiba resuelve, obtiene y verifica dependencias. Una dependencia queda fijada po
 
 ---
 
-← [Interoperabilidad](21-interop.md) · [Índice](README.md) · [Pochteca](23-pochteca.md) →
+← [Modelo de amenazas](27-amenazas.md) · [Índice](README.md) · [Pochteca](29-pochteca.md) →
