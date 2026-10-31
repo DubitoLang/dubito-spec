@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito
+# SPDX-License-Identifier: CC-BY-SA-4.0
+cff-version: 1.2.0
+message: "Si citas esta especificación, usa estos metadatos."
+type: standard
+title: "Especificación de Dubito"
+abstract: "Especificación conceptual (fase 0) de Dubito: una plataforma de compilación verificada y una familia de seis lenguajes del mismo rango."
+version: 0.1.0
+date-released: 2026-10-28
+license: CC-BY-SA-4.0
+repository-code: "https://github.com/DubitoLang/dubito-spec"
+authors:
+  - given-names: Xhunik Nikol
+    family-names: Miguel Mutzutz
+keywords:
+  - programming languages
+  - formal verification
+  - specification
