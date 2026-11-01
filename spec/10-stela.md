@@ -58,7 +58,7 @@ Stela es la representación intermedia de la plataforma: tipada, con control est
 
 ## <a id="stx-memoria"></a>Modelo de memoria
 
-<a id="stx-memoria-1"></a>Como la ausencia de carreras de datos se demuestra por tipos, los accesos no atómicos se comportan como en una ejecución secuencial. Los atómicos siguen el modelo formal RC11 (Lahav, Vafeiadis, Kang, Hur y Dreyer, 2017), que se resume así: `stx-memoria-1`
+<a id="stx-memoria-1"></a>Como la ausencia de carreras de datos se demuestra por tipos, los accesos no atómicos se comportan como en una ejecución secuencial. Los atómicos siguen el modelo formal RC11 (Lahav, Vafeiadis, Kang, Hur y Dreyer, 2017). Los enunciados `stx-memoria-2` a `stx-memoria-5` lo resumen y, ante cualquier diferencia, prevalece RC11; `stx-memoria-6` es una restricción propia de Dubito que se añade al modelo. `stx-memoria-1`
 
 - <a id="stx-memoria-2"></a>Órdenes: relajado, de adquisición (lecturas), de liberación (escrituras), de adquisición y liberación, y secuencialmente consistente. `stx-memoria-2`
 - <a id="stx-memoria-3"></a>Una escritura de liberación leída por una lectura de adquisición establece una relación *sucede antes* entre todo lo anterior a la escritura y todo lo posterior a la lectura. `stx-memoria-3`
