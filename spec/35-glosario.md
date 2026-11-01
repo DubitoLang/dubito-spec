@@ -26,7 +26,7 @@ order: 35
 
 **Clase de archivo.** Ejecutable, de demostración o de pruebas; cada una llega a una parte distinta del módulo.
 
-**Clase de producto.** Tipo de producto que puede declararse conforme, con los requisitos que debe cumplir: módulo, frontend, verificador, herramienta de mutación, formateador, backend, especificación de destino, cadena de herramientas, biblioteca estándar, gestor de paquetes, registro o herramienta de revisión.
+**Clase de producto.** Tipo de producto que puede declararse conforme, con los requisitos que debe cumplir: módulo, frontend, verificador, herramienta de mutación, formateador, backend, especificación de destino, cadena de herramientas, biblioteca estándar, gestor de paquetes, registro, herramienta de revisión, optimizador de Stela o mecanización.
 
 **Código fantasma.** Código de los archivos de demostración que aporta las demostraciones que el solucionador no encuentra solo; se verifica y se borra.
 
