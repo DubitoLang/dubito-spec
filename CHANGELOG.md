@@ -50,6 +50,8 @@ Correcciones de la revisión de cierre de la fase 0, que verificó los siete cri
 - Al declarar informativas las introducciones de página, `stela-1` y la tabla de estándares adoptados quedaban dentro de una introducción; ahora tienen su propia sección («Definición normativa» y «Referencias normativas»).
 - Mutación de código con efectos: el contraejemplo de un mutante que invoca intrínsecos incluye la respuesta de cada invocación, que cumple el contrato del intrínseco (`elk-criterio-1`); sin ella el mutante no podía evaluarse.
 - `dst-perfiles-7` exigía que los módulos core se aceptaran «en todo destino», un conjunto sin cota que ninguna prueba puede recorrer; ahora en todo destino de referencia.
+- La puntuación de mutación se declara como medida de revisión, calculada sobre los mutantes declarados (`elk-criterio-3`); una versión menor solo añade requisitos en clases nuevas o extensiones opcionales (`pro-compatibilidad-12`), coherente con `cnf-declaracion-9`; y `anx-implementacion-2` ya no incluye puntos pendientes que no son elecciones de una implementación.
+
 
 
 
