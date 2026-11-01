@@ -141,7 +141,7 @@ El proyecto está en la fase 0, [etapa de concepto](00-inicio.md#inicio-fase). L
 2. Cada requisito de una sección normativa lleva su identificador, y cada enlace y cada referencia a una invariante o a un teorema resuelve.
 3. Todo lo concreto que no está definido consta en el [anexo A](33-anexo-a.md), sin ningún hueco sin registrar.
 4. Cada estándar adoptado tiene su edición fijada en [Estándares adoptados](32-estandares.md), y no se redefine nada estandarizado.
-5. Se ha hecho una revisión de cierre de coherencia y de cobertura, y sus hallazgos están resueltos o registrados.
+5. Se ha hecho una revisión de cierre de coherencia y de cobertura, independiente de quien redactó el texto, y sus hallazgos están resueltos o registrados en el registro de cambios.
 6. Los nombres, las licencias y la política de marca están decididos, y el repositorio publica la licencia del texto, el código de conducta, la política de seguridad y el gobierno.
 7. Existe una versión etiquetada de la especificación, con su registro de cambios.
 
