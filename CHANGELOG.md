@@ -49,6 +49,8 @@ Correcciones de la revisión de cierre de la fase 0, que verificó los siete cri
 - Solsticio: un valor diferido que guarda su resultado podía referirse a sí mismo y formar un ciclo que el conteo de referencias no libera; ahora no puede depender de sí mismo (`cyc-modelo-4`), y `cyc-modelo-1` lo recoge.
 - Al declarar informativas las introducciones de página, `stela-1` y la tabla de estándares adoptados quedaban dentro de una introducción; ahora tienen su propia sección («Definición normativa» y «Referencias normativas»).
 - Mutación de código con efectos: el contraejemplo de un mutante que invoca intrínsecos incluye la respuesta de cada invocación, que cumple el contrato del intrínseco (`elk-criterio-1`); sin ella el mutante no podía evaluarse.
+- `dst-perfiles-7` exigía que los módulos core se aceptaran «en todo destino», un conjunto sin cota que ninguna prueba puede recorrer; ahora en todo destino de referencia.
+
 
 
 

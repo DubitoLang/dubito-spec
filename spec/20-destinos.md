@@ -22,7 +22,7 @@ Un destino combina una arquitectura, un sistema operativo (o ninguno) y una espe
 
 <a id="dst-perfiles-6"></a>Una biblioteca se atesta con sus requisitos abiertos y se enlaza en cualquier binario que los provea. El cierre de los requisitos solo se exige al enlazar un binario. `dst-perfiles-6`
 
-<a id="dst-perfiles-7"></a>Cada especificación de destino declara uno de dos perfiles ejecutables, freestanding o hosted. Core no es un destino: es el perfil de un módulo que no invoca intrínsecos y deja como requisitos abiertos todo lo demás; un módulo core se compila y se atesta para cualquier destino. Un lenguaje está disponible en core si sus módulos core se aceptan en todo destino, y está disponible en los tres perfiles (R11) si lo está en core y en al menos un destino freestanding y uno hosted. `dst-perfiles-7`
+<a id="dst-perfiles-7"></a>Cada especificación de destino declara uno de dos perfiles ejecutables, freestanding o hosted. Core no es un destino: es el perfil de un módulo que no invoca intrínsecos y deja como requisitos abiertos todo lo demás; un módulo core se compila y se atesta para cualquier destino. Un lenguaje está disponible en core si sus módulos core se aceptan en todo destino de referencia, y está disponible en los tres perfiles (R11) si lo está en core y en al menos un destino freestanding y uno hosted. `dst-perfiles-7`
 
 ## <a id="dst-disp"></a>Disponibilidad
 
