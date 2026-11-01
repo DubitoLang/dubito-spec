@@ -2,7 +2,7 @@
 title: "Índice"
 ---
 
-# Especificación de Dubito 1.0.0-alpha.2
+# Especificación de Dubito 1.0.0-alpha.1
 
 Alpha · especificación conceptual; fase 0 cerrada. El texto normativo, una página por archivo.
 

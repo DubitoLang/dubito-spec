@@ -136,7 +136,7 @@ La política sigue las Model Trademark Guidelines 1.0. Las marcas del proyecto s
 
 ## <a id="pro-fase"></a>Fases *(Informativa)*
 
-La fase 0, [etapa de concepto](00-inicio.md#inicio-fase), quedó cerrada con la versión 1.0.0-alpha.2. Lo concreto (sintaxis, formatos, codificaciones, protocolos, herramientas y sus interfaces) se definirá en las etapas siguientes, sin contradecir esta especificación.
+La fase 0, [etapa de concepto](00-inicio.md#inicio-fase), quedó cerrada con la versión 1.0.0-alpha.1. Lo concreto (sintaxis, formatos, codificaciones, protocolos, herramientas y sus interfaces) se definirá en las etapas siguientes, sin contradecir esta especificación.
 
 **Criterios de salida de la fase 0.** La fase termina cuando el consejo de mantenedores declara cerrada la especificación conceptual, lo que exige que se cumplan todos estos criterios:
 

@@ -18,7 +18,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 **Contenido.** Especificación conceptual, nombres, licencias, gobierno y este roadmap.
 
-**Estado.** Cerrada con la versión 1.0.0-alpha.2, que cumple los criterios de salida de [Fases](spec/30-proyecto.md#pro-fase).
+**Estado.** Cerrada con la versión 1.0.0-alpha.1, que cumple los criterios de salida de [Fases](spec/30-proyecto.md#pro-fase).
 
 **Sale cuando** el consejo de mantenedores, hoy formado solo por el editor, declara cerrada la especificación conceptual y se publica la versión de cierre con su etiqueta.
 

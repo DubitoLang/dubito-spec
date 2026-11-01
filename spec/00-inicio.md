@@ -16,7 +16,7 @@ La plataforma está formada por una representación intermedia (Stela) y otra de
 
 | Campo             | Valor                                                                                                                                                                                                                  |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión           | 1.0.0-alpha.2 |
+| Versión           | 1.0.0-alpha.1 |
 | Estado            | Alpha · especificación conceptual; fase 0 cerrada |
 | Fecha             | 2026-11-01                                                                                                                                                                                                             |
 | Editor            | Ing. Xhunik Nikol Miguel Mutzutz                                                                                                                                                                                       |
@@ -28,7 +28,7 @@ La plataforma está formada por una representación intermedia (Stela) y otra de
 
 ## <a id="inicio-fase"></a>Fase del proyecto *(Informativa)*
 
-Dubito cerró su **fase 0, la etapa de concepto** (*concept stage* en el ciclo de vida de ISO/IEC/IEEE 15288), con la versión 1.0.0-alpha.2. No existe ninguna implementación; la fase siguiente define lo concreto que el [anexo A](33-anexo-a.md#anx-pendiente) registra como pendiente.
+Dubito cerró su **fase 0, la etapa de concepto** (*concept stage* en el ciclo de vida de ISO/IEC/IEEE 15288), con la versión 1.0.0-alpha.1. No existe ninguna implementación; la fase siguiente define lo concreto que el [anexo A](33-anexo-a.md#anx-pendiente) registra como pendiente.
 
 Este documento es la **especificación conceptual**: define por completo el modelo abstracto (la filosofía, las garantías, la semántica y las reglas que toda implementación debe cumplir) y no inventa nada concreto. Donde la industria ya tiene un estándar, se adopta por referencia. Lo concreto que no está estandarizado (la sintaxis de los lenguajes, los formatos propios, las herramientas y sus comandos, las extensiones de archivo, los códigos de diagnóstico y los valores numéricos) se decidirá en las etapas siguientes, siempre dentro de lo que aquí se fija; cada punto está registrado en el [anexo A](33-anexo-a.md).
 
