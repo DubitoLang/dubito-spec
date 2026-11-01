@@ -16,15 +16,15 @@ Talud es el lenguaje orientado a objetos de la familia. Agrupa datos, invariante
 
 | Eje                                | Talud                                                                                     |
 |------------------------------------|-------------------------------------------------------------------------------------------|
-| Paradigma `tal-clasificacion-1`    | Orientado a objetos con clases; imperativo                                                |
-| Nivel `tal-clasificacion-2`        | Aplicaciones y bibliotecas de dominio; disponible en freestanding                         |
-| Memoria `tal-clasificacion-3`      | Ownership y préstamos; objetos por valor                                                  |
-| Evaluación `tal-clasificacion-4`   | Estricta, de izquierda a derecha                                                          |
-| Totalidad `tal-clasificacion-5`    | Total por defecto                                                                         |
-| Polimorfismo `tal-clasificacion-6` | De subtipo (métodos abiertos), paramétrico y por traits                                   |
-| Despacho `tal-clasificacion-7`     | Virtual en métodos abiertos llamados a través de un objeto de clase; estático en el resto |
-| Herencia `tal-clasificacion-8`     | Simple, solo desde clases abiertas o abstractas                                           |
-| Concurrencia `tal-clasificacion-9` | Concurrencia estructurada; ausencia de carreras por tipos                                 |
+| <a id="tal-clasificacion-1"></a>Paradigma `tal-clasificacion-1`    | Orientado a objetos con clases; imperativo                                                |
+| <a id="tal-clasificacion-2"></a>Nivel `tal-clasificacion-2`        | Aplicaciones y bibliotecas de dominio; disponible en freestanding                         |
+| <a id="tal-clasificacion-3"></a>Memoria `tal-clasificacion-3`      | Ownership y préstamos; objetos por valor                                                  |
+| <a id="tal-clasificacion-4"></a>Evaluación `tal-clasificacion-4`   | Estricta, de izquierda a derecha                                                          |
+| <a id="tal-clasificacion-5"></a>Totalidad `tal-clasificacion-5`    | Total por defecto                                                                         |
+| <a id="tal-clasificacion-6"></a>Polimorfismo `tal-clasificacion-6` | De subtipo (métodos abiertos), paramétrico y por traits                                   |
+| <a id="tal-clasificacion-7"></a>Despacho `tal-clasificacion-7`     | Virtual en métodos abiertos llamados a través de un objeto de clase; estático en el resto |
+| <a id="tal-clasificacion-8"></a>Herencia `tal-clasificacion-8`     | Simple, solo desde clases abiertas o abstractas                                           |
+| <a id="tal-clasificacion-9"></a>Concurrencia `tal-clasificacion-9` | Concurrencia estructurada; ausencia de carreras por tipos                                 |
 
 ## <a id="tal-clases"></a>Clases y objetos
 

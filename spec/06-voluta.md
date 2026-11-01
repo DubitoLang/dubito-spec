@@ -16,13 +16,13 @@ Voluta es el lenguaje simbólico de la familia: el código es una estructura de 
 
 | Eje                                    | Voluta                                                                                   |
 |----------------------------------------|------------------------------------------------------------------------------------------|
-| Paradigma `vol-clasificacion-1`        | Simbólico y funcional; código como dato                                                  |
-| Memoria `vol-clasificacion-2`          | Valores inmutables y colecciones persistentes; celdas atómicas como único estado mutable |
-| Evaluación `vol-clasificacion-3`       | Estricta                                                                                 |
-| Totalidad `vol-clasificacion-4`        | Total por defecto; no terminación explícita                                              |
-| Polimorfismo `vol-clasificacion-5`     | Paramétrico con instanciación explícita; multimétodos sobre tipos suma                   |
-| Despacho `vol-clasificacion-6`         | Estático; las funciones son valores                                                      |
-| Metaprogramación `vol-clasificacion-7` | Macros higiénicas, solo en compilación                                                   |
+| <a id="vol-clasificacion-1"></a>Paradigma `vol-clasificacion-1`        | Simbólico y funcional; código como dato                                                  |
+| <a id="vol-clasificacion-2"></a>Memoria `vol-clasificacion-2`          | Valores inmutables y colecciones persistentes; celdas atómicas como único estado mutable |
+| <a id="vol-clasificacion-3"></a>Evaluación `vol-clasificacion-3`       | Estricta                                                                                 |
+| <a id="vol-clasificacion-4"></a>Totalidad `vol-clasificacion-4`        | Total por defecto; no terminación explícita                                              |
+| <a id="vol-clasificacion-5"></a>Polimorfismo `vol-clasificacion-5`     | Paramétrico con instanciación explícita; multimétodos sobre tipos suma                   |
+| <a id="vol-clasificacion-6"></a>Despacho `vol-clasificacion-6`         | Estático; las funciones son valores                                                      |
+| <a id="vol-clasificacion-7"></a>Metaprogramación `vol-clasificacion-7` | Macros higiénicas, solo en compilación                                                   |
 
 ## <a id="vol-modelo"></a>Modelo
 

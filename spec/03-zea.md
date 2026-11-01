@@ -16,16 +16,16 @@ Zea es el lenguaje de sistemas de la familia: imperativo, con ownership y prést
 
 | Eje                                    | Zea                                                          |
 |----------------------------------------|--------------------------------------------------------------|
-| Paradigma `zea-clasificacion-1`        | Imperativo, funcional y genérico; especificación declarativa |
-| Nivel `zea-clasificacion-2`            | Sistemas: de freestanding a aplicaciones                     |
-| Memoria `zea-clasificacion-3`          | Ownership y préstamos                                        |
-| Evaluación `zea-clasificacion-4`       | Estricta, de izquierda a derecha                             |
-| Totalidad `zea-clasificacion-5`        | Total por defecto; no terminación solo con su efecto         |
-| Polimorfismo `zea-clasificacion-6`     | Paramétrico (monomorfizado) y por traits con contratos       |
-| Despacho `zea-clasificacion-7`         | Estático; dinámico solo con objetos de trait                 |
-| Herencia `zea-clasificacion-8`         | No; composición y traits                                     |
-| Metaprogramación `zea-clasificacion-9` | Solo evaluación en compilación                               |
-| Concurrencia `zea-clasificacion-10`    | Concurrencia estructurada; ausencia de carreras por tipos    |
+| <a id="zea-clasificacion-1"></a>Paradigma `zea-clasificacion-1`        | Imperativo, funcional y genérico; especificación declarativa |
+| <a id="zea-clasificacion-2"></a>Nivel `zea-clasificacion-2`            | Sistemas: de freestanding a aplicaciones                     |
+| <a id="zea-clasificacion-3"></a>Memoria `zea-clasificacion-3`          | Ownership y préstamos                                        |
+| <a id="zea-clasificacion-4"></a>Evaluación `zea-clasificacion-4`       | Estricta, de izquierda a derecha                             |
+| <a id="zea-clasificacion-5"></a>Totalidad `zea-clasificacion-5`        | Total por defecto; no terminación solo con su efecto         |
+| <a id="zea-clasificacion-6"></a>Polimorfismo `zea-clasificacion-6`     | Paramétrico (monomorfizado) y por traits con contratos       |
+| <a id="zea-clasificacion-7"></a>Despacho `zea-clasificacion-7`         | Estático; dinámico solo con objetos de trait                 |
+| <a id="zea-clasificacion-8"></a>Herencia `zea-clasificacion-8`         | No; composición y traits                                     |
+| <a id="zea-clasificacion-9"></a>Metaprogramación `zea-clasificacion-9` | Solo evaluación en compilación                               |
+| <a id="zea-clasificacion-10"></a>Concurrencia `zea-clasificacion-10`    | Concurrencia estructurada; ausencia de carreras por tipos    |
 
 ## <a id="zea-construcciones"></a>Construcciones
 

@@ -16,10 +16,10 @@ Relevo organiza un programa en actores: unidades aisladas con estado propio que 
 
 | Eje                                | Relevo                                                 |
 |------------------------------------|--------------------------------------------------------|
-| Paradigma `rel-clasificacion-1`    | Actores con supervisión                                |
-| Memoria `rel-clasificacion-2`      | Una región por actor; los mensajes mueven su contenido |
-| Evaluación `rel-clasificacion-3`   | Estricta; un mensaje a la vez por actor                |
-| Concurrencia `rel-clasificacion-4` | Actores sobre el motor de tareas                       |
+| <a id="rel-clasificacion-1"></a>Paradigma `rel-clasificacion-1`    | Actores con supervisión                                |
+| <a id="rel-clasificacion-2"></a>Memoria `rel-clasificacion-2`      | Una región por actor; los mensajes mueven su contenido |
+| <a id="rel-clasificacion-3"></a>Evaluación `rel-clasificacion-3`   | Estricta; un mensaje a la vez por actor                |
+| <a id="rel-clasificacion-4"></a>Concurrencia `rel-clasificacion-4` | Actores sobre el motor de tareas                       |
 
 ## <a id="rel-actores"></a>Actores y mensajes
 

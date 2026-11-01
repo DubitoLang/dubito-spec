@@ -16,14 +16,14 @@ Solsticio es el lenguaje funcional puro de la familia: todo es una expresión, n
 
 | Eje                                | Solsticio                                                            |
 |------------------------------------|----------------------------------------------------------------------|
-| Paradigma `cyc-clasificacion-1`    | Funcional puro                                                       |
-| Memoria `cyc-clasificacion-2`      | Valores inmutables; compartición resuelta al compilar                |
-| Evaluación `cyc-clasificacion-3`   | Estricta, con pereza explícita                                       |
-| Efectos `cyc-clasificacion-4`      | Efectos de la plataforma y efectos del usuario con manejadores       |
-| Totalidad `cyc-clasificacion-5`    | Total por defecto; recursión general con el efecto de no terminación |
-| Polimorfismo `cyc-clasificacion-6` | Paramétrico y por traits                                             |
-| Despacho `cyc-clasificacion-7`     | Estático; las funciones son valores                                  |
-| Concurrencia `cyc-clasificacion-8` | Paralelismo de expresiones puras y tareas                            |
+| <a id="cyc-clasificacion-1"></a>Paradigma `cyc-clasificacion-1`    | Funcional puro                                                       |
+| <a id="cyc-clasificacion-2"></a>Memoria `cyc-clasificacion-2`      | Valores inmutables; compartición resuelta al compilar                |
+| <a id="cyc-clasificacion-3"></a>Evaluación `cyc-clasificacion-3`   | Estricta, con pereza explícita                                       |
+| <a id="cyc-clasificacion-4"></a>Efectos `cyc-clasificacion-4`      | Efectos de la plataforma y efectos del usuario con manejadores       |
+| <a id="cyc-clasificacion-5"></a>Totalidad `cyc-clasificacion-5`    | Total por defecto; recursión general con el efecto de no terminación |
+| <a id="cyc-clasificacion-6"></a>Polimorfismo `cyc-clasificacion-6` | Paramétrico y por traits                                             |
+| <a id="cyc-clasificacion-7"></a>Despacho `cyc-clasificacion-7`     | Estático; las funciones son valores                                  |
+| <a id="cyc-clasificacion-8"></a>Concurrencia `cyc-clasificacion-8` | Paralelismo de expresiones puras y tareas                            |
 
 ## <a id="cyc-modelo"></a>Modelo
 

@@ -16,12 +16,12 @@ Amate expresa reglas, no pasos: se declaran relaciones de entrada, hechos y regl
 
 | Eje                              | Amate                                                                                      |
 |----------------------------------|--------------------------------------------------------------------------------------------|
-| Paradigma `alm-clasificacion-1`  | Lógico: cláusulas de Horn sin símbolos de función, con negación y agregados estratificados |
-| Nivel `alm-clasificacion-2`      | Bibliotecas de reglas invocadas desde otros lenguajes                                      |
-| Memoria `alm-clasificacion-3`    | Relaciones inmutables                                                                      |
-| Evaluación `alm-clasificacion-4` | Punto fijo mínimo por estratos; resultado determinista                                     |
-| Efectos `alm-clasificacion-5`    | Ninguno, salvo memoria dinámica y, opcionalmente, tareas                                   |
-| Totalidad `alm-clasificacion-6`  | Siempre total                                                                              |
+| <a id="alm-clasificacion-1"></a>Paradigma `alm-clasificacion-1`  | Lógico: cláusulas de Horn sin símbolos de función, con negación y agregados estratificados |
+| <a id="alm-clasificacion-2"></a>Nivel `alm-clasificacion-2`      | Bibliotecas de reglas invocadas desde otros lenguajes                                      |
+| <a id="alm-clasificacion-3"></a>Memoria `alm-clasificacion-3`    | Relaciones inmutables                                                                      |
+| <a id="alm-clasificacion-4"></a>Evaluación `alm-clasificacion-4` | Punto fijo mínimo por estratos; resultado determinista                                     |
+| <a id="alm-clasificacion-5"></a>Efectos `alm-clasificacion-5`    | Ninguno, salvo memoria dinámica y, opcionalmente, tareas                                   |
+| <a id="alm-clasificacion-6"></a>Totalidad `alm-clasificacion-6`  | Siempre total                                                                              |
 
 ## <a id="alm-modelo"></a>Relaciones y reglas
 

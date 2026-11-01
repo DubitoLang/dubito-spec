@@ -14,11 +14,11 @@ La plataforma distingue lo que puede salir mal en un programa correcto, que es u
 
 | Clase                                   | Ejemplo                                                   | Representación                                            |
 |-----------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------|
-| Error esperable `err-clases-1`          | Archivo inexistente, saldo insuficiente, conexión cerrada | Valor de error de un resultado                            |
-| Obligación no demostrada `err-clases-2` | Una comprobación en ejecución que resulta falsa           | Aborto del proceso o de la región                         |
-| Agotamiento de recursos `err-clases-3`  | Memoria insuficiente                                      | Aborto, salvo en operaciones que lo ofrecen como error    |
-| Fallo de una frontera `err-clases-4`    | Código nativo que cae, plazo vencido, mensaje corrupto    | Valor de error con las variantes de los fallos declarados |
-| Cancelación `err-clases-5`              | Una tarea cuyo ámbito se cierra antes de que termine      | Valor de error en su siguiente operación de espera        |
+| <a id="err-clases-1"></a>Error esperable `err-clases-1`          | Archivo inexistente, saldo insuficiente, conexión cerrada | Valor de error de un resultado                            |
+| <a id="err-clases-2"></a>Obligación no demostrada `err-clases-2` | Una comprobación en ejecución que resulta falsa           | Aborto del proceso o de la región                         |
+| <a id="err-clases-3"></a>Agotamiento de recursos `err-clases-3`  | Memoria insuficiente                                      | Aborto, salvo en operaciones que lo ofrecen como error    |
+| <a id="err-clases-4"></a>Fallo de una frontera `err-clases-4`    | Código nativo que cae, plazo vencido, mensaje corrupto    | Valor de error con las variantes de los fallos declarados |
+| <a id="err-clases-5"></a>Cancelación `err-clases-5`              | Una tarea cuyo ámbito se cierra antes de que termine      | Valor de error en su siguiente operación de espera        |
 
 ## <a id="err-valores"></a>Errores como valores
 

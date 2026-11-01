@@ -36,9 +36,9 @@ Rumbo es el conjunto de especificaciones de destino de la plataforma: cada desti
 
 | Nivel                       | Quién la mantiene                               | Uso                                                       |
 |-----------------------------|-------------------------------------------------|-----------------------------------------------------------|
-| Referencia `dst-gobierno-1` | El proyecto                                     | Destinos de la implementación de referencia               |
-| Revisada `dst-gobierno-2`   | Un mantenedor externo, con la revisión de abajo | Publicación en el registro                                |
-| Local `dst-gobierno-3`      | Cualquiera, sin revisión                        | Uso privado; queda indicado en el inventario de confianza |
+| <a id="dst-gobierno-1"></a>Referencia `dst-gobierno-1` | El proyecto                                     | Destinos de la implementación de referencia               |
+| <a id="dst-gobierno-2"></a>Revisada `dst-gobierno-2`   | Un mantenedor externo, con la revisión de abajo | Publicación en el registro                                |
+| <a id="dst-gobierno-3"></a>Local `dst-gobierno-3`      | Cualquiera, sin revisión                        | Uso privado; queda indicado en el inventario de confianza |
 
 - <a id="dst-gobierno-4"></a>**Trazabilidad.** Cada intrínseco y cada suposición cita la documentación del procesador o del sistema de la que proviene. `dst-gobierno-4`
 - <a id="dst-gobierno-5"></a>**Conformidad.** A partir de los contratos de cada intrínseco se generan pruebas que se ejecutan en el hardware y el sistema reales; si alguna falla, la especificación no se admite. `dst-gobierno-5`

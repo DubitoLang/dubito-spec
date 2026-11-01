@@ -16,9 +16,9 @@ Chinampa, la biblioteca estándar, se divide en tres capas según lo que exige d
 
 | Capa                | Requiere                         | Disponible en                      |
 |---------------------|----------------------------------|------------------------------------|
-| core `std-capas-1`  | Nada                             | Todos los destinos                 |
-| alloc `std-capas-2` | Un proveedor de memoria dinámica | Hosted; freestanding con proveedor |
-| std `std-capas-3`   | Un destino hosted                | Hosted                             |
+| <a id="std-capas-1"></a>core `std-capas-1`  | Nada                             | Todos los destinos                 |
+| <a id="std-capas-2"></a>alloc `std-capas-2` | Un proveedor de memoria dinámica | Hosted; freestanding con proveedor |
+| <a id="std-capas-3"></a>std `std-capas-3`   | Un destino hosted                | Hosted                             |
 
 ## <a id="std-requerido"></a>Lo que el lenguaje requiere
 

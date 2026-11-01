@@ -46,9 +46,9 @@ Dintel decide si un módulo puede convertirse en código máquina. Revisa la evi
 
 | Elemento                                                          | Por qué es de confianza                                                            |
 |-------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| El verificador, incluido su comprobador de pruebas `dintel-tcb-1` | Decide qué se acepta.                                                              |
-| El núcleo del backend, con Plomada `dintel-tcb-2`                 | Traduce la representación verificada a código máquina, incluido el enlazado final, y valida las pasadas que no pertenecen al núcleo. |
-| La especificación de cada destino `dintel-tcb-3`                  | Define la semántica de los intrínsecos y del arranque.                             |
+| <a id="dintel-tcb-1"></a>El verificador, incluido su comprobador de pruebas `dintel-tcb-1` | Decide qué se acepta.                                                              |
+| <a id="dintel-tcb-2"></a>El núcleo del backend, con Plomada `dintel-tcb-2`                 | Traduce la representación verificada a código máquina, incluido el enlazado final, y valida las pasadas que no pertenecen al núcleo. |
+| <a id="dintel-tcb-3"></a>La especificación de cada destino `dintel-tcb-3`                  | Define la semántica de los intrínsecos y del arranque.                             |
 
 <a id="dintel-tcb-4"></a>Los frontends, el solucionador, la herramienta de mutación, las pasadas de Pulido con validación de traducción y cualquier generador de código quedan fuera de la TCB. El verificador sigue el criterio de de Bruijn: su núcleo solo comprueba evidencia (lo que incluye evaluar un contraejemplo con la semántica de Stela, pero nunca buscar pruebas, contraejemplos ni mutantes) y es pequeño: cada versión publica el tamaño de su núcleo y el informe de su auditoría completa; su corrección respecto a la semántica mecanizada se demuestra en el mismo asistente de pruebas. `dintel-tcb-4`
 
