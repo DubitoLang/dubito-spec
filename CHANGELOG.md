@@ -9,6 +9,14 @@ Todos los cambios notables de la especificación se registran aquí. El formato 
 
 ## [Sin publicar]
 
+Correcciones de la revisión independiente de cierre de la fase 0.
+
+### Cambiado
+
+### Corregido
+
+- Enlaces de comparación al final de este registro y etiqueta `v1.0.0-alpha.1` sobre el commit de la versión publicada.
+
 ## [1.0.0-alpha.1] - 2026-11-01
 
 Primera versión de la línea oficial. La numeración 0.1.0 que se usó internamente antes de publicar se descarta; la política de versiones está en [Compatibilidad](spec/30-proyecto.md#pro-compatibilidad).
@@ -43,3 +51,6 @@ Primera versión de la línea oficial. La numeración 0.1.0 que se usó internam
 ### Revisión de cierre de la fase 0
 
 Comprobaciones hechas sobre las 36 páginas: ningún identificador duplicado ni con huecos, ningún enlace ni ancla rotos, cadena de anterior y siguiente íntegra, índice completo, ninguna referencia a nombres anteriores, a palabras SHOULD o a lenguajes y destinos concretos, y coherencia entre la TCB, los teoremas T1–T9, las invariantes R1–R11, el Anexo A y las clases de conformidad. Los hallazgos están resueltos en las entradas anteriores.
+
+[Sin publicar]: https://github.com/DubitoLang/dubito-spec/compare/v1.0.0-alpha.1...HEAD
+[1.0.0-alpha.1]: https://github.com/DubitoLang/dubito-spec/releases/tag/v1.0.0-alpha.1
