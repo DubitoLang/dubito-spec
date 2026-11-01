@@ -9,6 +9,10 @@ Todos los cambios notables de la especificación se registran aquí. El formato 
 
 ## [Sin publicar]
 
+### Corregido
+
+- Los enlaces de las versiones 1.0.0-alpha.1 y 1.0.0-alpha.2 apuntan al commit publicado de 1.0.0-alpha.1 en lugar de a una etiqueta que no existía, y la entrada de 1.0.0-alpha.1 recupera el texto con que se publicó.
+
 ## [1.0.0-alpha.2] - 2026-11-01
 
 Cierre de la fase 0. Correcciones de la revisión de cierre, que verificó los siete criterios de salida sobre los archivos, y roadmap del proyecto.
@@ -51,7 +55,6 @@ Cierre de la fase 0. Correcciones de la revisión de cierre, que verificó los s
 - La introducción de la visión general omitía Sillar y Glosa entre los componentes de la plataforma.
 - Títulos coherentes entre páginas, índice y navegación: «Destinos y perfiles» y «Fundamentos de diseño»; el anexo A se etiqueta «definido y pendiente».
 - Permisos escritos con PUEDE en mayúsculas donde se dirigen a una implementación (`bootstrap-1`, `cnf-requisitos-4`, `dst-backend-4`), y Glosa reporta los cambios en las directivas de exigencia (`review-1`), como exigen `directivas-3` y `fam-objetivos-12`.
-- Registro de cambios: la entrada de 1.0.0-alpha.1 contaba como «componentes» dos lenguajes y la mascota, y usaba una sección que no existe en Keep a Changelog; ambas cosas se corrigen sin cambiar su contenido.
 - El aviso de derechos del código de conducta atribuía el texto solo al editor; ahora reconoce a los autores del Contributor Covenant y deja al proyecto la adaptación.
 - Solsticio: un valor diferido que guarda su resultado podía referirse a sí mismo y formar un ciclo que el conteo de referencias no libera; ahora no puede depender de sí mismo (`cyc-modelo-4`), y `cyc-modelo-1` lo recoge.
 - Al declarar informativas las introducciones de página, `stela-1` y la tabla de estándares adoptados quedaban dentro de una introducción; ahora tienen su propia sección («Definición normativa» y «Referencias normativas»).
@@ -80,7 +83,7 @@ Primera versión de la línea oficial. La numeración 0.1.0 que se usó internam
 
 ### Cambiado
 
-- Los trece nombres nuevos (los lenguajes Solsticio y Amate; los componentes Dintel, Estuco, Pochteca, Sillar, Plomada, Pulido, Cincel, Glosa, Rumbo y Chinampa; y la mascota Quelonio) quedan confirmados por el editor. No se hizo una búsqueda formal de marcas; si más adelante aparece un conflicto, se cambia el nombre en una versión posterior.
+- Los nombres de los trece componentes (Solsticio, Amate, Dintel, Estuco, Pochteca, Quelonio, Sillar, Plomada, Pulido, Cincel, Glosa, Rumbo y Chinampa) quedan confirmados por el editor. No se hizo una búsqueda formal de marcas; si más adelante aparece un conflicto, se cambia el nombre en una versión posterior.
 - Conformidad: la clase Backend incluye ahora Sillar y Plomada entre sus requisitos, y existe la clase Herramienta de revisión (Glosa, R6).
 - Teoremas de la plataforma: la mecanización cubre las semánticas de Stela y de Sillar, porque T7 y T8 se apoyan en ambas.
 - Glosario: 21 entradas nuevas con los nombres de los seis lenguajes y de los componentes, la mascota y el nombre del proyecto.
@@ -90,8 +93,10 @@ Primera versión de la línea oficial. La numeración 0.1.0 que se usó internam
 - La ficha de la especificación y el requisito `cnf-requisitos-5` seguían refiriéndose a versiones 0.y.z; ahora citan los prelanzamientos y la política de versiones.
 - Se revisó la edición de in-toto citada en los estándares adoptados: la 1.2.0 es la versión vigente, sin cambios.
 
-**Revisión de cierre de la fase 0.** Comprobaciones hechas sobre las 36 páginas: ningún identificador duplicado ni con huecos, ningún enlace ni ancla rotos, cadena de anterior y siguiente íntegra, índice completo, ninguna referencia a nombres anteriores, a palabras SHOULD o a lenguajes y destinos concretos, y coherencia entre la TCB, los teoremas T1–T9, las invariantes R1–R11, el Anexo A y las clases de conformidad. Los hallazgos están resueltos en las entradas anteriores.
+### Revisión de cierre de la fase 0
+
+Comprobaciones hechas sobre las 36 páginas: ningún identificador duplicado ni con huecos, ningún enlace ni ancla rotos, cadena de anterior y siguiente íntegra, índice completo, ninguna referencia a nombres anteriores, a palabras SHOULD o a lenguajes y destinos concretos, y coherencia entre la TCB, los teoremas T1–T9, las invariantes R1–R11, el Anexo A y las clases de conformidad. Los hallazgos están resueltos en las entradas anteriores.
 
 [Sin publicar]: https://github.com/DubitoLang/dubito-spec/compare/v1.0.0-alpha.2...HEAD
-[1.0.0-alpha.2]: https://github.com/DubitoLang/dubito-spec/compare/v1.0.0-alpha.1...v1.0.0-alpha.2
-[1.0.0-alpha.1]: https://github.com/DubitoLang/dubito-spec/releases/tag/v1.0.0-alpha.1
+[1.0.0-alpha.2]: https://github.com/DubitoLang/dubito-spec/compare/2256d6789f0665b41862c0e667eb787f324d3306...v1.0.0-alpha.2
+[1.0.0-alpha.1]: https://github.com/DubitoLang/dubito-spec/tree/2256d6789f0665b41862c0e667eb787f324d3306
