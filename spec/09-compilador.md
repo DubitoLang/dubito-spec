@@ -33,7 +33,7 @@ dubito es la cadena de herramientas de la familia. Traduce el código fuente a l
 | Código fuente `niveles-2`             | Texto de uno de los lenguajes de la familia, en forma canónica.                                                                      | Ninguna por sí mismo.                                                            |
 | Stela `niveles-3`                     | Representación intermedia con tipos, ownership, efectos, procedencia, contratos y evidencia.                                         | Verificada por el verificador; de ella se deriva la identidad del módulo (R7).   |
 | Sillar (IR de bajo nivel) `niveles-4` | Forma de asignación única estática (SSA) sobre un grafo de control, con argumentos de bloque, los tipos de máquina y el modelo de memoria del destino. | Correcta por construcción del núcleo del backend o por validación de traducción. |
-| Código del destino `niveles-5`        | Instrucciones, datos y metadatos del binario.                                                                                        | La de Cincel, el backend, que pertenece a la TCB.                                |
+| Código del destino `niveles-5`        | Instrucciones, datos y metadatos del binario.                                                                                        | La de Cincel, el backend, cuyo núcleo pertenece a la TCB.                        |
 
 <a id="niveles-6"></a>Cada nivel posterior a Stela tiene su página: [Sillar](11-sillar.md) es la IR de bajo nivel, [Pulido](15-pulido.md) la optimiza, [Plomada](13-plomada.md) valida cada pasada y [Cincel](16-cincel.md) genera el código del destino. `niveles-6`
 

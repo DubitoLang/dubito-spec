@@ -134,7 +134,7 @@ order: 35
 
 **Talud.** Lenguaje orientado a objetos de la familia, con herencia y diseño por contrato.
 
-**TCB.** Base de cómputo confiable: el verificador, el núcleo del backend con su validador de traducción y las especificaciones de destino, más toda pasada sin validación que un binario declare en su inventario.
+**TCB.** Base de cómputo confiable: el verificador, el núcleo del backend con su validador de traducción, las especificaciones de destino y la base de la mecanización (el núcleo del asistente de pruebas y las definiciones mecanizadas), más toda pasada sin validación que un binario declare en su inventario. Se define en [Capas de confianza](26-confianza.md#conf-capas).
 
 **Teorema de la plataforma.** Propiedad de Stela, Dintel, Cincel o Plomada que la mecanización debe demostrar; mientras no lo esté, es un supuesto enumerado.
 

@@ -24,12 +24,15 @@ Ningún programa puede suspender sus garantías, pero todo programa se ejecuta s
 
 | Capa                                      | Contenido                                                                                       | Quién la fija                          |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------|----------------------------------------|
-| Núcleo de la plataforma `conf-capas-1`    | Dintel y el núcleo de Cincel con Plomada, más las pasadas sin validación que un binario declare | El proyecto; auditado y reconstruible  |
+| Núcleo de la plataforma `conf-capas-1`    | Dintel con su comprobador de pruebas; el núcleo de Cincel (bajada, selección de instrucciones, asignación de registros y enlazado) con Plomada; y las pasadas sin validación que un binario declare | El proyecto; auditado y reconstruible  |
+| Base de la mecanización `conf-capas-6`    | El núcleo del asistente de pruebas y las definiciones mecanizadas: las semánticas de Stela, de Sillar y de la arquitectura de cada destino, el modelo de fugas y los enunciados de los teoremas de la plataforma | El proyecto; auditada                  |
 | Especificación del destino `conf-capas-2` | Semántica de intrínsecos, arranque, aborto y convención de llamada                              | Mantenedores de cada destino; auditada |
 | Plataforma subyacente `conf-capas-3`      | Hardware y la parte del sistema que exige el tipo de frontera                                   | El tipo de frontera                    |
 | Fronteras declaradas `conf-capas-4`       | Código nativo aislado, anfitriones de bibliotecas exportadas, plugins, pares externos           | El programador                         |
 
-<a id="conf-capas-5"></a>Las dos primeras forman la TCB. La tercera es inevitable. La cuarta es opcional y nunca amplía lo que la TCB garantiza: solo añade valores *external* o condiciones explícitas. `conf-capas-5`
+<a id="conf-capas-5"></a>El núcleo de la plataforma, la base de la mecanización y la especificación del destino forman la TCB. La plataforma subyacente es inevitable. La cuarta es opcional y nunca amplía lo que la TCB garantiza: solo añade valores *external* o condiciones explícitas. `conf-capas-5`
+
+<a id="conf-capas-7"></a>Esta es la única definición de la TCB; las demás páginas remiten a ella. La base de la mecanización no se ejecuta al compilar: se confía en ella porque de ella se derivan las garantías de los teoremas de la plataforma. Mientras un teorema no esté mecanizado, su enunciado figura como supuesto en el inventario de confianza ([Teoremas de la plataforma](10-stela.md#stx-teoremas)). `conf-capas-7`
 
 ## <a id="conf-fronteras"></a>Tipos de frontera del sistema
 

@@ -57,7 +57,7 @@ Las palabras clave de BCP 14 se escriben en español con esta correspondencia:
 1.  **Un programa es un argumento.** Firmas, efectos, contratos y etiquetas de procedencia son premisas que el compilador verifica, no anotaciones opcionales.
 2.  **Optimizado para revisar, no para escribir.** El código se asume generado en gran parte por herramientas automáticas y revisado por personas. Los cambios se presentan como un diff de significado.
 3.  **Toda especificación debe ser falsable.** Un contrato que no distingue la implementación de sus mutaciones se rechaza.
-4.  **Confianza mínima y a la vista.** Solo el verificador, el núcleo del backend con su validador de traducción y la especificación de cada destino forman la base de cómputo confiable (TCB), más las pasadas sin validación que un binario declare; todo lo demás se verifica. Lo que un programa confía de su sistema o de código externo es lo mínimo que su destino permite, y queda enumerado.
+4.  **Confianza mínima y a la vista.** Solo el verificador, el núcleo del backend con su validador de traducción, la especificación de cada destino y la base de la mecanización forman la base de cómputo confiable (TCB), más las pasadas sin validación que un binario declare ([Capas de confianza](26-confianza.md#conf-capas)); todo lo demás se verifica. Lo que un programa confía de su sistema o de código externo es lo mínimo que su destino permite, y queda enumerado.
 5.  **Lenguajes del mismo rango.** Ningún lenguaje es el principal. Cada paradigma vive en su propio lenguaje y todos se combinan a través de la plataforma.
 
 ## <a id="inicio-invariantes"></a>Invariantes normativas
@@ -80,7 +80,7 @@ Toda implementación conforme ([Conformidad](31-conformidad.md)) DEBE cumplir es
 
 ## <a id="inicio-pipeline"></a>De la fuente al binario *(Informativa)*
 
-*Figura: diagrama de la cadena de compilación.* Solo lo que está dentro del recuadro punteado necesita confianza: Dintel, el núcleo de Cincel con Plomada y la especificación del destino (Rumbo). Las pasadas de Pulido sin validación, si se usan, se suman al inventario de confianza. Si un frontend o el código generado contienen errores, Dintel rechaza el módulo antes de que llegue a Cincel.
+*Figura: diagrama de la cadena de compilación.* Solo lo que está dentro del recuadro punteado necesita confianza durante la compilación: Dintel, el núcleo de Cincel con Plomada y la especificación del destino (Rumbo). La base de la mecanización también pertenece a la TCB, aunque no se ejecuta al compilar ([Capas de confianza](26-confianza.md#conf-capas)). Las pasadas de Pulido sin validación, si se usan, se suman al inventario de confianza. Si un frontend o el código generado contienen errores, Dintel rechaza el módulo antes de que llegue a Cincel.
 
 ## <a id="inicio-familia"></a>Lenguajes *(Informativa)*
 

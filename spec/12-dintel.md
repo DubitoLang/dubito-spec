@@ -45,10 +45,12 @@ Dintel decide si un módulo puede convertirse en código máquina. Revisa la evi
 | Elemento                                                          | Por qué es de confianza                                                            |
 |-------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | El verificador, incluido su comprobador de pruebas `dintel-tcb-1` | Decide qué se acepta.                                                              |
-| El backend `dintel-tcb-2`                                         | Traduce la representación verificada a código máquina, incluido el enlazado final. |
+| El núcleo del backend, con Plomada `dintel-tcb-2`                 | Traduce la representación verificada a código máquina, incluido el enlazado final, y valida las pasadas que no pertenecen al núcleo. |
 | La especificación de cada destino `dintel-tcb-3`                  | Define la semántica de los intrínsecos y del arranque.                             |
 
 <a id="dintel-tcb-4"></a>Los frontends, el solucionador, la herramienta de mutación, las pasadas de Pulido con validación de traducción y cualquier generador de código quedan fuera de la TCB. El verificador sigue el criterio de de Bruijn: su núcleo solo comprueba evidencia y es lo bastante pequeño para auditarse por completo; su corrección respecto a la semántica mecanizada se demuestra en el mismo asistente de pruebas. `dintel-tcb-4`
+
+<a id="dintel-tcb-5"></a>La tabla enumera lo que se ejecuta al compilar. La definición completa de la TCB, que incluye además la base de la mecanización y las pasadas sin validación que un binario declare, está en [Capas de confianza](26-confianza.md#conf-capas). `dintel-tcb-5`
 
 ## <a id="dintel-rechazos"></a>Motivos de rechazo
 
