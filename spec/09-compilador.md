@@ -54,7 +54,7 @@ dubito es la cadena de herramientas de la familia. Traduce el código fuente a l
 
 - <a id="bootstrap-1"></a>La primera implementación puede escribirse en cualquier lenguaje; su elección no forma parte de la especificación ni de la TCB. `bootstrap-1`
 - <a id="bootstrap-2"></a>Toda versión DEBE poder reconstruirse desde una base mínima publicada junto con ella. `bootstrap-2`
-- <a id="bootstrap-3"></a>Toda compilación es reproducible en el sentido de Reproducible Builds: las mismas fuentes, la misma cadena y el mismo destino producen los mismos bytes. `bootstrap-3`
+- <a id="bootstrap-3"></a>Toda compilación es reproducible en el sentido de Reproducible Builds: las mismas fuentes, la misma cadena, el mismo destino y el mismo perfil de optimización producen los mismos bytes (T9). `bootstrap-3`
 - <a id="bootstrap-4"></a>Toda versión se valida con doble compilación diversa (Wheeler, 2009): una cadena independiente compila las fuentes de la cadena y produce un compilador intermedio; ese compilador intermedio vuelve a compilar las mismas fuentes, y el resultado DEBE coincidir bit a bit con el binario oficial de la cadena, que se compiló a sí mismo. Los binarios que producen directamente las dos cadenas no tienen por qué coincidir. `bootstrap-4`
 
 ## <a id="diagnosticos"></a>Diagnósticos y editores

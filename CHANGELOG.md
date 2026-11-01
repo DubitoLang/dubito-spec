@@ -35,6 +35,8 @@ Correcciones de la revisión independiente de cierre de la fase 0. La revisión 
 - `optimizacion-3` decía que toda pasada DEBE tener validación y en la misma celda admitía pasadas sin ella; ahora una pasada PUEDE no tener validación si figura en el inventario de confianza.
 - `cnf-pruebas-2` exigía una prueba por cada identificador, imposible para los requisitos de proceso, de mecanización o descriptivos. Ahora cada requisito tiene un método de verificación de ISO/IEC/IEEE 29148 (inspección, análisis, demostración o prueba). Se precisan requisitos que no podían verificarse: `fam-sintaxis-3`, `fam-sintaxis-4`, `fam-objetivos-11`, `dintel-tcb-4`, `obs-senales-2` y `conf-principios-2`.
 - Modelo de memoria: el resumen de RC11 ya no puede redefinirlo; ante cualquier diferencia prevalece RC11, y `stx-memoria-6` queda marcado como restricción propia de Dubito (`stx-memoria-1`).
+- `bootstrap-3` y `ceiba-resolucion-2` omitían el perfil de optimización entre lo que determina los bytes de una compilación, a diferencia de T9 y `optimizacion-10`.
+
 
 
 
