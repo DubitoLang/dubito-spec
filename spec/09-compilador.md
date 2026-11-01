@@ -70,6 +70,10 @@ dubito es la cadena de herramientas de la familia. Traduce el código fuente a l
 - <a id="depuracion-4"></a>Los proveedores de tareas exponen tareas, ámbitos, regiones, árboles de supervisión y ocupación de buzones. `depuracion-4`
 - <a id="depuracion-5"></a>Un informe de aborto puede convertirse en una prueba que reproduce el fallo; un fallo concurrente se reproduce con el motor simulado y su semilla. `depuracion-5`
 
+## <a id="dubito-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+Los comandos y opciones de la cadena, las extensiones de archivo y los códigos de diagnóstico (`anx-pendiente-13`); la sintaxis común de las directivas (`anx-pendiente-1`); y, por implementación, el solucionador y los presupuestos (`anx-implementacion-3`, `anx-implementacion-9`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Relevo](08-relevo.md) · [Índice](README.md) · [Stela](10-stela.md) →

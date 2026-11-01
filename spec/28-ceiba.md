@@ -8,7 +8,7 @@ mark_group: eco
 
 # Ceiba
 
-**Rol:** gestor de paquetes
+**Rol:** gestor de paquetes · **En la TCB:** no
 
 Ceiba resuelve, obtiene y verifica dependencias. Una dependencia queda fijada por la identidad de su contenido, no por un número de versión, así que lo que se compila es exactamente lo que se revisó.
 
@@ -34,6 +34,10 @@ Ceiba resuelve, obtiene y verifica dependencias. Una dependencia queda fijada po
 - <a id="ceiba-reglas-3"></a>Los destinos que un paquete afirma se verifican: se rechaza la publicación si algún requisito abierto no puede satisfacerse en un destino declarado. `ceiba-reglas-3`
 - <a id="ceiba-reglas-4"></a>Los efectos y el inventario de confianza de una dependencia forman parte de su interfaz; una actualización muestra su diff de significado y el cambio en su inventario. `ceiba-reglas-4`
 - <a id="ceiba-reglas-5"></a>El grafo de dependencias de un binario, con su inventario de confianza, se exporta como lista de materiales de software en SPDX 3.0 y en CycloneDX (ECMA-424). `ceiba-reglas-5`
+
+## <a id="ceiba-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+El formato del manifiesto y del archivo de bloqueo (`anx-pendiente-10`) y la forma en que un paquete declara su edición (`anx-pendiente-15`). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

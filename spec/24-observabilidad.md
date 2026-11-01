@@ -6,6 +6,8 @@ order: 24
 
 # Observabilidad
 
+**Rol:** telemetría declarada y revisable · **En la TCB:** no
+
 Lo que un programa reporta sobre sí mismo forma parte de su interfaz revisable. Toda señal de telemetría se declara con su nombre y sus campos tipados, se emite bajo un efecto, respeta la procedencia y aparece en el diff de significado.
 
 ## <a id="obs-principios"></a>Principios
@@ -29,6 +31,10 @@ Lo que un programa reporta sobre sí mismo forma parte de su interfaz revisable.
 - <a id="obs-senales-5"></a>Un campo *external* se admite y se escapa; nunca se interpreta como formato. `obs-senales-5`
 - <a id="obs-senales-6"></a>Un exportador que descarta todo permite al backend eliminar las emisiones por completo. La mutación no muta las llamadas de telemetría. `obs-senales-6`
 - <a id="obs-senales-7"></a>El informe de aborto se emite también como evento de máxima severidad si hay un exportador. `obs-senales-7`
+
+## <a id="obs-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+El formato del manifiesto de telemetría (`anx-pendiente-9`). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

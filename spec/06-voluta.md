@@ -41,6 +41,10 @@ Voluta es el lenguaje simbólico de la familia: el código es una estructura de 
 - <a id="vol-macros-2"></a>**Higiene por conjuntos de ámbitos** (Flatt, 2016). Cada símbolo lleva el conjunto de ámbitos donde aparece; cada expansión añade un ámbito nuevo a los símbolos que introduce, y una referencia se resuelve con el enlace cuyo conjunto de ámbitos es el mayor subconjunto del suyo. Dos candidatos igual de grandes son un error. Una macro solo introduce un nombre visible en el sitio de uso si lo recibe como argumento. `vol-macros-2`
 - <a id="vol-macros-3"></a>Los nombres internos de una expansión se derivan de la identidad de la macro y de la posición de uso, de modo que la forma canónica es estable. `vol-macros-3`
 
+## <a id="vol-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+La sintaxis concreta, incluida la forma textual que acepta el lector (`anx-pendiente-1`), y los nombres de su biblioteca de soporte (`anx-pendiente-7`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Solsticio](05-solsticio.md) · [Índice](README.md) · [Amate](07-amate.md) →

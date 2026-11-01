@@ -34,6 +34,10 @@ Pulido es el optimizador de la plataforma. Mejora el código generado sin cambia
 
 <a id="optimizacion-11"></a>Un perfil de optimización se define por su objetivo, no por una lista de pasadas: **ninguno** (correspondencia directa con el código fuente, para depuración), **velocidad** o **tamaño**. Qué pasadas usa cada perfil es una decisión de cada implementación. El perfil no cambia el significado, así que no aparece en el diff de significado; queda registrado en la atestación del binario. Con cualquier perfil, la información de depuración sigue siendo correcta para el código que se generó. `optimizacion-11`
 
+## <a id="optimizacion-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+Por implementación, las pasadas de cada perfil de optimización (`anx-implementacion-5`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Speculum](14-speculum.md) · [Índice](README.md) · [Cincel](16-cincel.md) →

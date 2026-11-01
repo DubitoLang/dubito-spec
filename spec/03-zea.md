@@ -54,6 +54,10 @@ Zea es el lenguaje de sistemas de la familia: imperativo, con ownership y prést
 
 <a id="zea-concurrencia-1"></a>Zea usa directamente los ámbitos, las tareas y la E/S de la plataforma ([Entrada y salida](23-es.md)) y los atómicos del [modelo de memoria](10-stela.md#stx-memoria), con orden explícito en cada operación. `zea-concurrencia-1`
 
+## <a id="zea-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+La sintaxis concreta (`anx-pendiente-1`), que se elige según la [elección de la sintaxis](01-familia.md#fam-eleccion), y los nombres de su biblioteca de soporte (`anx-pendiente-7`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Núcleo común](02-nucleo.md) · [Índice](README.md) · [Talud](04-talud.md) →

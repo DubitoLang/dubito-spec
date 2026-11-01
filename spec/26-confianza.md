@@ -89,6 +89,10 @@ Ningún programa puede suspender sus garantías, pero todo programa se ejecuta s
 5.  <a id="conf-destinos-5"></a>Definir aborto, aborto por región si es posible, arranque, convención de llamada, formato ejecutable, fronteras asíncronas y mecanismo de espera. `conf-destinos-5`
 6.  <a id="conf-destinos-6"></a>Escribir la biblioteca estándar del destino como variantes con la interfaz común. `conf-destinos-6`
 
+## <a id="conf-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+El formato del inventario de confianza (`anx-pendiente-9`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Interoperabilidad](25-interop.md) · [Índice](README.md) · [Modelo de amenazas](27-amenazas.md) →

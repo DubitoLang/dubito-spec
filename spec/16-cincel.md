@@ -20,6 +20,10 @@ Cincel es el backend de la plataforma: talla la representación verificada en c�
 - <a id="dst-backend-4"></a>Puede sustituirse por otro backend conforme sin cambiar los lenguajes. `dst-backend-4`
 - <a id="dst-backend-5"></a>La convención de llamada interna no es estable entre versiones; la externa es la de la plataforma. `dst-backend-5`
 
+## <a id="cincel-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+Por destino, la convención de llamada externa, el formato ejecutable y el mecanismo de reducción de privilegios (`anx-destino-5`, `anx-destino-11`, `anx-destino-15`). La convención de llamada interna no es estable y la elige cada implementación. Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Pulido](15-pulido.md) · [Índice](README.md) · [Estuco](17-estuco.md) →

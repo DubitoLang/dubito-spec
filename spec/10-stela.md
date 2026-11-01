@@ -101,6 +101,10 @@ Stela es la representación intermedia de la plataforma: tipada, con control est
 - <a id="stx-teoremas-11"></a>Mientras un teorema no esté mecanizado, toda atestación lo enumera como supuesto en su inventario de confianza (R9). `stx-teoremas-11`
 - <a id="stx-teoremas-12"></a>Cada versión de Dintel, Cincel y Plomada declara la versión de la mecanización con la que se corresponde. `stx-teoremas-12`
 
+## <a id="stx-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+La codificación de Stela y la derivación de la identidad a partir de su forma canónica (`anx-pendiente-2`), el formato de la evidencia de mutación (`anx-pendiente-5`) y el asistente de pruebas con la forma exacta de la semántica y de los teoremas (`anx-pendiente-14`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [dubito](09-compilador.md) · [Índice](README.md) · [Sillar](11-sillar.md) →

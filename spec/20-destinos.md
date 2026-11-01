@@ -6,6 +6,8 @@ order: 20
 
 # Destinos
 
+**Rol:** perfiles, disponibilidad y concurrencia en cada destino · **En la TCB:** sus especificaciones ([Rumbo](19-rumbo.md))
+
 Un destino combina una arquitectura, un sistema operativo (o ninguno) y una especificación que define sus intrínsecos. El mismo módulo puede compilarse para cualquier destino cuya especificación provea lo que el módulo requiere.
 
 ## <a id="dst-perfiles"></a>Perfiles
@@ -67,6 +69,10 @@ Un destino combina una arquitectura, un sistema operativo (o ninguno) y una espe
 ## <a id="dst-componentes"></a>Componentes
 
 <a id="dst-componentes-1"></a>La especificación de cada destino es [Rumbo](19-rumbo.md), y el código del destino lo genera [Cincel](16-cincel.md). `dst-componentes-1`
+
+## <a id="dst-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+Lo que cada destino declara está en la tabla de lo [definido por el destino](33-anexo-a.md#anx-destino). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

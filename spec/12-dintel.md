@@ -56,6 +56,10 @@ Dintel decide si un módulo puede convertirse en código máquina. Revisa la evi
 
 <a id="dintel-rechazos-1"></a>Forma no canónica; dependencia sin atestación; violación de ownership; efecto no declarado o intrínseco inexistente; flujo de procedencia no autorizado; VC sin evidencia o refutada; certificado inválido; comprobaciones por encima de la política; valor no transferible cruzando entre tareas; valor fantasma en código ejecutable; implementación que no refina su contrato; requisito sin proveedor; extensión sin testigo; variantes incompatibles; pila no acotable sin cota declarada; declaración nativa mal formada; telemetría con datos excluidos; confianza no admitida por el destino; VC desconocida sin comprobación posible; razonamiento circular; suposición fuera de una especificación de destino; violación de tiempo constante; idempotencia sin demostrar; plugin o par fuera de lo declarado; postcondición que no elimina ningún mutante. `dintel-rechazos-1`
 
+## <a id="dintel-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+El predicado de evidencia de las atestaciones, y el algoritmo de firma y la gestión de claves dentro de DSSE (`anx-pendiente-3`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Sillar](11-sillar.md) · [Índice](README.md) · [Plomada](13-plomada.md) →

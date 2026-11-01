@@ -29,6 +29,10 @@ Speculum mide la adecuación de las especificaciones. Introduce mutaciones en el
 - <a id="elk-criterio-3"></a>**Puntuación.** Mutantes eliminados entre mutantes sin certificado de equivalencia. El paquete puede fijar un mínimo. `elk-criterio-3`
 - <a id="elk-criterio-4"></a>**Determinismo.** El conjunto de mutantes depende solo de la definición y de la versión de la herramienta; cualquiera puede repetirlo. `elk-criterio-4`
 
+## <a id="elk-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+El formato de la evidencia de mutación (`anx-pendiente-5`) y, por implementación, la selección de mutantes dentro de los operadores adoptados (`anx-implementacion-4`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Plomada](13-plomada.md) · [Índice](README.md) · [Pulido](15-pulido.md) →

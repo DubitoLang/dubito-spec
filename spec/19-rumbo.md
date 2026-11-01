@@ -47,6 +47,10 @@ Rumbo es el conjunto de especificaciones de destino de la plataforma: cada desti
 - <a id="dst-gobierno-8"></a>**Mínimo.** Solo se añade un intrínseco que algo necesita; entre versiones menores solo se añaden axiomas. `dst-gobierno-8`
 - <a id="dst-gobierno-9"></a>**Erratas.** Un error se publica como aviso sobre la identidad de la especificación, con el efecto descrito en [Compatibilidad](30-proyecto.md#pro-compatibilidad). `dst-gobierno-9`
 
+## <a id="rumbo-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+El formato y la codificación de las especificaciones de destino (`anx-pendiente-6`). Lo que cada especificación declara está en la tabla de lo [definido por el destino](33-anexo-a.md#anx-destino). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Glosa](18-glosa.md) · [Índice](README.md) · [Destinos](20-destinos.md) →

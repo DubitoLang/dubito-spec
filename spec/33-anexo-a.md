@@ -42,7 +42,7 @@ Dubito no tiene comportamiento indefinido: todo programa aceptado tiene un únic
 | Punto                                                                                                                                                                            | Dónde se define en esta especificación                   |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
 | Elección provisional de la sintaxis concreta de cada lenguaje, mientras esté pendiente (`anx-pendiente-1`) `anx-implementacion-1`                                                | [Elección de la sintaxis](01-familia.md#fam-eleccion)    |
-| Elección provisional de la codificación de Stela y de Sillar y de los demás formatos pendientes (`anx-pendiente-2` a `anx-pendiente-16`) `anx-implementacion-2`                 | [Niveles de representación](09-compilador.md#niveles)    |
+| Elección provisional de la codificación de Stela y de Sillar y de los demás formatos pendientes (`anx-pendiente-2` a `anx-pendiente-17`) `anx-implementacion-2`                 | [Niveles de representación](09-compilador.md#niveles)    |
 | Solucionador usado y valor del presupuesto del solucionador `anx-implementacion-3`                                                                                               | [Fases](09-compilador.md#fases)                          |
 | Selección de mutantes dentro de los operadores adoptados `anx-implementacion-4`                                                                                                  | [Speculum](14-speculum.md)                               |
 | Pasadas de cada perfil de optimización `anx-implementacion-5`                                                                                                                    | [Perfiles de optimización](15-pulido.md#perfiles-opt)    |
@@ -73,6 +73,7 @@ Estos puntos los fijará la especificación en la etapa siguiente ([Fases](30-pr
 | Asistente de pruebas, y forma exacta de las semánticas y de los teoremas mecanizados `anx-pendiente-14`                                      | [Stela](10-stela.md); [Semántica de Sillar](11-sillar.md#sillar-semantica); [Teoremas de la plataforma](10-stela.md#stx-teoremas)   |
 | Forma en que un paquete declara su edición `anx-pendiente-15`                                                                                | [Compatibilidad](30-proyecto.md#pro-compatibilidad); [Manifiesto y bloqueo](28-ceiba.md#ceiba-manifiesto)                            |
 | Formato del conjunto de pruebas de conformidad y de su trazabilidad `anx-pendiente-16`                                                       | [Conjunto de pruebas de conformidad](31-conformidad.md#cnf-pruebas)                                                                  |
+| Formato en que se presenta el diff de significado `anx-pendiente-17`                                                                          | [Glosa](18-glosa.md#review)                                                                                                          |
 
 ---
 

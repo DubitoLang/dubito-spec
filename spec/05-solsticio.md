@@ -48,6 +48,10 @@ Solsticio es el lenguaje funcional puro de la familia: todo es una expresión, n
 - <a id="cyc-especificos-3"></a>La E/S devuelve valores nuevos en lugar de modificar buffers. `cyc-especificos-3`
 - <a id="cyc-especificos-4"></a>Una prueba con un cuantificador se ejecuta como prueba de propiedades sobre valores generados. `cyc-especificos-4`
 
+## <a id="cyc-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+La sintaxis concreta (`anx-pendiente-1`), que se elige según la [elección de la sintaxis](01-familia.md#fam-eleccion), y los nombres de su biblioteca de soporte (`anx-pendiente-7`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Talud](04-talud.md) · [Índice](README.md) · [Voluta](06-voluta.md) →

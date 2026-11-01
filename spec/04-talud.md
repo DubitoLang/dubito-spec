@@ -50,6 +50,10 @@ Talud es el lenguaje orientado a objetos de la familia. Agrupa datos, invariante
 - <a id="tal-herencia-6"></a>Una clase puede renunciar a ser transferible o compartible. `tal-herencia-6`
 - <a id="tal-herencia-7"></a>Las pruebas de una clase abierta se ejecutan sobre cada subclase concreta del paquete. `tal-herencia-7`
 
+## <a id="tal-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+La sintaxis concreta (`anx-pendiente-1`), que se elige según la [elección de la sintaxis](01-familia.md#fam-eleccion), y los nombres de su biblioteca de soporte (`anx-pendiente-7`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Zea](03-zea.md) · [Índice](README.md) · [Solsticio](05-solsticio.md) →

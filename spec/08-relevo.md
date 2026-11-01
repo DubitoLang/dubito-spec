@@ -56,6 +56,10 @@ Relevo organiza un programa en actores: unidades aisladas con estado propio que 
 - <a id="rel-remotos-7"></a>Un supervisor puede vigilar un actor remoto y recibe una sospecha cuando no responde dentro del plazo. `rel-remotos-7`
 - <a id="rel-remotos-8"></a>Las consultas remotas no forman parte del grafo de esperas; su plazo obligatorio acota toda espera. `rel-remotos-8`
 
+## <a id="rel-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+La sintaxis concreta (`anx-pendiente-1`), que se elige según la [elección de la sintaxis](01-familia.md#fam-eleccion), y los nombres de su biblioteca de soporte (`anx-pendiente-7`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Amate](07-amate.md) · [Índice](README.md) · [dubito](09-compilador.md) →

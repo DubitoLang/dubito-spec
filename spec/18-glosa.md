@@ -18,6 +18,10 @@ Glosa compara dos versiones de un programa por su significado, no por su texto. 
 
 <a id="review-2"></a>Los cambios de documentación de la interfaz pública se reportan en una categoría propia, separada de los cambios de significado ([Documentación en el código](02-nucleo.md#nuc-documentacion)). `review-2`
 
+## <a id="review-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+El formato en que se presenta el diff de significado (`anx-pendiente-17`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Estuco](17-estuco.md) · [Índice](README.md) · [Rumbo](19-rumbo.md) →

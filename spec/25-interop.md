@@ -6,6 +6,8 @@ order: 25
 
 # Interoperabilidad
 
+**Rol:** relación con otros lenguajes, código nativo y componentes externos · **En la TCB:** no; lo que se confía queda en el inventario
+
 Hay cuatro relaciones posibles: entre lenguajes de la familia, con el resto del sistema por la convención de llamada de la plataforma, con código nativo no verificado y con componentes externos a través de una frontera asíncrona.
 
 ## <a id="int-familia"></a>Entre lenguajes de la familia
@@ -59,6 +61,10 @@ Hay cuatro relaciones posibles: entre lenguajes de la familia, con el resto del 
 ## <a id="int-sistema"></a>Biblioteca del sistema
 
 <a id="int-sistema-1"></a>La biblioteca del sistema no se importa como código nativo: la usa std en la base del sistema, con sus funciones declaradas en la especificación del destino y enumeradas en el inventario. Las marcadas como aisladas usan el mismo canal que el código nativo. `int-sistema-1`
+
+## <a id="int-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+El formato de la descripción de la interfaz exportada (`anx-pendiente-12`). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

@@ -24,6 +24,10 @@ Plomada comprueba, en cada compilación, que la salida de cada pasada de optimiz
 - <a id="plomada-tcb-1"></a>Plomada pertenece a la TCB junto con el núcleo de [Cincel](16-cincel.md); su corrección es el teorema T8. `plomada-tcb-1`
 - <a id="plomada-tcb-2"></a>Una pasada sin validación no pasa por Plomada: pertenece a la TCB y aparece en el inventario de confianza de cada binario que la usa (R9). `plomada-tcb-2`
 
+## <a id="plomada-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+El formato del testigo que comprueba Plomada (`anx-pendiente-4`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Dintel](12-dintel.md) · [Índice](README.md) · [Speculum](14-speculum.md) →

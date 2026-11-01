@@ -8,7 +8,7 @@ mark_group: eco
 
 # Pochteca
 
-**Rol:** registro de paquetes · **Direccionamiento:** por contenido
+**Rol:** registro de paquetes · **Direccionamiento:** por contenido · **En la TCB:** no
 
 Pochteca es el registro público de paquetes de la familia. Almacena las fuentes de cada paquete y sus atestaciones, direccionadas por contenido, y mantiene un registro de transparencia de todo lo publicado. Cualquier registro privado que siga el mismo modelo es intercambiable con él.
 
@@ -24,6 +24,10 @@ Pochteca es el registro público de paquetes de la familia. Almacena las fuentes
 - <a id="pochteca-modelo-8"></a>**Distribución por fuentes.** El registro distribuye fuentes y atestaciones, nunca la representación intermedia. Cada cliente regenera los módulos localmente, y como la compilación es reproducible obtiene la misma identidad que figura en la atestación. Así ningún paquete distribuye código de la biblioteca estándar en forma intermedia. `pochteca-modelo-8`
 - <a id="pochteca-modelo-9"></a>**Publicación.** El registro reconstruye los módulos desde las fuentes con la cadena fijada y exige la misma identidad, vuelve a ejecutar el verificador, comprueba el incremento de versión y la protección de nombres, y añade la entrada. `pochteca-modelo-9`
 - <a id="pochteca-modelo-10"></a>**Verificación del cliente.** El cliente comprueba la identidad de cada contenido, su inclusión en el registro y la consistencia del registro con la última vista, lo que detecta historias distintas para clientes distintos. Por eso ni el registro ni sus espejos están en la TCB: pueden negarse a servir, pero no servir algo distinto sin que se detecte. `pochteca-modelo-10`
+
+## <a id="pochteca-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+El protocolo del registro (`anx-pendiente-11`). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

@@ -46,6 +46,10 @@ Amate expresa reglas, no pasos: se declaran relaciones de entrada, hechos y regl
 - <a id="alm-especificos-6"></a>Una salida puede evaluarse en paralelo con el efecto de tareas, con resultado idéntico al secuencial. No hay E/S ni telemetría: las explicaciones son el registro de auditoría. `alm-especificos-6`
 - <a id="alm-especificos-7"></a>Una prueba declara hechos de entrada y las filas esperadas en una salida. `alm-especificos-7`
 
+## <a id="alm-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+La sintaxis concreta (`anx-pendiente-1`), que se elige según la [elección de la sintaxis](01-familia.md#fam-eleccion), y los nombres de su biblioteca de soporte (`anx-pendiente-7`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
 ← [Voluta](06-voluta.md) · [Índice](README.md) · [Relevo](08-relevo.md) →
