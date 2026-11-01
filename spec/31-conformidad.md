@@ -38,7 +38,7 @@ Qué productos pueden declararse conformes con esta especificación, qué requis
 
 <a id="cnf-declaracion-1"></a>Quien presenta un producto como conforme DEBE publicar una declaración de conformidad que indique: `cnf-declaracion-1`
 
-- <a id="cnf-declaracion-2"></a>la versión exacta de la especificación (x.y.z); `cnf-declaracion-2`
+- <a id="cnf-declaracion-2"></a>la versión exacta de la especificación (x.y.z, con su prelanzamiento si lo tiene); `cnf-declaracion-2`
 - <a id="cnf-declaracion-3"></a>la clase o las clases de producto; `cnf-declaracion-3`
 - <a id="cnf-declaracion-4"></a>los perfiles de destino, en las clases que dependen de ellos; `cnf-declaracion-4`
 - <a id="cnf-declaracion-5"></a>las extensiones que ofrece; `cnf-declaracion-5`

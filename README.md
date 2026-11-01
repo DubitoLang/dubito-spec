@@ -9,7 +9,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 Dubito es un proyecto de lenguajes de programación verificados: una plataforma de compilación compartida y seis lenguajes del mismo rango (Zea, Talud, Solsticio, Voluta, Amate y Relevo) en la que todo programa se entrega junto con la evidencia de lo que afirma.
 
-> **Estado: fase 0, etapa de concepto.** Este repositorio contiene la especificación conceptual 0.1.0. **No existe ninguna implementación.** La especificación define por completo el modelo abstracto y deja sin definir todo lo concreto (sintaxis, formatos y herramientas), que se decidirá en las etapas siguientes.
+> **Estado: fase 0, etapa de concepto.** Este repositorio contiene la especificación conceptual 1.0.0-alpha.1. **No existe ninguna implementación.** La especificación define por completo el modelo abstracto y deja sin definir todo lo concreto (sintaxis, formatos y herramientas), que se decidirá en las etapas siguientes.
 
 ## Contenido
 
