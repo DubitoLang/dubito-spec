@@ -14,9 +14,12 @@ Sillar es la representación de bajo nivel entre Stela verificada y el código d
 
 ## <a id="sillar-forma"></a>Forma
 
-- <a id="sillar-forma-1"></a>Código de tres direcciones en forma de asignación única estática (SSA). `sillar-forma-1`
-- <a id="sillar-forma-2"></a>Usa los tipos de máquina y el modelo de memoria del destino que declara su especificación ([Rumbo](19-rumbo.md)). `sillar-forma-2`
-- <a id="sillar-forma-3"></a>Existe solo en compilación (R3): nunca se distribuye ni se ejecuta. `sillar-forma-3`
+- <a id="sillar-forma-1"></a>Forma de asignación única estática (SSA) sobre un grafo de control: cada valor se define una sola vez. `sillar-forma-1`
+- <a id="sillar-forma-2"></a>Los valores que llegan a un bloque desde varios predecesores, como las variables de un bucle, se pasan como argumentos de bloque; no hay nodos phi. `sillar-forma-2`
+- <a id="sillar-forma-3"></a>Cada instrucción define como máximo un valor y recibe operandos explícitos. `sillar-forma-3`
+- <a id="sillar-forma-4"></a>Cada bloque termina en exactamente un terminador: salto, bifurcación condicional, retorno o aborto declarado. `sillar-forma-4`
+- <a id="sillar-forma-5"></a>Usa los tipos de máquina y el modelo de memoria del destino que declara su especificación ([Rumbo](19-rumbo.md)). `sillar-forma-5`
+- <a id="sillar-forma-6"></a>Existe solo en compilación (R3): nunca se distribuye ni se ejecuta. `sillar-forma-6`
 
 ## <a id="sillar-anotaciones"></a>Anotaciones obligatorias
 
@@ -28,9 +31,19 @@ Sillar es la representación de bajo nivel entre Stela verificada y el código d
 - <a id="sillar-anotaciones-5"></a>los puntos de telemetría; `sillar-anotaciones-5`
 - <a id="sillar-anotaciones-6"></a>los límites de los efectos. `sillar-anotaciones-6`
 
+## <a id="sillar-semantica"></a>Semántica
+
+- <a id="sillar-semantica-1"></a>La semántica de Sillar es operacional y DEBE mecanizarse en un asistente de pruebas, como la de Stela; ante cualquier diferencia con esta descripción, prevalece la mecanización. `sillar-semantica-1`
+- <a id="sillar-semantica-2"></a>Plomada compara la semántica de Stela con la de Sillar: la corrección de la validación de traducción se apoya en ambas. `sillar-semantica-2`
+
+## <a id="sillar-pulido"></a>Técnicas internas de las pasadas
+
+- <a id="sillar-pulido-1"></a>Sillar es la forma de intercambio entre pasadas. Una pasada PUEDE usar internamente cualquier otra representación o técnica, como grafos de nodos o grafos de equivalencia. `sillar-pulido-1`
+- <a id="sillar-pulido-2"></a>Lo que una pasada entrega DEBE ser Sillar, y pasa por Plomada; si no pasa, la pasada pertenece a la TCB y se declara en el inventario de confianza (R9). `sillar-pulido-2`
+
 ## <a id="sillar-concreto"></a>Lo que queda por definir
 
-<a id="sillar-concreto-1"></a>Su codificación concreta se define en la etapa siguiente, sin contradecir estos requisitos ([anexo A](33-anexo-a.md)). `sillar-concreto-1`
+<a id="sillar-concreto-1"></a>Su codificación concreta, textual o binaria, se define en la etapa siguiente, sin contradecir estos requisitos. DEBE ser determinista, para que la construcción sea reproducible ([anexo A](33-anexo-a.md)). `sillar-concreto-1`
 
 ---
 

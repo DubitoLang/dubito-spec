@@ -64,7 +64,7 @@ order: 35
 
 **Inventario de confianza.** Lista, en cada atestación, de todo lo que un módulo o binario confía sin demostrarlo.
 
-**IR de bajo nivel.** Sillar: código de tres direcciones en forma SSA, entre Stela verificada y el código del destino; existe solo en compilación.
+**IR de bajo nivel.** Sillar: forma SSA sobre un grafo de control con argumentos de bloque, entre Stela verificada y el código del destino; existe solo en compilación.
 
 **Justificación.** Función cuyo contrato demuestra lo necesario para convertir un valor de una etiqueta de procedencia a otra.
 
