@@ -10,7 +10,7 @@ Dubito, ergo compilo.
 
 Dubito es un proyecto de lenguajes de programación verificados: una plataforma de compilación compartida y seis lenguajes que la usan, en la que todo programa se entrega junto con la evidencia de lo que afirma. Ningún módulo se compila hasta que sus efectos, sus contratos y el origen de sus datos están demostrados o comprobados.
 
-La plataforma está formada por una representación intermedia (Stela), un verificador (Dintel), una herramienta de mutación (Speculum), un formateador (Estuco), un backend con su optimizador y su validador de traducción (Cincel, Pulido y Plomada), las especificaciones de destino (Rumbo), una biblioteca estándar (Chinampa) y la cadena de herramientas (dubito). Sobre ella hay una [familia de seis lenguajes](01-familia.md) del mismo rango, cada uno con un paradigma distinto y las mismas garantías.
+La plataforma está formada por una representación intermedia (Stela) y otra de bajo nivel (Sillar), un verificador (Dintel), una herramienta de mutación (Speculum), un formateador (Estuco), un diff de significado (Glosa), un backend con su optimizador y su validador de traducción (Cincel, Pulido y Plomada), las especificaciones de destino (Rumbo), una biblioteca estándar (Chinampa) y la cadena de herramientas (dubito). Sobre ella hay una [familia de seis lenguajes](01-familia.md) del mismo rango, cada uno con un paradigma distinto y las mismas garantías.
 
 ## <a id="inicio-estado"></a>Estado de este documento *(Informativa)*
 
