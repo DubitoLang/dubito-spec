@@ -33,7 +33,7 @@ Ceiba resuelve, obtiene y verifica dependencias. Una dependencia queda fijada po
 - <a id="ceiba-reglas-2"></a>La instalación no ejecuta código de terceros. `ceiba-reglas-2`
 - <a id="ceiba-reglas-3"></a>Los destinos que un paquete afirma se verifican: se rechaza la publicación si algún requisito abierto no puede satisfacerse en un destino declarado. `ceiba-reglas-3`
 - <a id="ceiba-reglas-4"></a>Los efectos y el inventario de confianza de una dependencia forman parte de su interfaz; una actualización muestra su diff de significado y el cambio en su inventario. `ceiba-reglas-4`
-- <a id="ceiba-reglas-5"></a>El grafo de dependencias de un binario, con su inventario de confianza, se exporta como lista de materiales de software en SPDX 3.0 y en CycloneDX (ECMA-424). `ceiba-reglas-5`
+- <a id="ceiba-reglas-5"></a>El grafo de dependencias de un binario, con su inventario de confianza, se exporta como lista de materiales de software en SPDX 3.0.1 y en CycloneDX 1.7 (ECMA-424). `ceiba-reglas-5`
 
 ## <a id="ceiba-pendiente"></a>Lo que queda por definir *(Informativa)*
 
