@@ -10,7 +10,7 @@ mark_group: plat
 
 **Rol:** IR de bajo nivel · **Existe:** solo en compilación
 
-Sillar es la representación de bajo nivel entre Stela verificada y el código del destino. Cincel la produce al bajar Stela, Pulido la optimiza y Plomada valida cada transformación.
+Sillar es la representación de bajo nivel entre Stela verificada y el código del destino. Cincel la produce al bajar Stela, Pulido la optimiza y Plomada valida cada pasada de optimización.
 
 ## <a id="sillar-forma"></a>Forma
 
@@ -34,7 +34,7 @@ Sillar es la representación de bajo nivel entre Stela verificada y el código d
 ## <a id="sillar-semantica"></a>Semántica
 
 - <a id="sillar-semantica-1"></a>La semántica de Sillar es operacional y DEBE mecanizarse en un asistente de pruebas, como la de Stela; ante cualquier diferencia con esta descripción, prevalece la mecanización. `sillar-semantica-1`
-- <a id="sillar-semantica-2"></a>Plomada compara la semántica de Stela con la de Sillar: la corrección de la validación de traducción se apoya en ambas. `sillar-semantica-2`
+- <a id="sillar-semantica-2"></a>La semántica de Sillar sustenta dos garantías: T7, que relaciona la semántica de Stela con la de Sillar y la del destino a través de la bajada y del resto del núcleo de Cincel, y T8, que relaciona la entrada y la salida de cada pasada que valida Plomada. `sillar-semantica-2`
 
 ## <a id="sillar-pulido"></a>Técnicas internas de las pasadas
 

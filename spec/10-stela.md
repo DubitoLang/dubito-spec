@@ -94,8 +94,8 @@ Stela es la representación intermedia de la plataforma: tipada, con control est
 | T4. Corrección de los certificados `stx-teoremas-5` | Si Dintel acepta el certificado de una VC, la VC es válida.                                                                                                        |
 | T5. No interferencia `stx-teoremas-6`               | Los valores secretos no influyen en las salidas observables salvo a través de desclasificaciones justificadas.                                                     |
 | T6. Tiempo constante `stx-teoremas-7`               | El código bajo la disciplina de tiempo constante no depende de secretos en su duración, sus accesos a memoria ni sus saltos, según el modelo de fugas mecanizado del destino. |
-| T7. Corrección de Cincel `stx-teoremas-8`           | El código del destino, según la semántica mecanizada de su arquitectura, refina la semántica de Stela y preserva T5, T6, las protecciones de especulación y los borrados de secretos.                                 |
-| T8. Corrección de Plomada `stx-teoremas-9`          | Si Plomada valida una pasada, su salida refina su entrada y preserva las propiedades de T7.                                                                        |
+| T7. Corrección de Cincel `stx-teoremas-8`           | El código del destino, según la semántica mecanizada de su arquitectura, refina la semántica de Stela y preserva T5, T6, las protecciones de especulación, los borrados de secretos y los puntos de telemetría.                                 |
+| T8. Corrección de Plomada `stx-teoremas-9`          | Si Plomada valida una pasada de optimización sobre Sillar, su salida refina su entrada (incluidos los efectos y su orden) y preserva las demás propiedades de T7. |
 | T9. Determinismo `stx-teoremas-10`                  | El resultado de compilar depende solo de las fuentes, la cadena de herramientas, el destino y el perfil de optimización.                                           |
 
 - <a id="stx-teoremas-11"></a>Mientras un teorema no esté mecanizado, toda atestación lo enumera como supuesto en su inventario de confianza (R9). `stx-teoremas-11`

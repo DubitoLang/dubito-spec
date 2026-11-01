@@ -23,6 +23,8 @@ Correcciones de la revisión independiente de cierre de la fase 0.
 - Las convenciones seguían diciendo que los identificadores pueden cambiar «mientras la versión sea 0.y.z»; ahora siguen la política de prelanzamientos: pueden cambiar en `alpha` y son estables desde `beta`.
 - `cnf-declaracion-9` decía que una declaración de conformidad vale solo para su versión exacta, contra `pro-compatibilidad-12` y la ficha. Ahora vale solo para su versión mientras sea un prelanzamiento, y desde la 1.0.0 para toda la misma versión mayor.
 - `pro-compatibilidad-7` definía el parche como ningún cambio en la interfaz pública, aunque la documentación forma parte de ella y cambiarla es un parche (`nuc-documentacion-2`). Ahora exceptúa la documentación.
+- Alcance de Plomada: valida las pasadas de optimización sobre Sillar; la bajada y el resto del núcleo de Cincel pertenecen a la TCB y los cubre T7. Se alinean la introducción de Plomada, `sillar-semantica-2`, `plomada-proceso-3`, `niveles-4`, T7 y T8 (los puntos de telemetría pasan a figurar en T7, y los efectos y su orden en T8).
+
 
 
 

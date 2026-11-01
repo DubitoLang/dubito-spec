@@ -100,7 +100,7 @@ order: 35
 
 **Perfil de optimización.** Objetivo de la optimización de un binario (ninguno, velocidad o tamaño); no cambia el significado y queda en la atestación.
 
-**Plomada.** Validador de traducción: comprueba que la salida de cada pasada conserva el significado de su entrada; pertenece a la TCB.
+**Plomada.** Validador de traducción: comprueba que la salida de cada pasada de optimización sobre Sillar conserva el significado de su entrada; pertenece a la TCB.
 
 **Plugin.** Módulo verificado cargado en ejecución dentro de un techo de interfaz, efectos y confianza fijado al compilar.
 
