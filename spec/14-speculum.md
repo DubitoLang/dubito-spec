@@ -24,7 +24,7 @@ Speculum mide la adecuación de las especificaciones. Introduce mutaciones en el
 
 ## <a id="elk-criterio"></a>Criterio de aceptación
 
-- <a id="elk-criterio-1"></a>**Eliminación.** Un mutante queda eliminado solo con un contraejemplo concreto: un modelo del solucionador en el que incumple la postcondición, o una prueba que falla. Que no pueda demostrarse su postcondición no lo elimina. `elk-criterio-1`
+- <a id="elk-criterio-1"></a>**Eliminación.** Un mutante queda eliminado solo con un contraejemplo concreto: una entrada, obtenida de un modelo del solucionador o de una prueba que falla, con la que el mutante incumple la postcondición. El contraejemplo forma parte de la evidencia y se comprueba evaluando el mutante sobre esa entrada con la semántica de Stela, con un presupuesto determinista de pasos y sin generar código del destino. Que no pueda demostrarse su postcondición no lo elimina. `elk-criterio-1`
 - <a id="elk-criterio-2"></a>**Por postcondición.** Cada postcondición de código ejecutable DEBE eliminar al menos un mutante. `elk-criterio-2`
 - <a id="elk-criterio-3"></a>**Puntuación.** Mutantes eliminados entre mutantes sin certificado de equivalencia. El paquete puede fijar un mínimo. `elk-criterio-3`
 - <a id="elk-criterio-4"></a>**Determinismo.** El conjunto de mutantes depende solo de la definición y de la versión de la herramienta; cualquiera puede repetirlo. `elk-criterio-4`

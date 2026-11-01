@@ -42,7 +42,7 @@ Rumbo es el conjunto de especificaciones de destino de la plataforma: cada desti
 
 - <a id="dst-gobierno-4"></a>**Trazabilidad.** Cada intrínseco y cada suposición cita la documentación del procesador o del sistema de la que proviene. `dst-gobierno-4`
 - <a id="dst-gobierno-5"></a>**Conformidad.** A partir de los contratos de cada intrínseco se generan pruebas que se ejecutan en el hardware y el sistema reales; si alguna falla, la especificación no se admite. `dst-gobierno-5`
-- <a id="dst-gobierno-6"></a>**Consistencia.** El verificador intenta demostrar falso a partir de sus axiomas. `dst-gobierno-6`
+- <a id="dst-gobierno-6"></a>**Consistencia.** Antes de admitirla, se intenta demostrar falso a partir de sus axiomas con un presupuesto declarado; si se consigue, la especificación no se admite. El intento, su presupuesto y su resultado se publican con la especificación. `dst-gobierno-6`
 - <a id="dst-gobierno-7"></a>**Revisión.** Dos revisores independientes la firman. `dst-gobierno-7`
 - <a id="dst-gobierno-8"></a>**Mínimo.** Solo se añade un intrínseco que algo necesita; entre versiones menores solo se añaden axiomas. `dst-gobierno-8`
 - <a id="dst-gobierno-9"></a>**Erratas.** Un error se publica como aviso sobre la identidad de la especificación, con el efecto descrito en [Compatibilidad](30-proyecto.md#pro-compatibilidad). `dst-gobierno-9`

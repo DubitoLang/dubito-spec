@@ -335,7 +335,7 @@ Lo que los seis lenguajes comparten no pertenece a ninguno de ellos. Aquí se de
 ### <a id="nuc-limites-consistencia"></a>Consistencia de las suposiciones
 
 - <a id="nuc-limites-23"></a>**Razonamiento circular.** Lo impide la regla de dependencias del [código fantasma](#nuc-fantasma-reglas). `nuc-limites-23`
-- <a id="nuc-limites-24"></a>**Vacuidad.** Por cada función, invariante y especificación de destino, el verificador intenta demostrar falso a partir de sus suposiciones, y si lo consigue rechaza. Si no lo consigue, la consistencia no queda demostrada; por eso las especificaciones de destino son parte de la TCB. `nuc-limites-24`
+- <a id="nuc-limites-24"></a>**Vacuidad.** Por cada función, invariante y especificación de destino, la cadena de herramientas intenta demostrar falso a partir de sus suposiciones, dentro del presupuesto del solucionador, y si lo consigue rechaza el programa. Es un diagnóstico de calidad, no una garantía: unas precondiciones contradictorias no pueden demostrarse en ningún punto de llamada y una invariante contradictoria no puede establecerse al construir el valor, así que no hacen aceptar nada falso. Solo los axiomas de una especificación de destino podrían hacerlo; por eso las especificaciones de destino son parte de la TCB y su consistencia se comprueba al admitirlas ([Gobierno de las especificaciones](19-rumbo.md#dst-gobierno)). El verificador no repite esta búsqueda. `nuc-limites-24`
 - <a id="nuc-limites-25"></a>**Contratos totales.** Como los contratos solo llaman funciones puras y totales, ninguna definición introduce una ecuación contradictoria. `nuc-limites-25`
 
 ### <a id="nuc-limites-concurrencia"></a>Concurrencia
