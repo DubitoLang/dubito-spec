@@ -30,10 +30,10 @@ dubito es la cadena de herramientas de la familia. Traduce el código fuente a l
 
 | Nivel                                 | Contenido                                                                                                                            | Garantía                                                                         |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| Código fuente `niveles-2`             | Texto de uno de los lenguajes de la familia, en forma canónica.                                                                      | Ninguna por sí mismo.                                                            |
-| Stela `niveles-3`                     | Representación intermedia con tipos, ownership, efectos, procedencia, contratos y evidencia.                                         | Verificada por el verificador; de ella se deriva la identidad del módulo (R7).   |
-| Sillar (IR de bajo nivel) `niveles-4` | Forma de asignación única estática (SSA) sobre un grafo de control, con argumentos de bloque, los tipos de máquina y el modelo de memoria del destino. | Correcta por construcción del núcleo del backend o por validación de traducción. |
-| Código del destino `niveles-5`        | Instrucciones, datos y metadatos del binario.                                                                                        | La de Cincel, el backend, que pertenece a la TCB.                                |
+| <a id="niveles-2"></a>Código fuente `niveles-2`             | Texto de uno de los lenguajes de la familia, en forma canónica.                                                                      | Ninguna por sí mismo.                                                            |
+| <a id="niveles-3"></a>Stela `niveles-3`                     | Representación intermedia con tipos, ownership, efectos, procedencia, contratos y evidencia.                                         | Verificada por el verificador; de ella se deriva la identidad del módulo (R7).   |
+| <a id="niveles-4"></a>Sillar (IR de bajo nivel) `niveles-4` | Forma de asignación única estática (SSA) sobre un grafo de control, con argumentos de bloque, los tipos de máquina y el modelo de memoria del destino. | Correcta por construcción del núcleo del backend (T7) y preservada por cada pasada que valida Plomada (T8). |
+| <a id="niveles-5"></a>Código del destino `niveles-5`        | Instrucciones, datos y metadatos del binario.                                                                                        | La de Cincel, el backend, cuyo núcleo pertenece a la TCB.                        |
 
 <a id="niveles-6"></a>Cada nivel posterior a Stela tiene su página: [Sillar](11-sillar.md) es la IR de bajo nivel, [Pulido](15-pulido.md) la optimiza, [Plomada](13-plomada.md) valida cada pasada y [Cincel](16-cincel.md) genera el código del destino. `niveles-6`
 
@@ -43,8 +43,8 @@ dubito es la cadena de herramientas de la familia. Traduce el código fuente a l
 
 | Clase                     | Ejemplos                                                                                                               | Reglas                                                                                                                                                                |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sugerencia `directivas-2` | Perfil de optimización de una función, expansión en línea, desenrollado de un bucle, rama probable.                    | NO DEBE cambiar el significado ni debilitar ninguna de las propiedades que la optimización preserva. La cadena PUEDE ignorarla. No aparece en el diff de significado. |
-| Exigencia `directivas-3`  | Tiempo constante, sin memoria dinámica, pila acotada, capacidad del procesador requerida, llamada de cola garantizada. | Se verifica: si no se cumple, el módulo se rechaza. Forma parte de la interfaz y aparece en el diff de significado.                                                   |
+| <a id="directivas-2"></a>Sugerencia `directivas-2` | Perfil de optimización de una función, expansión en línea, desenrollado de un bucle, rama probable.                    | NO DEBE cambiar el significado ni debilitar ninguna de las propiedades que la optimización preserva. La cadena PUEDE ignorarla. No aparece en el diff de significado. |
+| <a id="directivas-3"></a>Exigencia `directivas-3`  | Tiempo constante, sin memoria dinámica, pila acotada, capacidad del procesador requerida, llamada de cola garantizada. | Se verifica: si no se cumple, el módulo se rechaza. Forma parte de la interfaz y aparece en el diff de significado.                                                   |
 
 - <a id="directivas-4"></a>**Sin duplicar el núcleo.** Lo que el núcleo ya expresa como efecto, etiqueta de procedencia o contrato se exige con ese mecanismo; una directiva de exigencia nunca crea una garantía paralela (R4). `directivas-4`
 - <a id="directivas-5"></a>**Ámbito.** Una directiva sobre un paquete alcanza a sus módulos, y una sobre un módulo, a sus declaraciones. Entre sugerencias gana la más específica; las exigencias se acumulan y una declaración no puede relajar una exigencia heredada. `directivas-5`
@@ -52,10 +52,10 @@ dubito es la cadena de herramientas de la familia. Traduce el código fuente a l
 
 ## <a id="bootstrap"></a>Construcción de la propia cadena
 
-- <a id="bootstrap-1"></a>La primera implementación puede escribirse en cualquier lenguaje; su elección no forma parte de la especificación ni de la TCB. `bootstrap-1`
+- <a id="bootstrap-1"></a>La primera implementación PUEDE escribirse en cualquier lenguaje; su elección no forma parte de la especificación ni de la TCB. `bootstrap-1`
 - <a id="bootstrap-2"></a>Toda versión DEBE poder reconstruirse desde una base mínima publicada junto con ella. `bootstrap-2`
-- <a id="bootstrap-3"></a>Toda compilación es reproducible en el sentido de Reproducible Builds: las mismas fuentes, la misma cadena y el mismo destino producen los mismos bytes. `bootstrap-3`
-- <a id="bootstrap-4"></a>Toda versión se valida con doble compilación diversa (Wheeler, 2009): construida por dos cadenas independientes, los binarios DEBEN coincidir bit a bit. `bootstrap-4`
+- <a id="bootstrap-3"></a>Toda compilación es reproducible en el sentido de Reproducible Builds: las mismas fuentes, la misma cadena, el mismo destino y el mismo perfil de optimización producen los mismos bytes (T9). `bootstrap-3`
+- <a id="bootstrap-4"></a>Toda versión se valida con doble compilación diversa (Wheeler, 2009): una cadena independiente compila las fuentes de la cadena y produce un compilador intermedio; ese compilador intermedio vuelve a compilar las mismas fuentes, y el resultado DEBE coincidir bit a bit con el binario oficial de la cadena, que se compiló a sí mismo. Los binarios que producen directamente las dos cadenas no tienen por qué coincidir. `bootstrap-4`
 
 ## <a id="diagnosticos"></a>Diagnósticos y editores
 
@@ -69,6 +69,10 @@ dubito es la cadena de herramientas de la familia. Traduce el código fuente a l
 - <a id="depuracion-3"></a>Los datos secretos se muestran redactados por defecto. En lugar del código fantasma, que no existe en ejecución, se muestran los contratos y la clase de evidencia de cada VC. `depuracion-3`
 - <a id="depuracion-4"></a>Los proveedores de tareas exponen tareas, ámbitos, regiones, árboles de supervisión y ocupación de buzones. `depuracion-4`
 - <a id="depuracion-5"></a>Un informe de aborto puede convertirse en una prueba que reproduce el fallo; un fallo concurrente se reproduce con el motor simulado y su semilla. `depuracion-5`
+
+## <a id="dubito-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+Los comandos y opciones de la cadena, las extensiones de archivo y los códigos de diagnóstico (`anx-pendiente-13`); la sintaxis común de las directivas (`anx-pendiente-1`); y, por implementación, el solucionador y los presupuestos (`anx-implementacion-3`, `anx-implementacion-9`). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

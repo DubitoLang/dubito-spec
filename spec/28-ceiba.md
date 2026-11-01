@@ -8,7 +8,7 @@ mark_group: eco
 
 # Ceiba
 
-**Rol:** gestor de paquetes
+**Rol:** gestor de paquetes · **En la TCB:** no
 
 Ceiba resuelve, obtiene y verifica dependencias. Una dependencia queda fijada por la identidad de su contenido, no por un número de versión, así que lo que se compila es exactamente lo que se revisó.
 
@@ -20,7 +20,7 @@ Ceiba resuelve, obtiene y verifica dependencias. Una dependencia queda fijada po
 
 <a id="ceiba-resolucion-1"></a>Resolver versiones con rangos arbitrarios, límites superiores y exclusiones es un problema NP-completo. Ceiba usa selección de versión mínima (Cox, 2018): `ceiba-resolucion-1`
 
-- <a id="ceiba-resolucion-2"></a>**Requisitos.** Solo mínimos dentro de una versión mayor; sin límites superiores, exclusiones ni características opcionales. Lo único que varía la compilación es el destino. `ceiba-resolucion-2`
+- <a id="ceiba-resolucion-2"></a>**Requisitos.** Solo mínimos dentro de una versión mayor; sin límites superiores, exclusiones ni características opcionales. Lo único que varía la resolución es el destino; el perfil de optimización cambia los bytes del binario, nunca las dependencias elegidas. `ceiba-resolucion-2`
 - <a id="ceiba-resolucion-3"></a>**Selección.** Para cada paquete y versión mayor, el mayor de los mínimos que pide el grafo. Recorre el grafo una vez, es determinista y no busca. `ceiba-resolucion-3`
 - <a id="ceiba-resolucion-4"></a>**Estabilidad.** Publicar una versión nueva de una dependencia no cambia ninguna resolución existente; solo una actualización explícita sube los mínimos. `ceiba-resolucion-4`
 - <a id="ceiba-resolucion-5"></a>**Versiones mayores distintas** son paquetes distintos y pueden coexistir; sus tipos no se convierten implícitamente. `ceiba-resolucion-5`
@@ -33,7 +33,11 @@ Ceiba resuelve, obtiene y verifica dependencias. Una dependencia queda fijada po
 - <a id="ceiba-reglas-2"></a>La instalación no ejecuta código de terceros. `ceiba-reglas-2`
 - <a id="ceiba-reglas-3"></a>Los destinos que un paquete afirma se verifican: se rechaza la publicación si algún requisito abierto no puede satisfacerse en un destino declarado. `ceiba-reglas-3`
 - <a id="ceiba-reglas-4"></a>Los efectos y el inventario de confianza de una dependencia forman parte de su interfaz; una actualización muestra su diff de significado y el cambio en su inventario. `ceiba-reglas-4`
-- <a id="ceiba-reglas-5"></a>El grafo de dependencias de un binario, con su inventario de confianza, se exporta como lista de materiales de software en SPDX 3.0 y en CycloneDX (ECMA-424). `ceiba-reglas-5`
+- <a id="ceiba-reglas-5"></a>El grafo de dependencias de un binario, con su inventario de confianza, se exporta como lista de materiales de software en SPDX 3.0.1 y en CycloneDX 1.7 (ECMA-424). `ceiba-reglas-5`
+
+## <a id="ceiba-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+El formato del manifiesto y del archivo de bloqueo (`anx-pendiente-10`) y la forma en que un paquete declara su edición (`anx-pendiente-15`). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

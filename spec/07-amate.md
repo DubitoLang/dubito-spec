@@ -16,12 +16,12 @@ Amate expresa reglas, no pasos: se declaran relaciones de entrada, hechos y regl
 
 | Eje                              | Amate                                                                                      |
 |----------------------------------|--------------------------------------------------------------------------------------------|
-| Paradigma `alm-clasificacion-1`  | Lógico: cláusulas de Horn sin símbolos de función, con negación y agregados estratificados |
-| Nivel `alm-clasificacion-2`      | Bibliotecas de reglas invocadas desde otros lenguajes                                      |
-| Memoria `alm-clasificacion-3`    | Relaciones inmutables                                                                      |
-| Evaluación `alm-clasificacion-4` | Punto fijo mínimo por estratos; resultado determinista                                     |
-| Efectos `alm-clasificacion-5`    | Ninguno, salvo memoria dinámica y, opcionalmente, tareas                                   |
-| Totalidad `alm-clasificacion-6`  | Siempre total                                                                              |
+| <a id="alm-clasificacion-1"></a>Paradigma `alm-clasificacion-1`  | Lógico: cláusulas de Horn sin símbolos de función, con negación y agregados estratificados |
+| <a id="alm-clasificacion-2"></a>Nivel `alm-clasificacion-2`      | Bibliotecas de reglas invocadas desde otros lenguajes                                      |
+| <a id="alm-clasificacion-3"></a>Memoria `alm-clasificacion-3`    | Relaciones inmutables                                                                      |
+| <a id="alm-clasificacion-4"></a>Evaluación `alm-clasificacion-4` | Punto fijo mínimo por estratos; resultado determinista                                     |
+| <a id="alm-clasificacion-5"></a>Efectos `alm-clasificacion-5`    | Ninguno, salvo memoria dinámica y, opcionalmente, tareas                                   |
+| <a id="alm-clasificacion-6"></a>Totalidad `alm-clasificacion-6`  | Siempre total                                                                              |
 
 ## <a id="alm-modelo"></a>Relaciones y reglas
 
@@ -45,6 +45,10 @@ Amate expresa reglas, no pasos: se declaran relaciones de entrada, hechos y regl
 - <a id="alm-especificos-5"></a>Una relación derivada lleva la etiqueta de procedencia más específica común a las relaciones de las que depende; si no existe, el programa se rechaza. La conversión de etiquetas ocurre en el lenguaje que recibe la salida. `alm-especificos-5`
 - <a id="alm-especificos-6"></a>Una salida puede evaluarse en paralelo con el efecto de tareas, con resultado idéntico al secuencial. No hay E/S ni telemetría: las explicaciones son el registro de auditoría. `alm-especificos-6`
 - <a id="alm-especificos-7"></a>Una prueba declara hechos de entrada y las filas esperadas en una salida. `alm-especificos-7`
+
+## <a id="alm-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+La sintaxis concreta (`anx-pendiente-1`), que se elige según la [elección de la sintaxis](01-familia.md#fam-eleccion), y los nombres de su biblioteca de soporte (`anx-pendiente-7`). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

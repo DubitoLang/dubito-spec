@@ -5,7 +5,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 # Cómo contribuir
 
-Gracias por tu interés en Dubito. El proyecto está en la fase 0: las contribuciones son cambios a la especificación.
+Gracias por tu interés en Dubito. La fase 0 está cerrada y aún no existe código: las contribuciones a este repositorio son cambios a la especificación.
 
 ## Antes de empezar
 
@@ -18,7 +18,7 @@ Gracias por tu interés en Dubito. El proyecto está en la fase 0: las contribuc
 
 - Solo la versión final: la especificación no guarda historial ni alternativas descartadas en el cuerpo normativo; las decisiones y su justificación van en el [anexo B](spec/34-fundamentos.md).
 - Donde exista un estándar de la industria, se adopta por referencia y se registra en [Estándares adoptados](spec/32-estandares.md); nunca se redefine.
-- Nada concreto sin estándar (sintaxis, formatos propios, herramientas, valores numéricos) se fija en la fase 0.
+- Nada concreto sin estándar (sintaxis, formatos propios, herramientas, valores numéricos) se fija sin una propuesta pública aprobada; lo pendiente está registrado en el [anexo A](spec/33-anexo-a.md#anx-pendiente).
 - La especificación no nombra otros lenguajes de programación ni destinos concretos.
 - El texto se edita en `spec/`; el sitio se regenera solo. Los archivos de `spec/` están cubiertos por REUSE.toml; los demás archivos nuevos llevan cabecera REUSE.
 

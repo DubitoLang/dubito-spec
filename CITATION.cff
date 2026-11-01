@@ -5,7 +5,7 @@ message: "Si citas esta especificación, usa estos metadatos."
 type: standard
 title: "Especificación de Dubito"
 abstract: "Especificación conceptual (fase 0) de Dubito: una plataforma de compilación verificada y una familia de seis lenguajes del mismo rango."
-version: 1.0.0-alpha.1
+version: 1.0.0-alpha.2
 date-released: 2026-11-01
 license: CC-BY-SA-4.0
 repository-code: "https://github.com/DubitoLang/dubito-spec"

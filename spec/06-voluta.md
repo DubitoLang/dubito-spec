@@ -16,13 +16,13 @@ Voluta es el lenguaje simbólico de la familia: el código es una estructura de 
 
 | Eje                                    | Voluta                                                                                   |
 |----------------------------------------|------------------------------------------------------------------------------------------|
-| Paradigma `vol-clasificacion-1`        | Simbólico y funcional; código como dato                                                  |
-| Memoria `vol-clasificacion-2`          | Valores inmutables y colecciones persistentes; celdas atómicas como único estado mutable |
-| Evaluación `vol-clasificacion-3`       | Estricta                                                                                 |
-| Totalidad `vol-clasificacion-4`        | Total por defecto; no terminación explícita                                              |
-| Polimorfismo `vol-clasificacion-5`     | Paramétrico con instanciación explícita; multimétodos sobre tipos suma                   |
-| Despacho `vol-clasificacion-6`         | Estático; las funciones son valores                                                      |
-| Metaprogramación `vol-clasificacion-7` | Macros higiénicas, solo en compilación                                                   |
+| <a id="vol-clasificacion-1"></a>Paradigma `vol-clasificacion-1`        | Simbólico y funcional; código como dato                                                  |
+| <a id="vol-clasificacion-2"></a>Memoria `vol-clasificacion-2`          | Valores inmutables y colecciones persistentes; celdas atómicas como único estado mutable |
+| <a id="vol-clasificacion-3"></a>Evaluación `vol-clasificacion-3`       | Estricta                                                                                 |
+| <a id="vol-clasificacion-4"></a>Totalidad `vol-clasificacion-4`        | Total por defecto; no terminación explícita                                              |
+| <a id="vol-clasificacion-5"></a>Polimorfismo `vol-clasificacion-5`     | Paramétrico con instanciación explícita; multimétodos sobre tipos suma                   |
+| <a id="vol-clasificacion-6"></a>Despacho `vol-clasificacion-6`         | Estático; las funciones son valores                                                      |
+| <a id="vol-clasificacion-7"></a>Metaprogramación `vol-clasificacion-7` | Macros higiénicas, solo en compilación                                                   |
 
 ## <a id="vol-modelo"></a>Modelo
 
@@ -40,6 +40,10 @@ Voluta es el lenguaje simbólico de la familia: el código es una estructura de 
 - <a id="vol-macros-1"></a>Una macro recibe formas y devuelve formas, y se ejecuta solo en compilación. El código expandido se comprueba y verifica como cualquier otro; una expansión mal tipada es un error en el sitio de uso. `vol-macros-1`
 - <a id="vol-macros-2"></a>**Higiene por conjuntos de ámbitos** (Flatt, 2016). Cada símbolo lleva el conjunto de ámbitos donde aparece; cada expansión añade un ámbito nuevo a los símbolos que introduce, y una referencia se resuelve con el enlace cuyo conjunto de ámbitos es el mayor subconjunto del suyo. Dos candidatos igual de grandes son un error. Una macro solo introduce un nombre visible en el sitio de uso si lo recibe como argumento. `vol-macros-2`
 - <a id="vol-macros-3"></a>Los nombres internos de una expansión se derivan de la identidad de la macro y de la posición de uso, de modo que la forma canónica es estable. `vol-macros-3`
+
+## <a id="vol-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+La sintaxis concreta, incluida la forma textual que acepta el lector (`anx-pendiente-1`), y los nombres de su biblioteca de soporte (`anx-pendiente-7`). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

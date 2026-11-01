@@ -8,15 +8,17 @@ mark_group: plat
 
 # Chinampa
 
-Chinampa, la biblioteca estándar, se divide en tres capas según lo que exige del destino. Se verifica como cualquier código y la usan los seis lenguajes. Añade capacidades, nunca garantías (R4). Su contenido concreto no se define en esta fase; aquí se fija solo lo que el lenguaje requiere de ella.
+**Rol:** biblioteca estándar · **En la TCB:** no; se verifica como cualquier código
+
+Chinampa, la biblioteca estándar, se divide en tres capas según lo que exige del destino. Se verifica como cualquier código y la usan los seis lenguajes. Añade capacidades, nunca garantías (R4). Su contenido concreto no se define en esta fase y está registrado como pendiente en el [anexo A](33-anexo-a.md#anx-pendiente); aquí se fija solo lo que el lenguaje requiere de ella.
 
 ## <a id="std-capas"></a>Capas
 
 | Capa                | Requiere                         | Disponible en                      |
 |---------------------|----------------------------------|------------------------------------|
-| core `std-capas-1`  | Nada                             | Todos los destinos                 |
-| alloc `std-capas-2` | Un proveedor de memoria dinámica | Hosted; freestanding con proveedor |
-| std `std-capas-3`   | Un destino hosted                | Hosted                             |
+| <a id="std-capas-1"></a>core `std-capas-1`  | Nada                             | Todos los destinos                 |
+| <a id="std-capas-2"></a>alloc `std-capas-2` | Un proveedor de memoria dinámica | Hosted; freestanding con proveedor |
+| <a id="std-capas-3"></a>std `std-capas-3`   | Un destino hosted                | Hosted                             |
 
 ## <a id="std-requerido"></a>Lo que el lenguaje requiere
 
@@ -39,6 +41,10 @@ Chinampa, la biblioteca estándar, se divide en tres capas según lo que exige d
 
 <a id="std-portable-5"></a>Ninguna capa usa una operación que no exista en el lenguaje o en la especificación del destino, y ninguna contiene código no verificado (R8, R9). `std-portable-5`
 
+## <a id="std-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+Los módulos, nombres y firmas de las tres capas (`anx-pendiente-7`). Todo está registrado en el [anexo A](33-anexo-a.md).
+
 ---
 
-← [Destinos](20-destinos.md) · [Índice](README.md) · [Errores y aborto](22-errores.md) →
+← [Destinos y perfiles](20-destinos.md) · [Índice](README.md) · [Errores y aborto](22-errores.md) →

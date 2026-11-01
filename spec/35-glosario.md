@@ -26,13 +26,15 @@ order: 35
 
 **Clase de archivo.** Ejecutable, de demostración o de pruebas; cada una llega a una parte distinta del módulo.
 
-**Clase de producto.** Tipo de producto que puede declararse conforme, con los requisitos que debe cumplir: módulo, frontend, verificador, herramienta de mutación, formateador, backend, especificación de destino, cadena de herramientas, biblioteca estándar, gestor de paquetes, registro o herramienta de revisión.
+**Clase de producto.** Tipo de producto que puede declararse conforme, con los requisitos que debe cumplir: módulo, frontend, verificador, herramienta de mutación, formateador, backend, especificación de destino, cadena de herramientas, biblioteca estándar, gestor de paquetes, registro, herramienta de revisión, optimizador de Stela o mecanización.
 
 **Código fantasma.** Código de los archivos de demostración que aporta las demostraciones que el solucionador no encuentra solo; se verifica y se borra.
 
 **Comprobación en ejecución.** VC desconocida que se compila como comprobación con aborto.
 
 **Concurrencia estructurada.** Modelo en el que ninguna tarea sobrevive al ámbito que la creó.
+
+**Core.** Perfil de un módulo que no invoca intrínsecos y deja como requisitos abiertos todo lo demás; se compila para cualquier destino.
 
 **Declaración de conformidad.** Documento público que afirma que un producto es conforme e indica la versión exacta de la especificación, la clase de producto, los perfiles, las extensiones y las decisiones concretas propias.
 
@@ -44,7 +46,7 @@ order: 35
 
 **Directiva.** Anotación dirigida a la cadena de herramientas; una sugerencia puede ignorarse y nunca cambia el significado, y una exigencia se verifica.
 
-**Doble compilación diversa.** Construir la cadena de herramientas por dos caminos independientes y exigir binarios idénticos.
+**Doble compilación diversa.** Compilar las fuentes de la cadena de herramientas con una cadena independiente, usar el resultado para volver a compilarlas y exigir que el binario obtenido coincida bit a bit con el binario oficial, que se compiló a sí mismo.
 
 **dubito.** Cadena de herramientas de la familia (frontends, generación de VC y coordinación) y nombre del proyecto.
 
@@ -60,9 +62,11 @@ order: 35
 
 **Etapa de concepto.** Primera etapa del ciclo de vida de un sistema (ISO/IEC/IEEE 15288), en la que se establecen el concepto, su viabilidad y su conveniencia.
 
+**Evidencia.** Lo que un módulo trae para resolver sus VC y sus contratos (certificados, refinamientos, comprobaciones en ejecución y resultados de mutación), que el verificador comprueba sin repetir la búsqueda.
+
 **Extensión.** Función que un producto añade a lo que exige su clase; no contradice ningún requisito ni cambia el resultado de verificar un módulo conforme.
 
-**Freestanding / hosted.** Perfil sin sistema operativo / sobre un sistema operativo.
+**Freestanding / hosted.** Perfil de un destino sin sistema operativo / sobre un sistema operativo.
 
 **Frontera asíncrona.** Conexión con algo que el programa no controla, mediante operaciones que van y vuelven, con un modelo de fallos declarado.
 
@@ -86,6 +90,8 @@ order: 35
 
 **Lema.** Teorema con su demostración, en un archivo de demostración; su recursión con medida es una inducción.
 
+**Mecanización.** Formalización en un asistente de pruebas de las semánticas de Stela, de Sillar y de la arquitectura de cada destino, y demostración en él de los teoremas de la plataforma; pertenece a la TCB.
+
 **Modelo de amenazas.** Enumeración de los atacantes contra los que se defiende la plataforma y de la defensa que detiene a cada uno.
 
 **Modelo de fallos.** Fallos que una frontera asíncrona puede exhibir: pérdida, duplicación, reordenamiento, retraso, caída, escritura parcial y corrupción detectable.
@@ -96,11 +102,11 @@ order: 35
 
 **Par externo.** Componente de cualquier lenguaje al otro lado de una frontera asíncrona; si es un binario de la familia con atestación aceptada, es un par verificado.
 
-**Perfil.** Nivel de un destino: core, freestanding o hosted.
+**Perfil.** Core, freestanding o hosted. Un destino declara freestanding o hosted; core es el perfil de los módulos que valen en cualquier destino.
 
 **Perfil de optimización.** Objetivo de la optimización de un binario (ninguno, velocidad o tamaño); no cambia el significado y queda en la atestación.
 
-**Plomada.** Validador de traducción: comprueba que la salida de cada pasada conserva el significado de su entrada; pertenece a la TCB.
+**Plomada.** Validador de traducción: comprueba que la salida de cada pasada de optimización sobre Sillar conserva el significado de su entrada; pertenece a la TCB.
 
 **Plugin.** Módulo verificado cargado en ejecución dentro de un techo de interfaz, efectos y confianza fijado al compilar.
 
@@ -134,7 +140,7 @@ order: 35
 
 **Talud.** Lenguaje orientado a objetos de la familia, con herencia y diseño por contrato.
 
-**TCB.** Base de cómputo confiable: el verificador, el núcleo del backend con su validador de traducción y las especificaciones de destino, más toda pasada sin validación que un binario declare en su inventario.
+**TCB.** Base de cómputo confiable: el verificador, el núcleo del backend con su validador de traducción, las especificaciones de destino y la base de la mecanización (el núcleo del asistente de pruebas y las definiciones mecanizadas), más toda pasada sin validación que un binario declare en su inventario. Se define en [Capas de confianza](26-confianza.md#conf-capas).
 
 **Teorema de la plataforma.** Propiedad de Stela, Dintel, Cincel o Plomada que la mecanización debe demostrar; mientras no lo esté, es un supuesto enumerado.
 

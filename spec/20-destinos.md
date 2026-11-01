@@ -1,10 +1,12 @@
 ---
-title: "Destinos"
+title: "Destinos y perfiles"
 order: 20
 ---
 *Plataforma*
 
-# Destinos
+# Destinos y perfiles
+
+**Rol:** perfiles, disponibilidad y concurrencia en cada destino · **En la TCB:** sus especificaciones ([Rumbo](19-rumbo.md))
 
 Un destino combina una arquitectura, un sistema operativo (o ninguno) y una especificación que define sus intrínsecos. El mismo módulo puede compilarse para cualquier destino cuya especificación provea lo que el módulo requiere.
 
@@ -12,13 +14,15 @@ Un destino combina una arquitectura, un sistema operativo (o ninguno) y una espe
 
 |                                                   | core                                     | freestanding                              | hosted                                |
 |---------------------------------------------------|------------------------------------------|-------------------------------------------|---------------------------------------|
-| Bajo el programa `dst-perfiles-1`                 | Nada: el módulo no puede ejecutarse solo | Hardware                                  | Sistema operativo                     |
-| Intrínsecos `dst-perfiles-2`                      | Ninguno                                  | Operaciones de hardware                   | Interfaz del sistema                  |
-| Memoria dinámica, tareas y reloj `dst-perfiles-3` | Como requisitos abiertos                 | Con proveedores del programa              | Provistos por la biblioteca estándar  |
-| Archivos, red, procesos `dst-perfiles-4`          | No                                       | No                                        | Sí                                    |
-| Produce `dst-perfiles-5`                          | Bibliotecas portables                    | Kernels, cargadores de arranque, firmware | Aplicaciones, servicios, herramientas |
+| <a id="dst-perfiles-1"></a>Bajo el programa `dst-perfiles-1`                 | Nada: el módulo no puede ejecutarse solo | Hardware                                  | Sistema operativo                     |
+| <a id="dst-perfiles-2"></a>Intrínsecos `dst-perfiles-2`                      | Ninguno                                  | Operaciones de hardware                   | Interfaz del sistema                  |
+| <a id="dst-perfiles-3"></a>Memoria dinámica, tareas y reloj `dst-perfiles-3` | Como requisitos abiertos                 | Con proveedores del programa              | Provistos por la biblioteca estándar  |
+| <a id="dst-perfiles-4"></a>Archivos, red, procesos `dst-perfiles-4`          | No                                       | No                                        | Sí                                    |
+| <a id="dst-perfiles-5"></a>Produce `dst-perfiles-5`                          | Bibliotecas portables                    | Kernels, cargadores de arranque, firmware | Aplicaciones, servicios, herramientas |
 
 <a id="dst-perfiles-6"></a>Una biblioteca se atesta con sus requisitos abiertos y se enlaza en cualquier binario que los provea. El cierre de los requisitos solo se exige al enlazar un binario. `dst-perfiles-6`
+
+<a id="dst-perfiles-7"></a>Cada especificación de destino declara uno de dos perfiles ejecutables, freestanding o hosted. Core no es un destino: es el perfil de un módulo que no invoca intrínsecos y deja como requisitos abiertos todo lo demás; un módulo core se compila y se atesta para cualquier destino. Un lenguaje está disponible en core si sus módulos core se aceptan en todo destino de referencia, y está disponible en los tres perfiles (R11) si lo está en core y en al menos un destino freestanding y uno hosted. `dst-perfiles-7`
 
 ## <a id="dst-disp"></a>Disponibilidad
 
@@ -51,12 +55,12 @@ Un destino combina una arquitectura, un sistema operativo (o ninguno) y una espe
 
 | Lenguaje                | core (bibliotecas portables)                                                                                                                                                                               | freestanding (kernel y firmware)                                                                                                                       | hosted (espacio de usuario)                                                                          |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| Zea `dst-disp-13`       | Todo el lenguaje sin memoria dinámica; concurrencia como requisito abierto.                                                                                                                                | Acceso al hardware e interrupciones; memoria dinámica, tareas y reloj con proveedores del programa.                                                    | Todo, con los proveedores y la E/S de la biblioteca estándar.                                        |
-| Talud `dst-disp-14`     | Clases, herencia, contratos y despacho sobre objetos por valor o prestados.                                                                                                                                | Además, objetos en memoria dinámica y conteo de referencias con un proveedor; modelado de dispositivos y controladores.                                | Todo, con los proveedores predeterminados.                                                           |
-| Solsticio `dst-disp-15` | Funciones sobre datos de tamaño fijo, recursión con medida y manejadores.                                                                                                                                  | Además, clausuras que escapan, tipos recursivos, colecciones y pereza con un proveedor de memoria; efectos de hardware a través de manejadores.        | Todo, con paralelismo sobre las tareas predeterminadas.                                              |
-| Voluta `dst-disp-16`    | Macros completas, que se expanden al compilar; funciones sobre escalares, registros y uniones de claves.                                                                                                   | Además, colecciones, texto, datos de forma desconocida y funciones que escapan con un proveedor de memoria.                                            | Todo.                                                                                                |
-| Amate `dst-disp-17`     | Relaciones de capacidad declarada en almacenamiento estático o provisto por quien llama; exceder la capacidad es un error declarado. Las reglas sobre hechos constantes se evalúan al compilar.            | Lo mismo que en core y, con un proveedor de memoria, relaciones sin capacidad declarada.                                                               | Todo, con evaluación paralela sobre tareas.                                                          |
-| Relevo `dst-disp-18`    | Un conjunto estático de actores con almacenamiento estático y buzones de capacidad fija; la planificación queda como requisito abierto. Sin aborto por región, la supervisión maneja errores como valores. | Además, interrupciones como fuente de mensajes, planificación cooperativa propia y, con proveedores, creación dinámica de actores y aborto por región. | Todo: actores dinámicos repartidos en tareas, aborto por región, plazos con reloj y actores remotos. |
+| <a id="dst-disp-13"></a>Zea `dst-disp-13`       | Todo el lenguaje sin memoria dinámica; concurrencia como requisito abierto.                                                                                                                                | Acceso al hardware e interrupciones; memoria dinámica, tareas y reloj con proveedores del programa.                                                    | Todo, con los proveedores y la E/S de la biblioteca estándar.                                        |
+| <a id="dst-disp-14"></a>Talud `dst-disp-14`     | Clases, herencia, contratos y despacho sobre objetos por valor o prestados.                                                                                                                                | Además, objetos en memoria dinámica y conteo de referencias con un proveedor; modelado de dispositivos y controladores.                                | Todo, con los proveedores predeterminados.                                                           |
+| <a id="dst-disp-15"></a>Solsticio `dst-disp-15` | Funciones sobre datos de tamaño fijo, recursión con medida y manejadores.                                                                                                                                  | Además, clausuras que escapan, tipos recursivos, colecciones y pereza con un proveedor de memoria; efectos de hardware a través de manejadores.        | Todo, con paralelismo sobre las tareas predeterminadas.                                              |
+| <a id="dst-disp-16"></a>Voluta `dst-disp-16`    | Macros completas, que se expanden al compilar; funciones sobre escalares, registros y uniones de claves.                                                                                                   | Además, colecciones, texto, datos de forma desconocida y funciones que escapan con un proveedor de memoria.                                            | Todo.                                                                                                |
+| <a id="dst-disp-17"></a>Amate `dst-disp-17`     | Relaciones de capacidad declarada en almacenamiento estático o provisto por quien llama; exceder la capacidad es un error declarado. Las reglas sobre hechos constantes se evalúan al compilar.            | Lo mismo que en core y, con un proveedor de memoria, relaciones sin capacidad declarada.                                                               | Todo, con evaluación paralela sobre tareas.                                                          |
+| <a id="dst-disp-18"></a>Relevo `dst-disp-18`    | Un conjunto estático de actores con almacenamiento estático y buzones de capacidad fija; la planificación queda como requisito abierto. Sin aborto por región, la supervisión maneja errores como valores. | Además, interrupciones como fuente de mensajes, planificación cooperativa propia y, con proveedores, creación dinámica de actores y aborto por región. | Todo: actores dinámicos repartidos en tareas, aborto por región, plazos con reloj y actores remotos. |
 
 ## <a id="dst-concurrencia"></a>Concurrencia por perfil
 
@@ -65,6 +69,10 @@ Un destino combina una arquitectura, un sistema operativo (o ninguno) y una espe
 ## <a id="dst-componentes"></a>Componentes
 
 <a id="dst-componentes-1"></a>La especificación de cada destino es [Rumbo](19-rumbo.md), y el código del destino lo genera [Cincel](16-cincel.md). `dst-componentes-1`
+
+## <a id="dst-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+Lo que cada destino declara está en la tabla de lo [definido por el destino](33-anexo-a.md#anx-destino). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

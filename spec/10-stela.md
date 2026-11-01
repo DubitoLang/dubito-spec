@@ -12,7 +12,7 @@ mark_group: plat
 
 Stela es la representación intermedia de la plataforma: tipada, con control estructurado, específica de un destino y portadora de su propia evidencia. Los seis lenguajes compilan a ella, el verificador la verifica y el backend la traduce a código nativo.
 
-**Definición normativa**
+## <a id="stx-definicion"></a>Definición normativa
 
 <a id="stela-1"></a>La semántica de Stela es operacional y DEBE mecanizarse en un asistente de pruebas; ante cualquier diferencia con esta descripción, prevalece la mecanización. `stela-1`
 
@@ -58,7 +58,7 @@ Stela es la representación intermedia de la plataforma: tipada, con control est
 
 ## <a id="stx-memoria"></a>Modelo de memoria
 
-<a id="stx-memoria-1"></a>Como la ausencia de carreras de datos se demuestra por tipos, los accesos no atómicos se comportan como en una ejecución secuencial. Los atómicos siguen el modelo formal RC11 (Lahav, Vafeiadis, Kang, Hur y Dreyer, 2017), que se resume así: `stx-memoria-1`
+<a id="stx-memoria-1"></a>Como la ausencia de carreras de datos se demuestra por tipos, los accesos no atómicos se comportan como en una ejecución secuencial. Los atómicos siguen el modelo formal RC11 (Lahav, Vafeiadis, Kang, Hur y Dreyer, 2017). Los enunciados `stx-memoria-2` a `stx-memoria-5` lo resumen y, ante cualquier diferencia, prevalece RC11; `stx-memoria-6` es una restricción propia de Dubito que se añade al modelo. `stx-memoria-1`
 
 - <a id="stx-memoria-2"></a>Órdenes: relajado, de adquisición (lecturas), de liberación (escrituras), de adquisición y liberación, y secuencialmente consistente. `stx-memoria-2`
 - <a id="stx-memoria-3"></a>Una escritura de liberación leída por una lectura de adquisición establece una relación *sucede antes* entre todo lo anterior a la escritura y todo lo posterior a la lectura. `stx-memoria-3`
@@ -74,32 +74,36 @@ Stela es la representación intermedia de la plataforma: tipada, con control est
 
 | Clase                                       | Contenido                                                                                                                                                                                             |
 |---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Certificado `stx-evidencia-1`               | Prueba del solucionador en el formato Alethe, que un comprobador revisa paso a paso sin repetir la búsqueda.                                                                                          |
-| Refinamiento `stx-evidencia-2`              | Certificado de que una implementación refina el contrato de su trait o del método que redefine.                                                                                                       |
-| Idempotencia `stx-evidencia-3`              | Certificado de que aplicar dos veces una operación idempotente equivale a aplicarla una.                                                                                                              |
-| Comprobación en ejecución `stx-evidencia-4` | La VC se compila como comprobación que aborta si falla. Solo para VC desconocidas cuyos términos son todos ejecutables, dentro de la política del paquete; siempre visible en el diff de significado. |
-| Mutación `stx-evidencia-5`                  | Por postcondición: cada mutante y su estado (eliminado con su contraejemplo, equivalente con su certificado, o sobreviviente). Determinista y repetible.                                              |
+| <a id="stx-evidencia-1"></a>Certificado `stx-evidencia-1`               | Prueba del solucionador en el formato Alethe, que un comprobador revisa paso a paso sin repetir la búsqueda.                                                                                          |
+| <a id="stx-evidencia-2"></a>Refinamiento `stx-evidencia-2`              | Certificado de que una implementación refina el contrato de su trait o del método que redefine.                                                                                                       |
+| <a id="stx-evidencia-3"></a>Idempotencia `stx-evidencia-3`              | Certificado de que aplicar dos veces una operación idempotente equivale a aplicarla una.                                                                                                              |
+| <a id="stx-evidencia-4"></a>Comprobación en ejecución `stx-evidencia-4` | La VC se compila como comprobación que aborta si falla. Solo para VC desconocidas cuyos términos son todos ejecutables, dentro de la política del paquete; siempre visible en el diff de significado. |
+| <a id="stx-evidencia-5"></a>Mutación `stx-evidencia-5`                  | Por postcondición: cada mutante y su estado (eliminado con su contraejemplo, equivalente con su certificado, o sobreviviente). Determinista y repetible.                                              |
 
 <a id="stx-evidencia-6"></a>Una VC refutada no tiene evidencia: el módulo se rechaza. `stx-evidencia-6`
 
 ## <a id="stx-teoremas"></a>Teoremas de la plataforma
 
-<a id="stx-teoremas-1"></a>La mecanización de las semánticas de Stela y de Sillar DEBE demostrar estos teoremas en un asistente de pruebas. Sus enunciados son normativos; su forma exacta se fija con la mecanización. `stx-teoremas-1`
+<a id="stx-teoremas-1"></a>La mecanización de las semánticas de Stela y de Sillar, junto con la semántica de la arquitectura y el modelo de fugas de cada destino ([Contenido de una especificación](19-rumbo.md#dst-spec)), DEBE demostrar estos teoremas en un asistente de pruebas. T6 y T7 se demuestran para cada destino. Sus enunciados son normativos; su forma exacta se fija con la mecanización. `stx-teoremas-1`
 
 | Teorema                                             | Enunciado                                                                                                                                                          |
 |-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| T1. Seguridad de tipos `stx-teoremas-2`             | Un módulo bien tipado nunca llega a un estado sin significado (progreso y preservación).                                                                           |
-| T2. Seguridad de memoria `stx-teoremas-3`           | Ownership y préstamos excluyen el acceso fuera de límites, el uso tras liberar y las carreras de datos en el modelo de memoria adoptado.                           |
-| T3. Corrección de Dintel `stx-teoremas-4`           | Si Dintel acepta un módulo para un destino, toda ejecución cumple sus contratos y no ejerce efectos no declarados, suponiendo la especificación de ese destino.    |
-| T4. Corrección de los certificados `stx-teoremas-5` | Si Dintel acepta el certificado de una VC, la VC es válida.                                                                                                        |
-| T5. No interferencia `stx-teoremas-6`               | Los valores secretos no influyen en las salidas observables salvo a través de desclasificaciones justificadas.                                                     |
-| T6. Tiempo constante `stx-teoremas-7`               | El código bajo la disciplina de tiempo constante no depende de secretos en su duración, sus accesos a memoria ni sus saltos, según el modelo de fugas del destino. |
-| T7. Corrección de Cincel `stx-teoremas-8`           | El código del destino refina la semántica de Stela y preserva T5, T6, las protecciones de especulación y los borrados de secretos.                                 |
-| T8. Corrección de Plomada `stx-teoremas-9`          | Si Plomada valida una pasada, su salida refina su entrada y preserva las propiedades de T7.                                                                        |
-| T9. Determinismo `stx-teoremas-10`                  | El resultado de compilar depende solo de las fuentes, la cadena de herramientas, el destino y el perfil de optimización.                                           |
+| <a id="stx-teoremas-2"></a><a id="teo-t1"></a>T1. Seguridad de tipos `stx-teoremas-2`             | Un módulo bien tipado nunca llega a un estado sin significado (progreso y preservación).                                                                           |
+| <a id="stx-teoremas-3"></a><a id="teo-t2"></a>T2. Seguridad de memoria `stx-teoremas-3`           | Ownership y préstamos excluyen el acceso fuera de límites, el uso tras liberar y las carreras de datos en el modelo de memoria adoptado.                           |
+| <a id="stx-teoremas-4"></a><a id="teo-t3"></a>T3. Corrección de Dintel `stx-teoremas-4`           | Si Dintel acepta un módulo para un destino, toda ejecución cumple sus contratos y no ejerce efectos no declarados, suponiendo la especificación de ese destino.    |
+| <a id="stx-teoremas-5"></a><a id="teo-t4"></a>T4. Corrección de los certificados `stx-teoremas-5` | Si Dintel acepta el certificado de una VC, la VC es válida.                                                                                                        |
+| <a id="stx-teoremas-6"></a><a id="teo-t5"></a>T5. No interferencia `stx-teoremas-6`               | Los valores secretos no influyen en las salidas observables salvo a través de desclasificaciones justificadas.                                                     |
+| <a id="stx-teoremas-7"></a><a id="teo-t6"></a>T6. Tiempo constante `stx-teoremas-7`               | El código bajo la disciplina de tiempo constante no depende de secretos en su duración, sus accesos a memoria ni sus saltos, según el modelo de fugas mecanizado del destino. |
+| <a id="stx-teoremas-8"></a><a id="teo-t7"></a>T7. Corrección de Cincel `stx-teoremas-8`           | El código del destino, según la semántica mecanizada de su arquitectura, refina la semántica de Stela y preserva T5, T6, las protecciones de especulación, los borrados de secretos y los puntos de telemetría.                                 |
+| <a id="stx-teoremas-9"></a><a id="teo-t8"></a>T8. Corrección de Plomada `stx-teoremas-9`          | Si Plomada valida una pasada de optimización sobre Sillar, su salida refina su entrada (incluidos los efectos y su orden) y preserva las demás propiedades de T7. |
+| <a id="stx-teoremas-10"></a><a id="teo-t9"></a>T9. Determinismo `stx-teoremas-10`                  | El resultado de compilar depende solo de las fuentes, la cadena de herramientas, el destino y el perfil de optimización.                                           |
 
 - <a id="stx-teoremas-11"></a>Mientras un teorema no esté mecanizado, toda atestación lo enumera como supuesto en su inventario de confianza (R9). `stx-teoremas-11`
 - <a id="stx-teoremas-12"></a>Cada versión de Dintel, Cincel y Plomada declara la versión de la mecanización con la que se corresponde. `stx-teoremas-12`
+
+## <a id="stx-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+La codificación de Stela y la derivación de la identidad a partir de su forma canónica (`anx-pendiente-2`), el formato de la evidencia de mutación (`anx-pendiente-5`) y el asistente de pruebas con la forma exacta de la semántica y de los teoremas (`anx-pendiente-14`). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

@@ -18,8 +18,8 @@ Pulido es el optimizador de la plataforma. Mejora el código generado sin cambia
 
 | Camino                         | Dónde                                                 | Cómo se confía en el resultado                                                                                                                                                                                                                                                   |
 |--------------------------------|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sobre Stela `optimizacion-2`   | Transformaciones de Stela a Stela, antes del backend. | El resultado lleva su evidencia y el verificador lo comprueba por completo, igual que el original. La pasada queda fuera de la TCB.                                                                                                                                              |
-| En el backend `optimizacion-3` | Pasadas sobre la IR de bajo nivel.                    | Cada pasada DEBE tener validación de traducción: produce un testigo que Plomada, el validador de traducción, comprueba, y solo Plomada pertenece a la TCB. Una pasada sin validación pertenece a la TCB y aparece en el inventario de confianza de cada binario que la usa (R9). |
+| <a id="optimizacion-2"></a>Sobre Stela `optimizacion-2`   | Transformaciones de Stela a Stela, antes del backend. | El resultado lleva su evidencia y el verificador lo comprueba por completo, igual que el original. La pasada queda fuera de la TCB.                                                                                                                                              |
+| <a id="optimizacion-3"></a>En el backend `optimizacion-3` | Pasadas sobre la IR de bajo nivel.                    | Una pasada con validación de traducción produce un testigo que Plomada, el validador de traducción, comprueba; la pasada queda fuera de la TCB y solo Plomada pertenece a ella. Una pasada PUEDE no tener validación: entonces pertenece a la TCB y DEBE figurar en el inventario de confianza de cada binario que la usa (R9). |
 
 <a id="optimizacion-4"></a>Ninguna optimización, por ningún camino, puede alterar: `optimizacion-4`
 
@@ -33,6 +33,10 @@ Pulido es el optimizador de la plataforma. Mejora el código generado sin cambia
 ### <a id="perfiles-opt"></a>Perfiles de optimización
 
 <a id="optimizacion-11"></a>Un perfil de optimización se define por su objetivo, no por una lista de pasadas: **ninguno** (correspondencia directa con el código fuente, para depuración), **velocidad** o **tamaño**. Qué pasadas usa cada perfil es una decisión de cada implementación. El perfil no cambia el significado, así que no aparece en el diff de significado; queda registrado en la atestación del binario. Con cualquier perfil, la información de depuración sigue siendo correcta para el código que se generó. `optimizacion-11`
+
+## <a id="optimizacion-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+Por implementación, las pasadas de cada perfil de optimización (`anx-implementacion-5`). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

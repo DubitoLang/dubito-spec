@@ -26,8 +26,8 @@ Seis lenguajes independientes y del mismo rango, cada uno con un paradigma propi
 <a id="fam-sintaxis-1"></a>La sintaxis concreta de cada lenguaje no se define en esta fase. Cualquier sintaxis que se defina DEBE cumplir: `fam-sintaxis-1`
 
 - <a id="fam-sintaxis-2"></a>Todas las palabras del lenguaje (palabras reservadas, nombres de la biblioteca, valores predefinidos) están en inglés. `fam-sintaxis-2`
-- <a id="fam-sintaxis-3"></a>Palabras completas en todo punto donde un revisor toma decisiones: efectos, contratos, propagación de errores, mutabilidad y conversiones de procedencia. `fam-sintaxis-3`
-- <a id="fam-sintaxis-4"></a>Los argumentos de una llamada se nombran, salvo en los casos que el lenguaje justifique de forma uniforme. `fam-sintaxis-4`
+- <a id="fam-sintaxis-3"></a>Las construcciones de efectos, contratos, propagación de errores, mutabilidad y conversiones de procedencia se escriben con palabras reservadas completas, no con símbolos ni abreviaturas. `fam-sintaxis-3`
+- <a id="fam-sintaxis-4"></a>Los argumentos de una llamada se nombran. Las únicas excepciones son las que la gramática del lenguaje enumera, cada una aplicada igual en todas las llamadas y justificada en su propuesta de sintaxis. `fam-sintaxis-4`
 - <a id="fam-sintaxis-5"></a>Gramática libre de contexto, analizable con anticipación acotada. `fam-sintaxis-5`
 - <a id="fam-sintaxis-6"></a>Una única forma canónica para cada programa, aplicada por el formateador sin opciones. `fam-sintaxis-6`
 - <a id="fam-sintaxis-7"></a>Ningún comentario puede ocultar código: no hay comentarios de bloque. `fam-sintaxis-7`
@@ -39,12 +39,12 @@ Seis lenguajes independientes y del mismo rango, cada uno con un paradigma propi
 
 | Lenguaje                                       | Lector y tarea                                                                                                      | Estilo estructural                                                                                                                            |
 |------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Zea](03-zea.md) `fam-objetivos-2`             | Quien revisa código de bajo nivel y necesita ver en cada línea la memoria, los préstamos, los efectos y los costos. | Bloques delimitados de instrucciones y expresiones con precedencia fija. Toda copia, reserva de memoria y conversión tiene una marca visible. |
-| [Talud](04-talud.md) `fam-objetivos-3`         | Quien modela un dominio y lee jerarquías, invariantes de clase y redefiniciones.                                    | Declaraciones de clase con sus miembros agrupados, la invariante junto a la clase y la redefinición siempre marcada.                          |
-| [Solsticio](05-solsticio.md) `fam-objetivos-4` | Quien razona por ecuaciones sobre transformaciones de datos.                                                        | Definiciones por ecuaciones y casos, aplicación y composición ligeras, y encadenamiento de transformaciones de izquierda a derecha.           |
-| [Voluta](06-voluta.md) `fam-objetivos-5`       | Quien escribe código que se manipula como datos: macros y lenguajes de dominio.                                     | Expresiones anidadas uniformes, cuya estructura textual es la del árbol de sintaxis.                                                          |
-| [Amate](07-amate.md) `fam-objetivos-6`         | Quien lee reglas de negocio, de cumplimiento o de permisos, a menudo sin ser programador.                           | Cláusulas con cabeza y cuerpo, hechos que se leen como filas de una tabla y consultas separadas de las reglas.                                |
-| [Relevo](08-relevo.md) `fam-objetivos-7`       | Quien sigue flujos de mensajes, esperas y supervisión entre actores.                                                | Declaraciones de actor con sus mensajes y manejadores, supervisión declarativa, y envíos y esperas siempre visibles.                          |
+| <a id="fam-objetivos-2"></a>[Zea](03-zea.md) `fam-objetivos-2`             | Quien revisa código de bajo nivel y necesita ver en cada línea la memoria, los préstamos, los efectos y los costos. | Bloques delimitados de instrucciones y expresiones con precedencia fija. Toda copia, reserva de memoria y conversión tiene una marca visible. |
+| <a id="fam-objetivos-3"></a>[Talud](04-talud.md) `fam-objetivos-3`         | Quien modela un dominio y lee jerarquías, invariantes de clase y redefiniciones.                                    | Declaraciones de clase con sus miembros agrupados, la invariante junto a la clase y la redefinición siempre marcada.                          |
+| <a id="fam-objetivos-4"></a>[Solsticio](05-solsticio.md) `fam-objetivos-4` | Quien razona por ecuaciones sobre transformaciones de datos.                                                        | Definiciones por ecuaciones y casos, aplicación y composición ligeras, y encadenamiento de transformaciones de izquierda a derecha.           |
+| <a id="fam-objetivos-5"></a>[Voluta](06-voluta.md) `fam-objetivos-5`       | Quien escribe código que se manipula como datos: macros y lenguajes de dominio.                                     | Expresiones anidadas uniformes, cuya estructura textual es la del árbol de sintaxis.                                                          |
+| <a id="fam-objetivos-6"></a>[Amate](07-amate.md) `fam-objetivos-6`         | Quien lee reglas de negocio, de cumplimiento o de permisos, a menudo sin ser programador.                           | Cláusulas con cabeza y cuerpo, hechos que se leen como filas de una tabla y consultas separadas de las reglas.                                |
+| <a id="fam-objetivos-7"></a>[Relevo](08-relevo.md) `fam-objetivos-7`       | Quien sigue flujos de mensajes, esperas y supervisión entre actores.                                                | Declaraciones de actor con sus mensajes y manejadores, supervisión declarativa, y envíos y esperas siempre visibles.                          |
 
 ### <a id="fam-criterios"></a>Criterios de evaluación
 
@@ -52,7 +52,7 @@ Seis lenguajes independientes y del mismo rango, cada uno con un paradigma propi
 
 - <a id="fam-objetivos-9"></a>**Determinismo.** La gramática se analiza de forma determinista con anticipación acotada; un generador de analizadores la acepta sin conflictos. `fam-objetivos-9`
 - <a id="fam-objetivos-10"></a>**Ida y vuelta.** Imprimir un árbol de sintaxis con el formateador y volver a analizarlo produce el mismo árbol. `fam-objetivos-10`
-- <a id="fam-objetivos-11"></a>**Localidad.** Un cambio local de significado produce un cambio textual local en la forma canónica. `fam-objetivos-11`
+- <a id="fam-objetivos-11"></a>**Localidad.** Un cambio en una sola declaración modifica en la forma canónica solo las líneas de esa declaración y, si cambia su interfaz, las de sus usos. `fam-objetivos-11`
 - <a id="fam-objetivos-12"></a>**Visibilidad.** Cada elemento del diff de significado (efectos, contratos, conversiones de procedencia, propagación de errores, mutabilidad y directivas de exigencia) tiene una marca visible en el punto donde ocurre. `fam-objetivos-12`
 - <a id="fam-objetivos-13"></a>**Recuperación.** La gramática permite recuperarse de un error de análisis y localizar el diagnóstico en el punto del error. `fam-objetivos-13`
 - <a id="fam-objetivos-14"></a>**Coherencia.** Los conceptos comunes (efectos, contratos, procedencia, directivas) usan las mismas palabras en los seis lenguajes. `fam-objetivos-14`

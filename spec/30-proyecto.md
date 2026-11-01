@@ -78,12 +78,15 @@ Los nombres usan palabras de idiomas occidentales (latín, español, inglés) co
 | Componente                                                                                                      | Licencia                                | Efecto                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | Cadena de herramientas (dubito, Dintel, Speculum, Estuco, Pulido, Glosa, Ceiba y el backend Cincel con Plomada) | AGPL-3.0-or-later                       | Quien modifique las herramientas y las distribuya u ofrezca como servicio en red debe publicar sus cambios.                    |
+| Mecanización (semánticas formales y teoremas de la plataforma)                                                  | AGPL-3.0-or-later                       | Quien la modifique y la distribuya u ofrezca como servicio en red debe publicar sus cambios; lo que se verifica o se compila apoyándose en ella no hereda su licencia. |
+| Especificaciones de destino del proyecto (Rumbo)                                                                | AGPL-3.0-or-later                       | Quien modifique una y la distribuya u ofrezca como servicio en red debe publicar sus cambios; lo que se compila para ese destino no hereda su licencia. |
 | Registro (Pochteca)                                                                                             | AGPL-3.0-or-later                       | Un registro o espejo modificado debe publicar su código.                                                                       |
 | Biblioteca estándar (Chinampa) y bibliotecas de soporte de los lenguajes                                        | GPL-3.0-or-later WITH GCC-exception-3.1 | Modificarlas obliga a liberar los cambios; lo que termina dentro de un programa compilado puede llevar cualquier licencia.     |
 | Conjunto de pruebas de conformidad                                                                              | AGPL-3.0-or-later                       | Quien lo modifique y lo distribuya debe publicar sus cambios; ejecutarlo no impone nada.                                       |
 | Especificación                                                                                                  | CC BY-SA 4.0                            | Una versión modificada del texto debe publicarse con la misma licencia; implementar la especificación no es una obra derivada. |
 
-- Los programas escritos con los lenguajes de la familia no quedan sujetos a estas licencias: la salida de un compilador no hereda su licencia, y la excepción cubre el código de la biblioteca estándar que entra en un binario.
+- Los programas escritos con los lenguajes de la familia no quedan sujetos a estas licencias: la salida de un compilador no hereda su licencia ni la de la mecanización o la especificación de destino que se usaron al compilar, y la excepción cubre el código de la biblioteca estándar que entra en un binario.
+- Si una especificación de destino necesita aportar código que entra en un binario, como el arranque, ese código se entrega como parte de la biblioteca estándar del destino y queda cubierto por su excepción.
 - Como el registro distribuye fuentes y no representación intermedia, ningún paquete de terceros distribuye código de la biblioteca estándar fuera de la excepción.
 - Las licencias de la familia GPLv3 incluyen una concesión de patentes.
 - Las licencias no cubren nombres ni logos, que se rigen por la [política de marca](#pro-marca).
@@ -103,7 +106,7 @@ Los nombres usan palabras de idiomas occidentales (latín, español, inglés) co
 
 ## <a id="pro-gobierno"></a>Gobierno *(Informativa)*
 
-- **Modelo.** El proyecto adopta la plantilla de consejo de mantenedores de la CNCF. En la fase 0, el fundador es el único mantenedor; nuevos mantenedores se incorporan por decisión del consejo según sus contribuciones.
+- **Modelo.** El proyecto adopta la plantilla de consejo de mantenedores de la CNCF. Mientras no haya otros mantenedores, el fundador es el único; nuevos mantenedores se incorporan por decisión del consejo según sus contribuciones.
 - **Cambios a la especificación.** Todo cambio sustantivo se propone por escrito y de forma pública, con un periodo de comentarios. Se acepta por consenso tácito: si ningún mantenedor objeta dentro del periodo, se aprueba; si hay objeciones, decide el consejo por mayoría.
 - **Invariantes.** Cambiar una de las invariantes R1–R11 exige el acuerdo de todos los mantenedores.
 - **Evolución.** Cuando el proyecto tenga varios mantenedores activos, el modelo puede pasar a un comité de dirección elegido, con la plantilla correspondiente de la CNCF.
@@ -133,7 +136,7 @@ La política sigue las Model Trademark Guidelines 1.0. Las marcas del proyecto s
 
 ## <a id="pro-fase"></a>Fases *(Informativa)*
 
-El proyecto está en la fase 0, [etapa de concepto](00-inicio.md#inicio-fase). Lo concreto (sintaxis, formatos, codificaciones, protocolos, herramientas y sus interfaces) se definirá en las etapas siguientes, sin contradecir esta especificación.
+La fase 0, [etapa de concepto](00-inicio.md#inicio-fase), quedó cerrada con la versión 1.0.0-alpha.2. Lo concreto (sintaxis, formatos, codificaciones, protocolos, herramientas y sus interfaces) se definirá en las etapas siguientes, sin contradecir esta especificación.
 
 **Criterios de salida de la fase 0.** La fase termina cuando el consejo de mantenedores declara cerrada la especificación conceptual, lo que exige que se cumplan todos estos criterios:
 
@@ -141,11 +144,11 @@ El proyecto está en la fase 0, [etapa de concepto](00-inicio.md#inicio-fase). L
 2. Cada requisito de una sección normativa lleva su identificador, y cada enlace y cada referencia a una invariante o a un teorema resuelve.
 3. Todo lo concreto que no está definido consta en el [anexo A](33-anexo-a.md), sin ningún hueco sin registrar.
 4. Cada estándar adoptado tiene su edición fijada en [Estándares adoptados](32-estandares.md), y no se redefine nada estandarizado.
-5. Se ha hecho una revisión de cierre de coherencia y de cobertura, y sus hallazgos están resueltos o registrados.
+5. Se ha hecho una revisión de cierre de coherencia y de cobertura, y sus hallazgos están resueltos o registrados en el registro de cambios.
 6. Los nombres, las licencias y la política de marca están decididos, y el repositorio publica la licencia del texto, el código de conducta, la política de seguridad y el gobierno.
 7. Existe una versión etiquetada de la especificación, con su registro de cambios.
 
-La fase siguiente empieza con la definición concreta de lo que el anexo A deja abierto, por propuestas públicas según el [proceso de gobierno](#pro-gobierno).
+La fase siguiente empieza con la definición concreta de lo que el [anexo A](33-anexo-a.md#anx-pendiente) registra como pendiente, por propuestas públicas según el [proceso de gobierno](#pro-gobierno).
 
 ## <a id="pro-compatibilidad"></a>Compatibilidad
 
@@ -159,18 +162,18 @@ La fase siguiente empieza con la definición concreta de lo que el anexo A deja 
 
 | Incremento                    | Cambios en la interfaz pública                                                                                                                                                                                                                                           |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mayor `pro-compatibilidad-5`  | Quitar o renombrar una declaración; cambiar una firma, un tipo o una etiqueta; añadir un efecto, una variante a un tipo suma público o un error; fortalecer una precondición; debilitar una postcondición; quitar un trait derivado; ampliar el inventario de confianza. |
-| Menor `pro-compatibilidad-6`  | Añadir declaraciones; debilitar una precondición; fortalecer una postcondición; quitar un efecto; añadir un trait derivado.                                                                                                                                              |
-| Parche `pro-compatibilidad-7` | Ningún cambio en la interfaz pública.                                                                                                                                                                                                                                    |
+| <a id="pro-compatibilidad-5"></a>Mayor `pro-compatibilidad-5`  | Quitar o renombrar una declaración; cambiar una firma, un tipo o una etiqueta; añadir un efecto, una variante a un tipo suma público o un error; fortalecer una precondición; debilitar una postcondición; quitar un trait derivado; ampliar el inventario de confianza. |
+| <a id="pro-compatibilidad-6"></a>Menor `pro-compatibilidad-6`  | Añadir declaraciones; debilitar una precondición; fortalecer una postcondición; quitar un efecto; añadir un trait derivado.                                                                                                                                              |
+| <a id="pro-compatibilidad-7"></a>Parche `pro-compatibilidad-7` | Ningún cambio en la interfaz pública salvo en su documentación ([Documentación en el código](02-nucleo.md#nuc-documentacion)).                                                                                                                                                                                                                                  |
 
 <a id="pro-compatibilidad-8"></a>Debilitar una precondición o fortalecer una postcondición se demuestra con un certificado de refinamiento: la misma regla de sustitución que en una redefinición de método. `pro-compatibilidad-8`
 
 ### <a id="pro-compat-especificacion"></a>Versiones de la especificación
 
 - <a id="pro-compatibilidad-9"></a>La especificación sigue Semantic Versioning 2.0.0 y cada versión se registra en el registro de cambios. `pro-compatibilidad-9`
-- <a id="pro-compatibilidad-10"></a>Hasta la versión 1.0.0 se publican prelanzamientos: `alpha.N` mientras ninguna implementación pase el conjunto de pruebas de conformidad para un destino; `beta.N` desde entonces y hasta que lo pasen los seis lenguajes en los tres perfiles (R11); `rc.N` hasta que el consejo de mantenedores apruebe la 1.0.0. `pro-compatibilidad-10`
-- <a id="pro-compatibilidad-11"></a>En `alpha` cualquier requisito puede cambiar o retirarse, y el registro de cambios lo señala. Desde `beta`, un requisito solo cambia por una errata. `pro-compatibilidad-11`
-- <a id="pro-compatibilidad-12"></a>Desde la 1.0.0, el incremento mayor cambia o retira un requisito de modo que una implementación conforme deja de serlo; el menor añade requisitos o clases sin invalidar las implementaciones conformes; el parche corrige erratas y aclara sin cambiar el significado. `pro-compatibilidad-12`
+- <a id="pro-compatibilidad-10"></a>Hasta la versión 1.0.0 se publican prelanzamientos: `alpha.N` mientras ninguna cadena de herramientas conforme, con el frontend de al menos un lenguaje de la familia, pase el conjunto de pruebas de conformidad para un destino; `beta.N` desde entonces y hasta que lo pasen los seis lenguajes en los tres perfiles, en el sentido de [Perfiles](20-destinos.md#dst-perfiles) (R11); `rc.N` hasta que el consejo de mantenedores apruebe la 1.0.0. `pro-compatibilidad-10`
+- <a id="pro-compatibilidad-11"></a>En `alpha` cualquier requisito puede cambiar o retirarse, y el registro de cambios lo señala. Desde `beta`, un requisito solo cambia por una errata; los puntos pendientes del [anexo A](33-anexo-a.md#anx-pendiente), como la sintaxis de los lenguajes que aún no la tienen, siguen definiéndose por propuesta pública sin cambiar ningún requisito existente. `pro-compatibilidad-11`
+- <a id="pro-compatibilidad-12"></a>Desde la 1.0.0, el incremento mayor cambia o retira un requisito de modo que una implementación conforme deja de serlo; el menor añade clases, o requisitos solo en clases nuevas o en extensiones opcionales, de modo que no invalida ninguna implementación conforme; el parche corrige erratas y aclara sin cambiar el significado. `pro-compatibilidad-12`
 - <a id="pro-compatibilidad-13"></a>Una declaración de conformidad cita la versión exacta, con su prelanzamiento si lo tiene ([declaración de conformidad](31-conformidad.md#cnf-declaracion-1)). `pro-compatibilidad-13`
 
 ## <a id="pro-ciclo"></a>Ciclo de vida de las características
@@ -179,10 +182,10 @@ La fase siguiente empieza con la definición concreta de lo que el anexo A deja 
 
 | Estado                     | Reglas                                                                                                                                                                                                                       |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Experimental `pro-ciclo-2` | Solo se usa activada por una directiva de exigencia explícita. No DEBE aparecer en un paquete publicado en el registro, y nada experimental forma parte de la conformidad. Puede cambiar o desaparecer en cualquier versión. |
-| Estable `pro-ciclo-3`      | Forma parte de la especificación y de la conformidad; solo se retira pasando por los estados siguientes.                                                                                                                     |
-| Obsoleta `pro-ciclo-4`     | Conserva su significado. Su uso produce un aviso que indica la alternativa y Glosa lo reporta. Se declara obsoleta en una versión menor.                                                                                     |
-| Retirada `pro-ciclo-5`     | Deja de aceptarse. Solo ocurre en una versión mayor, o en una edición nueva si es sintaxis, y nunca antes de haber pasado al menos una versión menor como obsoleta.                                                          |
+| <a id="pro-ciclo-2"></a>Experimental `pro-ciclo-2` | Solo se usa activada por una directiva de exigencia explícita. No DEBE aparecer en un paquete publicado en el registro, y nada experimental forma parte de la conformidad. Puede cambiar o desaparecer en cualquier versión. |
+| <a id="pro-ciclo-3"></a>Estable `pro-ciclo-3`      | Forma parte de la especificación y de la conformidad; solo se retira pasando por los estados siguientes.                                                                                                                     |
+| <a id="pro-ciclo-4"></a>Obsoleta `pro-ciclo-4`     | Conserva su significado. Su uso produce un aviso que indica la alternativa y Glosa lo reporta. Se declara obsoleta en una versión menor.                                                                                     |
+| <a id="pro-ciclo-5"></a>Retirada `pro-ciclo-5`     | Deja de aceptarse. Solo ocurre en una versión mayor, o en una edición nueva si es sintaxis, y nunca antes de haber pasado al menos una versión menor como obsoleta.                                                          |
 
 - <a id="pro-ciclo-6"></a>La representación intermedia no retira nada, porque evoluciona solo de forma aditiva. `pro-ciclo-6`
 - <a id="pro-ciclo-7"></a>Toda retirada viene con una migración automática, que es correcta solo si la representación intermedia resultante tiene la misma identidad que la original. `pro-ciclo-7`

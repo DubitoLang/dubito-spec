@@ -9,7 +9,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 Dubito es un proyecto de lenguajes de programación verificados: una plataforma de compilación compartida y seis lenguajes del mismo rango (Zea, Talud, Solsticio, Voluta, Amate y Relevo) en la que todo programa se entrega junto con la evidencia de lo que afirma.
 
-> **Estado: fase 0, etapa de concepto.** Este repositorio contiene la especificación conceptual 1.0.0-alpha.1. **No existe ninguna implementación.** La especificación define por completo el modelo abstracto y deja sin definir todo lo concreto (sintaxis, formatos y herramientas), que se decidirá en las etapas siguientes.
+> **Estado: fase 0 cerrada.** Este repositorio contiene la especificación conceptual 1.0.0-alpha.2, con la que terminó la etapa de concepto. **No existe ninguna implementación.** La especificación define por completo el modelo abstracto y deja sin definir todo lo concreto (sintaxis, formatos y herramientas), que se decidirá en las etapas siguientes.
 
 ## Contenido
 
@@ -19,6 +19,7 @@ Dubito es un proyecto de lenguajes de programación verificados: una plataforma 
 | [Sitio](https://dubitolang.github.io/dubito-spec/) | GitHub Pages lo genera automáticamente desde `spec/` con Jekyll en cada cambio de `main`. |
 | [`LICENSE`](LICENSE) | Licencia del texto de la especificación: CC BY-SA 4.0. |
 | [`CHANGELOG.md`](CHANGELOG.md) | Registro de cambios por versión. |
+| [`ROADMAP.md`](ROADMAP.md) | Fases del proyecto, de la especificación conceptual a la 1.0.0. Informativo. |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Cómo proponer cambios y el Developer Certificate of Origin. |
 | [`GOVERNANCE.md`](GOVERNANCE.md) | Quién decide y cómo se aprueban los cambios. |
 | [`SECURITY.md`](SECURITY.md) | Cómo reportar una vulnerabilidad. |

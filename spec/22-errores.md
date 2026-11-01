@@ -6,17 +6,19 @@ order: 22
 
 # Errores y aborto
 
+**Rol:** clases de fallo, errores como valores y aborto · **En la TCB:** no
+
 La plataforma distingue lo que puede salir mal en un programa correcto, que es un valor que el programa maneja, de lo que solo puede ocurrir si una afirmación no demostrada resulta falsa, que detiene la ejecución. No hay excepciones, desenrollado de pila ni recuperación oculta.
 
 ## <a id="err-clases"></a>Clases de fallo
 
 | Clase                                   | Ejemplo                                                   | Representación                                            |
 |-----------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------|
-| Error esperable `err-clases-1`          | Archivo inexistente, saldo insuficiente, conexión cerrada | Valor de error de un resultado                            |
-| Obligación no demostrada `err-clases-2` | Una comprobación en ejecución que resulta falsa           | Aborto del proceso o de la región                         |
-| Agotamiento de recursos `err-clases-3`  | Memoria insuficiente                                      | Aborto, salvo en operaciones que lo ofrecen como error    |
-| Fallo de una frontera `err-clases-4`    | Código nativo que cae, plazo vencido, mensaje corrupto    | Valor de error con las variantes de los fallos declarados |
-| Cancelación `err-clases-5`              | Una tarea cuyo ámbito se cierra antes de que termine      | Valor de error en su siguiente operación de espera        |
+| <a id="err-clases-1"></a>Error esperable `err-clases-1`          | Archivo inexistente, saldo insuficiente, conexión cerrada | Valor de error de un resultado                            |
+| <a id="err-clases-2"></a>Obligación no demostrada `err-clases-2` | Una comprobación en ejecución que resulta falsa           | Aborto del proceso o de la región                         |
+| <a id="err-clases-3"></a>Agotamiento de recursos `err-clases-3`  | Memoria insuficiente                                      | Aborto, salvo en operaciones que lo ofrecen como error    |
+| <a id="err-clases-4"></a>Fallo de una frontera `err-clases-4`    | Código nativo que cae, plazo vencido, mensaje corrupto    | Valor de error con las variantes de los fallos declarados |
+| <a id="err-clases-5"></a>Cancelación `err-clases-5`              | Una tarea cuyo ámbito se cierra antes de que termine      | Valor de error en su siguiente operación de espera        |
 
 ## <a id="err-valores"></a>Errores como valores
 
@@ -34,6 +36,10 @@ La plataforma distingue lo que puede salir mal en un programa correcto, que es u
 - <a id="err-aborto-3"></a>**Freestanding:** se invoca el manejador que declara el paquete raíz, que recibe el informe y no puede retornar. `err-aborto-3`
 - <a id="err-aborto-4"></a>**Por región:** en un programa cuya memoria está dividida en regiones sin préstamos entre ellas, el destino puede limitar el aborto a una región, que se libera completa mientras el resto continúa. `err-aborto-4`
 - <a id="err-aborto-5"></a>El informe de aborto se emite como registro del modelo de datos de OpenTelemetry. Contiene la VC que falló y su clase, la identidad de la definición y del módulo, la posición en el código fuente, los operandos de la VC salvo los secretos y los sensibles, la tarea o actor y el contexto de traza, y si el aborto fue del proceso o de una región. Lo genera el destino sin ejecutar código del programa. `err-aborto-5`
+
+## <a id="err-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+Los campos propios del informe de aborto, más allá del modelo de registros de OpenTelemetry (`anx-pendiente-9`), y, por destino, la semántica del aborto (`anx-destino-10`). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

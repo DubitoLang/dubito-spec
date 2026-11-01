@@ -21,8 +21,8 @@ Dintel decide si un módulo puede convertirse en código máquina. Revisa la evi
 3.  <a id="dintel-pasos-4"></a>**Tipos y ownership.** Dueño único, préstamos dentro de su vida, transferibilidad y compartibilidad de lo que cruza entre tareas, pila acotada de cada tarea y ningún valor fantasma en código ejecutable. `dintel-pasos-4`
 4.  <a id="dintel-pasos-5"></a>**Efectos y disponibilidad.** Contención en cada llamada; cada intrínseco existe en la especificación del destino; cada extensión del procesador se usa con su testigo; las variantes de un módulo comparten interfaz; en un binario, todo requisito tiene un intrínseco o un proveedor. `dintel-pasos-5`
 5.  <a id="dintel-pasos-6"></a>**Procedencia.** Toda conversión ocurre en una justificación; ningún dato secreto determina lo que la disciplina de tiempo constante prohíbe; el análisis especulativo marca dónde aplicar protecciones. `dintel-pasos-6`
-6.  <a id="dintel-pasos-7"></a>**Cobertura de VC.** Toda VC y todo contrato tienen evidencia; el grafo de demostraciones es acíclico; ninguna suposición es contradictoria. `dintel-pasos-7`
-7.  <a id="dintel-pasos-8"></a>**Evidencia.** Comprueba cada certificado, aplica la política de comprobaciones en ejecución y repite la mutación de las definiciones nuevas o modificadas. `dintel-pasos-8`
+6.  <a id="dintel-pasos-7"></a>**Cobertura de VC.** Toda VC y todo contrato tienen evidencia; el grafo de demostraciones es acíclico; toda suposición proviene de la especificación del destino. `dintel-pasos-7`
+7.  <a id="dintel-pasos-8"></a>**Evidencia.** Comprueba cada certificado y aplica la política de comprobaciones en ejecución. De la evidencia de mutación de las definiciones nuevas o modificadas comprueba que cada mutante declarado aplica un operador adoptado, que cada mutante eliminado lo está por el contraejemplo que trae, que cada equivalente trae su certificado y que cada postcondición de código ejecutable elimina al menos un mutante (R5). No genera mutantes ni busca contraejemplos. `dintel-pasos-8`
 8.  <a id="dintel-pasos-9"></a>**Atestación.** Emite un documento firmado. `dintel-pasos-9`
 
 ## <a id="dintel-atestacion"></a>Atestación
@@ -38,21 +38,29 @@ Dintel decide si un módulo puede convertirse en código máquina. Revisa la evi
 
 **Regla**
 
-<a id="dintel-atestacion-8"></a>El backend solo genera código para un módulo con atestación válida. `dintel-atestacion-8`
+<a id="dintel-atestacion-8"></a>El backend solo genera código para un módulo con atestación válida, y solo enlaza un binario con atestación de enlace válida. `dintel-atestacion-8`
+
+<a id="dintel-atestacion-9"></a>**Atestación de enlace.** Al enlazar un binario, Dintel comprueba que sus requisitos están contenidos en sus provisiones ([Disponibilidad](20-destinos.md#dst-disp)) y emite una atestación de enlace con la identidad y la atestación de cada módulo y el inventario de confianza del binario. La atestación del binario la completa el núcleo de Cincel ([Cincel](16-cincel.md#dst-backend)). `dintel-atestacion-9`
 
 ## <a id="dintel-tcb"></a>Base de cómputo confiable
 
 | Elemento                                                          | Por qué es de confianza                                                            |
 |-------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| El verificador, incluido su comprobador de pruebas `dintel-tcb-1` | Decide qué se acepta.                                                              |
-| El backend `dintel-tcb-2`                                         | Traduce la representación verificada a código máquina, incluido el enlazado final. |
-| La especificación de cada destino `dintel-tcb-3`                  | Define la semántica de los intrínsecos y del arranque.                             |
+| <a id="dintel-tcb-1"></a>El verificador, incluido su comprobador de pruebas `dintel-tcb-1` | Decide qué se acepta.                                                              |
+| <a id="dintel-tcb-2"></a>El núcleo del backend, con Plomada `dintel-tcb-2`                 | Traduce la representación verificada a código máquina, incluido el enlazado final, y valida las pasadas que no pertenecen al núcleo. |
+| <a id="dintel-tcb-3"></a>La especificación de cada destino `dintel-tcb-3`                  | Define la semántica de los intrínsecos y del arranque.                             |
 
-<a id="dintel-tcb-4"></a>Los frontends, el solucionador, la herramienta de mutación, las pasadas de Pulido con validación de traducción y cualquier generador de código quedan fuera de la TCB. El verificador sigue el criterio de de Bruijn: su núcleo solo comprueba evidencia y es lo bastante pequeño para auditarse por completo; su corrección respecto a la semántica mecanizada se demuestra en el mismo asistente de pruebas. `dintel-tcb-4`
+<a id="dintel-tcb-4"></a>Los frontends, el solucionador, la herramienta de mutación, las pasadas de Pulido con validación de traducción y cualquier generador de código quedan fuera de la TCB. El verificador sigue el criterio de de Bruijn: su núcleo solo comprueba evidencia (lo que incluye evaluar un contraejemplo con la semántica de Stela, pero nunca buscar pruebas, contraejemplos ni mutantes) y es pequeño: cada versión publica el tamaño de su núcleo y el informe de su auditoría completa; su corrección respecto a la semántica mecanizada se demuestra en el mismo asistente de pruebas. `dintel-tcb-4`
+
+<a id="dintel-tcb-5"></a>La tabla enumera lo que se ejecuta al compilar. La definición completa de la TCB, que incluye además la base de la mecanización y las pasadas sin validación que un binario declare, está en [Capas de confianza](26-confianza.md#conf-capas). `dintel-tcb-5`
 
 ## <a id="dintel-rechazos"></a>Motivos de rechazo
 
-<a id="dintel-rechazos-1"></a>Forma no canónica; dependencia sin atestación; violación de ownership; efecto no declarado o intrínseco inexistente; flujo de procedencia no autorizado; VC sin evidencia o refutada; certificado inválido; comprobaciones por encima de la política; valor no transferible cruzando entre tareas; valor fantasma en código ejecutable; implementación que no refina su contrato; requisito sin proveedor; extensión sin testigo; variantes incompatibles; pila no acotable sin cota declarada; declaración nativa mal formada; telemetría con datos excluidos; confianza no admitida por el destino; VC desconocida sin comprobación posible; razonamiento circular; suposiciones contradictorias; violación de tiempo constante; idempotencia sin demostrar; plugin o par fuera de lo declarado; postcondición que no elimina ningún mutante. `dintel-rechazos-1`
+<a id="dintel-rechazos-1"></a>Forma no canónica; dependencia sin atestación; violación de ownership; efecto no declarado o intrínseco inexistente; flujo de procedencia no autorizado; VC sin evidencia o refutada; certificado inválido; comprobaciones por encima de la política; valor no transferible cruzando entre tareas; valor fantasma en código ejecutable; implementación que no refina su contrato; requisito sin proveedor; extensión sin testigo; variantes incompatibles; pila no acotable sin cota declarada; declaración nativa mal formada; telemetría con datos excluidos; confianza no admitida por el destino; VC desconocida sin comprobación posible; razonamiento circular; suposición fuera de una especificación de destino; violación de tiempo constante; idempotencia sin demostrar; plugin o par fuera de lo declarado; postcondición que no elimina ningún mutante. `dintel-rechazos-1`
+
+## <a id="dintel-pendiente"></a>Lo que queda por definir *(Informativa)*
+
+El predicado de evidencia de las atestaciones, y el algoritmo de firma y la gestión de claves dentro de DSSE (`anx-pendiente-3`). Todo está registrado en el [anexo A](33-anexo-a.md).
 
 ---
 

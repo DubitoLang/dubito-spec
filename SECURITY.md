@@ -13,7 +13,7 @@ Reporta las vulnerabilidades **en privado** con el reporte privado de vulnerabil
 
 ## Qué es una vulnerabilidad
 
-En la fase 0 no hay código: una vulnerabilidad es un error del texto que permite que una implementación conforme sea insegura. En particular, es de máxima gravedad cualquier error que permita aceptar un programa que no cumple su atestación (en la especificación de Dintel, Cincel, Plomada, Rumbo o la mecanización), aunque no se conozca un ataque.
+Mientras no exista código, una vulnerabilidad es un error del texto que permite que una implementación conforme sea insegura. En particular, es de máxima gravedad cualquier error que permita aceptar un programa que no cumple su atestación (en la especificación de Dintel, Cincel, Plomada, Rumbo o la mecanización), aunque no se conozca un ataque.
 
 ## Proceso
 
