@@ -17,8 +17,9 @@ Correcciones de la revisión independiente de cierre de la fase 0.
 - Teoremas T6 y T7: se demuestran para cada destino sobre la semántica mecanizada de su arquitectura y su modelo de fugas. Toda especificación de destino de referencia o revisada incluye esa semántica, adoptada por referencia si existe una oficial (nuevo `dst-spec-14`); `stx-teoremas-1` y `anx-destino-7` lo recogen.
 
 ### Corregido
-
 - Enlaces de comparación al final de este registro y etiqueta `v1.0.0-alpha.1` sobre el commit de la versión publicada.
+- `bootstrap-4` describía la doble compilación diversa como si dos cadenas independientes debieran producir los mismos bytes, lo que no puede cumplirse. Ahora sigue el método de Wheeler: lo que coincide bit a bit es la recompilación hecha por el compilador intermedio con el binario oficial. El glosario se corrige igual.
+
 
 ## [1.0.0-alpha.1] - 2026-11-01
 

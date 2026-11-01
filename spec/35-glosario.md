@@ -44,7 +44,7 @@ order: 35
 
 **Directiva.** Anotación dirigida a la cadena de herramientas; una sugerencia puede ignorarse y nunca cambia el significado, y una exigencia se verifica.
 
-**Doble compilación diversa.** Construir la cadena de herramientas por dos caminos independientes y exigir binarios idénticos.
+**Doble compilación diversa.** Compilar las fuentes de la cadena de herramientas con una cadena independiente, usar el resultado para volver a compilarlas y exigir que el binario obtenido coincida bit a bit con el binario oficial, que se compiló a sí mismo.
 
 **dubito.** Cadena de herramientas de la familia (frontends, generación de VC y coordinación) y nombre del proyecto.
 
