@@ -1,5 +1,6 @@
 <!--
-SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito
+SPDX-FileCopyrightText: Colaboradores del Contributor Covenant <https://www.contributor-covenant.org>
+SPDX-FileCopyrightText: 2026 Xhunik Nikol Miguel Mutzutz y colaboradores de Dubito (adaptación)
 SPDX-License-Identifier: CC-BY-4.0
 -->
 

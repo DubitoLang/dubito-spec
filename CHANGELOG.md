@@ -44,6 +44,8 @@ Correcciones de la revisión independiente de cierre de la fase 0. La revisión 
 - Títulos coherentes entre páginas, índice y navegación: «Destinos y perfiles» y «Fundamentos de diseño»; el anexo A se etiqueta «definido y pendiente».
 - Permisos escritos con PUEDE en mayúsculas donde se dirigen a una implementación (`bootstrap-1`, `cnf-requisitos-4`, `dst-backend-4`), y Glosa reporta los cambios en las directivas de exigencia (`review-1`), como exigen `directivas-3` y `fam-objetivos-12`.
 - Registro de cambios: la entrada de 1.0.0-alpha.1 contaba como «componentes» dos lenguajes y la mascota, y usaba una sección que no existe en Keep a Changelog; ambas cosas se corrigen sin cambiar su contenido.
+- El aviso de derechos del código de conducta atribuía el texto solo al editor; ahora reconoce a los autores del Contributor Covenant y deja al proyecto la adaptación.
+
 
 
 ## [1.0.0-alpha.1] - 2026-11-01
