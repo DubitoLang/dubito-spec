@@ -12,6 +12,7 @@ Todos los cambios notables de la especificación se registran aquí. El formato 
 Correcciones de la revisión de cierre de la fase 0, que verificó los siete criterios de salida sobre los archivos.
 
 ### Añadido
+
 - Cada página de lenguaje, componente y servicio tiene una sección informativa «Lo que queda por definir» que remite a los puntos del anexo A, y una línea de rol que dice si pertenece a la TCB (Estuco, Destinos, Chinampa, Errores, E/S, Observabilidad, Interoperabilidad, Ceiba y Pochteca). Nuevo punto pendiente `anx-pendiente-17` (formato del diff de significado).
 - Atestación de enlace (`dintel-atestacion-9`), que Dintel emite al enlazar, y atestación del binario (`dst-backend-6`), que emite el núcleo de Cincel después de Plomada. Antes no se decía quién emitía ni firmaba la atestación del binario.
 - Glosario: entradas «Evidencia» y «Mecanización».
@@ -20,6 +21,7 @@ Correcciones de la revisión de cierre de la fase 0, que verificó los siete cri
 - [Roadmap](ROADMAP.md) informativo, fuera de `spec/`: seis fases alineadas con los prelanzamientos, primer destino, bootstrap con punto fijo entre las etapas 2 y 3, calendario de la mecanización, repositorios y riesgos.
 
 ### Cambiado
+
 - Anexo A: ahora distingue tres categorías (definido por el destino, por la implementación y pendiente de definir por la especificación) y registra todo lo concreto que faltaba: orden de bytes, punto flotante, aborto, formato ejecutable, protecciones de especulación, ventana especulativa, fronteras asíncronas y reducción de privilegios (destino); presupuesto de la evaluación en compilación (implementación); y diecisiete puntos pendientes, entre ellos la sintaxis, las codificaciones, los formatos de atestación, testigo, evidencia de mutación, especificación de destino, inventario, manifiestos y protocolo del registro, el contenido de Chinampa y el asistente de pruebas. Nuevos requisitos `anx-reglas-5` y `anx-reglas-6`.
 - TCB: se define en un solo lugar, [Capas de confianza](spec/26-confianza.md#conf-capas), y ahora incluye la base de la mecanización (núcleo del asistente de pruebas y definiciones mecanizadas), nueva capa `conf-capas-6`. La visión general, Dintel (`dintel-tcb-2`, nuevo `dintel-tcb-5`), los niveles de representación y el glosario remiten a esa definición y hablan del núcleo de Cincel, no del backend entero. Nuevo requisito `conf-capas-7`.
 - Teoremas T6 y T7: se demuestran para cada destino sobre la semántica mecanizada de su arquitectura y su modelo de fugas. Toda especificación de destino de referencia o revisada incluye esa semántica, adoptada por referencia si existe una oficial (nuevo `dst-spec-14`); `stx-teoremas-1` y `anx-destino-7` lo recogen.
@@ -30,6 +32,7 @@ Correcciones de la revisión de cierre de la fase 0, que verificó los siete cri
 - Versiones de la especificación: `beta` empieza cuando una cadena de herramientas conforme con al menos un frontend pasa el conjunto de pruebas para un destino (`pro-compatibilidad-10`), y en `beta` los puntos pendientes del anexo A pueden seguir definiéndose sin cambiar requisitos existentes (`pro-compatibilidad-11`).
 
 ### Corregido
+
 - Enlaces de comparación al final de este registro, que apuntan a las etiquetas de versión.
 - `bootstrap-4` describía la doble compilación diversa como si dos cadenas independientes debieran producir los mismos bytes, lo que no puede cumplirse. Ahora sigue el método de Wheeler: lo que coincide bit a bit es la recompilación hecha por el compilador intermedio con el binario oficial. El glosario se corrige igual.
 - Dintel ya no busca: `dintel-pasos-8` comprueba la evidencia de mutación en lugar de repetir la mutación, `dintel-pasos-7` exige que toda suposición provenga de la especificación del destino, y `dintel-tcb-4` precisa que comprobar evidencia incluye evaluar contraejemplos pero nunca buscar. El contraejemplo de un mutante es una entrada que se comprueba evaluando con la semántica de Stela, sin generar código (`elk-criterio-1`), lo que elimina la dependencia circular con el backend. La comprobación de vacuidad pasa a la cadena de herramientas como diagnóstico (`nuc-limites-24`), y la consistencia de una especificación de destino se comprueba al admitirla (`dst-gobierno-6`).
@@ -53,10 +56,6 @@ Correcciones de la revisión de cierre de la fase 0, que verificó los siete cri
 - Mutación de código con efectos: el contraejemplo de un mutante que invoca intrínsecos incluye la respuesta de cada invocación, que cumple el contrato del intrínseco (`elk-criterio-1`); sin ella el mutante no podía evaluarse.
 - `dst-perfiles-7` exigía que los módulos core se aceptaran «en todo destino», un conjunto sin cota que ninguna prueba puede recorrer; ahora en todo destino de referencia.
 - La puntuación de mutación se declara como medida de revisión, calculada sobre los mutantes declarados (`elk-criterio-3`); una versión menor solo añade requisitos en clases nuevas o extensiones opcionales (`pro-compatibilidad-12`), coherente con `cnf-declaracion-9`; y `anx-implementacion-2` ya no incluye puntos pendientes que no son elecciones de una implementación.
-
-
-
-
 
 ## [1.0.0-alpha.1] - 2026-11-01
 
