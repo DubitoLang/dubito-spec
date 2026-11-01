@@ -26,6 +26,7 @@ Correcciones de la revisión de cierre de la fase 0, que verificó los siete cri
 - Clases de conformidad: el Verificador incluye el Núcleo común, la disponibilidad por destino y la interoperabilidad; el Frontend, la interoperabilidad entre lenguajes; el Backend, la especificación de destino, las obligaciones de tiempo constante y especulación y la depuración. Nuevas clases Optimizador de Stela (`cnf-clases-14`) y Mecanización (`cnf-clases-15`).
 - Convenciones: la introducción de cada página y su línea de rol son informativas y solo resumen requisitos con identificador; antes solo lo era la de la visión general, lo que dejaba enunciados normativos sin identificador.
 - Código de conducta: el marcador del canal de reporte se sustituye por la indicación de que el canal de contacto se publicará en el propio documento.
+- Versiones de la especificación: `beta` empieza cuando una cadena de herramientas conforme con al menos un frontend pasa el conjunto de pruebas para un destino (`pro-compatibilidad-10`), y en `beta` los puntos pendientes del anexo A pueden seguir definiéndose sin cambiar requisitos existentes (`pro-compatibilidad-11`).
 
 ### Corregido
 - Enlaces de comparación al final de este registro, que apuntan a las etiquetas de versión.
