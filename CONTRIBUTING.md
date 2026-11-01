@@ -36,4 +36,4 @@ Las contribuciones se reciben bajo la misma licencia del archivo al que se aport
 
 ## Registro de cambios
 
-Todo cambio visible se anota en la sección «Sin publicar» de [CHANGELOG.md](CHANGELOG.md), con el formato de Keep a Changelog.
+Los cambios se anotan en [CHANGELOG.md](CHANGELOG.md), con el formato de Keep a Changelog, al publicar la versión que los incluye: cada entrada va directamente bajo el número de esa versión. El registro no lleva sección «Sin publicar».

@@ -7,12 +7,6 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 Todos los cambios notables de la especificación se registran aquí. El formato sigue [Keep a Changelog 1.1.0](https://keepachangelog.com/es-ES/1.1.0/) y las versiones siguen [Semantic Versioning 2.0.0](https://semver.org/lang/es/).
 
-## [Sin publicar]
-
-### Corregido
-
-- Los enlaces de las versiones 1.0.0-alpha.1 y 1.0.0-alpha.2 apuntan al commit publicado de 1.0.0-alpha.1 en lugar de a una etiqueta que no existía, y la entrada de 1.0.0-alpha.1 recupera el texto con que se publicó.
-
 ## [1.0.0-alpha.2] - 2026-11-01
 
 Cierre de la fase 0. Correcciones de la revisión de cierre, que verificó los siete criterios de salida sobre los archivos, y roadmap del proyecto.
@@ -97,6 +91,5 @@ Primera versión de la línea oficial. La numeración 0.1.0 que se usó internam
 
 Comprobaciones hechas sobre las 36 páginas: ningún identificador duplicado ni con huecos, ningún enlace ni ancla rotos, cadena de anterior y siguiente íntegra, índice completo, ninguna referencia a nombres anteriores, a palabras SHOULD o a lenguajes y destinos concretos, y coherencia entre la TCB, los teoremas T1–T9, las invariantes R1–R11, el Anexo A y las clases de conformidad. Los hallazgos están resueltos en las entradas anteriores.
 
-[Sin publicar]: https://github.com/DubitoLang/dubito-spec/compare/v1.0.0-alpha.2...HEAD
 [1.0.0-alpha.2]: https://github.com/DubitoLang/dubito-spec/compare/2256d6789f0665b41862c0e667eb787f324d3306...v1.0.0-alpha.2
 [1.0.0-alpha.1]: https://github.com/DubitoLang/dubito-spec/tree/2256d6789f0665b41862c0e667eb787f324d3306
