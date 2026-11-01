@@ -12,6 +12,7 @@ Todos los cambios notables de la especificación se registran aquí. El formato 
 Correcciones de la revisión independiente de cierre de la fase 0. La revisión de cierre registrada en 1.0.0-alpha.1 la hizo el propio editor y afirmaba coherencias que no se cumplían; la revisión independiente verificó los siete criterios de salida sobre los archivos y sus hallazgos de gravedad alta, media y baja se resuelven en las entradas siguientes.
 
 ### Añadido
+
 - Cada página de lenguaje, componente y servicio tiene una sección informativa «Lo que queda por definir» que remite a los puntos del anexo A, y una línea de rol que dice si pertenece a la TCB (Estuco, Destinos, Chinampa, Errores, E/S, Observabilidad, Interoperabilidad, Ceiba y Pochteca). Nuevo punto pendiente `anx-pendiente-17` (formato del diff de significado).
 - Atestación de enlace (`dintel-atestacion-9`), que Dintel emite al enlazar, y atestación del binario (`dst-backend-6`), que emite el núcleo de Cincel después de Plomada. Antes no se decía quién emitía ni firmaba la atestación del binario.
 - Glosario: entradas «Evidencia» y «Mecanización».
@@ -28,6 +29,7 @@ Correcciones de la revisión independiente de cierre de la fase 0. La revisión 
 - Criterio de salida 5 de la fase 0: la revisión de cierre debe ser independiente de quien redactó el texto, y sus hallazgos quedan en el registro de cambios.
 
 ### Corregido
+
 - Enlaces de comparación al final de este registro y etiqueta `v1.0.0-alpha.1` sobre el commit de la versión publicada.
 - `bootstrap-4` describía la doble compilación diversa como si dos cadenas independientes debieran producir los mismos bytes, lo que no puede cumplirse. Ahora sigue el método de Wheeler: lo que coincide bit a bit es la recompilación hecha por el compilador intermedio con el binario oficial. El glosario se corrige igual.
 - Dintel ya no busca: `dintel-pasos-8` comprueba la evidencia de mutación en lugar de repetir la mutación, `dintel-pasos-7` exige que toda suposición provenga de la especificación del destino, y `dintel-tcb-4` precisa que comprobar evidencia incluye evaluar contraejemplos pero nunca buscar. El contraejemplo de un mutante es una entrada que se comprueba evaluando con la semántica de Stela, sin generar código (`elk-criterio-1`), lo que elimina la dependencia circular con el backend. La comprobación de vacuidad pasa a la cadena de herramientas como diagnóstico (`nuc-limites-24`), y la consistencia de una especificación de destino se comprueba al admitirla (`dst-gobierno-6`).
@@ -47,9 +49,6 @@ Correcciones de la revisión independiente de cierre de la fase 0. La revisión 
 - Registro de cambios: la entrada de 1.0.0-alpha.1 contaba como «componentes» dos lenguajes y la mascota, y usaba una sección que no existe en Keep a Changelog; ambas cosas se corrigen sin cambiar su contenido.
 - El aviso de derechos del código de conducta atribuía el texto solo al editor; ahora reconoce a los autores del Contributor Covenant y deja al proyecto la adaptación.
 - Solsticio: un valor diferido que guarda su resultado podía referirse a sí mismo y formar un ciclo que el conteo de referencias no libera; ahora no puede depender de sí mismo (`cyc-modelo-4`), y `cyc-modelo-1` lo recoge.
-
-
-
 
 ## [1.0.0-alpha.1] - 2026-11-01
 
