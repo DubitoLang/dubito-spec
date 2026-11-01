@@ -62,6 +62,8 @@ order: 35
 
 **Etapa de concepto.** Primera etapa del ciclo de vida de un sistema (ISO/IEC/IEEE 15288), en la que se establecen el concepto, su viabilidad y su conveniencia.
 
+**Evidencia.** Lo que un módulo trae para resolver sus VC y sus contratos (certificados, refinamientos, comprobaciones en ejecución y resultados de mutación), que el verificador comprueba sin repetir la búsqueda.
+
 **Extensión.** Función que un producto añade a lo que exige su clase; no contradice ningún requisito ni cambia el resultado de verificar un módulo conforme.
 
 **Freestanding / hosted.** Perfil de un destino sin sistema operativo / sobre un sistema operativo.
@@ -87,6 +89,8 @@ order: 35
 **Justificación.** Función cuyo contrato demuestra lo necesario para convertir un valor de una etiqueta de procedencia a otra.
 
 **Lema.** Teorema con su demostración, en un archivo de demostración; su recursión con medida es una inducción.
+
+**Mecanización.** Formalización en un asistente de pruebas de las semánticas de Stela, de Sillar y de la arquitectura de cada destino, y demostración en él de los teoremas de la plataforma; pertenece a la TCB.
 
 **Modelo de amenazas.** Enumeración de los atacantes contra los que se defiende la plataforma y de la defensa que detiene a cada uno.
 

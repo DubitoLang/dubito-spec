@@ -12,9 +12,9 @@ Todos los cambios notables de la especificación se registran aquí. El formato 
 Correcciones de la revisión independiente de cierre de la fase 0. La revisión de cierre registrada en 1.0.0-alpha.1 la hizo el propio editor y afirmaba coherencias que no se cumplían; la revisión independiente verificó los siete criterios de salida sobre los archivos y sus hallazgos de gravedad alta, media y baja se resuelven en las entradas siguientes.
 
 ### Añadido
-
 - Cada página de lenguaje, componente y servicio tiene una sección informativa «Lo que queda por definir» que remite a los puntos del anexo A, y una línea de rol que dice si pertenece a la TCB (Estuco, Destinos, Chinampa, Errores, E/S, Observabilidad, Interoperabilidad, Ceiba y Pochteca). Nuevo punto pendiente `anx-pendiente-17` (formato del diff de significado).
 - Atestación de enlace (`dintel-atestacion-9`), que Dintel emite al enlazar, y atestación del binario (`dst-backend-6`), que emite el núcleo de Cincel después de Plomada. Antes no se decía quién emitía ni firmaba la atestación del binario.
+- Glosario: entradas «Evidencia» y «Mecanización».
 
 ### Cambiado
 
