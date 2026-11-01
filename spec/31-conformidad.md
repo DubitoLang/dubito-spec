@@ -36,6 +36,7 @@ Qué productos pueden declararse conformes con esta especificación, qué requis
 - <a id="cnf-requisitos-3"></a>**Extensiones.** Un producto PUEDE ofrecer extensiones. Una extensión NO DEBE contradecir ningún requisito, suspender garantías (R8), cambiar el resultado de verificar un módulo conforme ni alterar la identidad de un módulo. Todo lo que una extensión añade a un programa DEBE quedar explícito en la representación intermedia y visible en el diff de significado (R6). `cnf-requisitos-3`
 - <a id="cnf-requisitos-4"></a>**Características experimentales.** Un producto conforme puede ofrecerlas solo detrás de su directiva de activación; nada experimental forma parte de su conformidad ([Ciclo de vida](30-proyecto.md#pro-ciclo)). `cnf-requisitos-4`
 - <a id="cnf-requisitos-5"></a>**Lo que esta versión no define.** Cuando un producto necesita algo concreto que la especificación todavía no fija (sintaxis, formatos propios, interfaces de herramientas), su elección DEBE documentarse y NO DEBE contradecir ningún requisito. Mientras la versión sea un prelanzamiento alpha, esas elecciones no forman parte de la conformidad. `cnf-requisitos-5`
+- <a id="cnf-requisitos-6"></a>**Límites de traducción.** Un producto PUEDE imponer límites de traducción (anidamiento, tamaño de módulo y número de declaraciones). DEBE documentarlos en su declaración de conformidad, y un programa que los excede se rechaza con un diagnóstico; nunca se acepta con otro significado. `cnf-requisitos-6`
 
 ## <a id="cnf-declaracion"></a>Declaración de conformidad
 
