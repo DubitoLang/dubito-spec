@@ -16,7 +16,7 @@ Rumbo es el conjunto de especificaciones de destino de la plataforma: cada desti
 
 <a id="dst-spec-1"></a>Toda especificación de destino declara: `dst-spec-1`
 
-- <a id="dst-spec-2"></a>Su perfil, su sistema operativo y su [tipo de frontera](26-confianza.md#conf-fronteras). `dst-spec-2`
+- <a id="dst-spec-2"></a>Su perfil, freestanding o hosted ([Perfiles](20-destinos.md#dst-perfiles)), su sistema operativo y su [tipo de frontera](26-confianza.md#conf-fronteras). `dst-spec-2`
 - <a id="dst-spec-3"></a>Las bases de la biblioteca estándar disponibles y los modos de aislamiento admitidos, con su mecanismo. `dst-spec-3`
 - <a id="dst-spec-4"></a>La arquitectura y sus extensiones: las garantizadas y las que pueden detectarse al arrancar. `dst-spec-4`
 - <a id="dst-spec-5"></a>El ancho máximo de los atómicos y cómo se implementa el punto flotante, siempre con la semántica de IEEE 754. `dst-spec-5`

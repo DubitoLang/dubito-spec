@@ -34,6 +34,8 @@ order: 35
 
 **Concurrencia estructurada.** Modelo en el que ninguna tarea sobrevive al ámbito que la creó.
 
+**Core.** Perfil de un módulo que no invoca intrínsecos y deja como requisitos abiertos todo lo demás; se compila para cualquier destino.
+
 **Declaración de conformidad.** Documento público que afirma que un producto es conforme e indica la versión exacta de la especificación, la clase de producto, los perfiles, las extensiones y las decisiones concretas propias.
 
 **Desclasificación.** Conversión de un dato secreto en uno observable, solo en una justificación; queda en la atestación.
@@ -62,7 +64,7 @@ order: 35
 
 **Extensión.** Función que un producto añade a lo que exige su clase; no contradice ningún requisito ni cambia el resultado de verificar un módulo conforme.
 
-**Freestanding / hosted.** Perfil sin sistema operativo / sobre un sistema operativo.
+**Freestanding / hosted.** Perfil de un destino sin sistema operativo / sobre un sistema operativo.
 
 **Frontera asíncrona.** Conexión con algo que el programa no controla, mediante operaciones que van y vuelven, con un modelo de fallos declarado.
 
@@ -96,7 +98,7 @@ order: 35
 
 **Par externo.** Componente de cualquier lenguaje al otro lado de una frontera asíncrona; si es un binario de la familia con atestación aceptada, es un par verificado.
 
-**Perfil.** Nivel de un destino: core, freestanding o hosted.
+**Perfil.** Core, freestanding o hosted. Un destino declara freestanding o hosted; core es el perfil de los módulos que valen en cualquier destino.
 
 **Perfil de optimización.** Objetivo de la optimización de un binario (ninguno, velocidad o tamaño); no cambia el significado y queda en la atestación.
 
