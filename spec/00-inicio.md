@@ -24,7 +24,7 @@ La plataforma está formada por una representación intermedia (Stela), un verif
 | Licencia          | CC BY-SA 4.0 ([Licencias](30-proyecto.md#pro-licencias))                                                                                                                                                               |
 | Versión normativa | Español                                                                                                                                                                                                                |
 | Comentarios       | Propuestas públicas según el [proceso de gobierno](30-proyecto.md#pro-gobierno)                                                                                                                                        |
-| Versionado        | Semantic Versioning 2.0.0. Mientras la versión sea 0.y.z, cualquier versión puede cambiar cualquier parte de la especificación. Desde la 1.0.0, solo una versión mayor puede invalidar una declaración de conformidad. |
+| Versionado        | Semantic Versioning 2.0.0, con prelanzamientos alpha, beta y rc hasta la 1.0.0 ([Versiones de la especificación](30-proyecto.md#pro-compat-especificacion)). En alpha cualquier requisito puede cambiar; desde la 1.0.0, solo una versión mayor puede invalidar una declaración de conformidad. |
 
 ## <a id="inicio-fase"></a>Fase del proyecto *(Informativa)*
 

@@ -24,4 +24,22 @@ Primera versión de la línea oficial. La numeración 0.1.0 que se usó internam
 - Sillar: SSA sobre un grafo de control con argumentos de bloque (sin nodos phi), instrucciones de resultado único y exactamente un terminador por bloque; semántica operacional mecanizada que Plomada compara con la de Stela; y técnicas internas de las pasadas, que pueden usar otra representación siempre que entreguen Sillar y pasen por Plomada o se declaren en el inventario de confianza.
 - Anexo A: la codificación de Stela y de Sillar puede ser textual o binaria; la de Sillar DEBE ser determinista para que la construcción sea reproducible.
 - Estándares adoptados con sus ediciones normativas.
+- Criterios de salida de la fase 0 en [Fases](spec/30-proyecto.md#pro-fase).
+- Archivo `LICENSE` en la raíz del repositorio con la licencia del texto (CC BY-SA 4.0), y pie del sitio con el aviso de derechos y la licencia.
 - Gobierno, contribuciones, política de vulnerabilidades, ciclo de vida de las características, política de marca, licencias y política de versiones de la especificación.
+
+### Cambiado
+
+- Los nombres de los trece componentes (Solsticio, Amate, Dintel, Estuco, Pochteca, Quelonio, Sillar, Plomada, Pulido, Cincel, Glosa, Rumbo y Chinampa) quedan confirmados por el editor. No se hizo una búsqueda formal de marcas; si más adelante aparece un conflicto, se cambia el nombre en una versión posterior.
+- Conformidad: la clase Backend incluye ahora Sillar y Plomada entre sus requisitos, y existe la clase Herramienta de revisión (Glosa, R6).
+- Teoremas de la plataforma: la mecanización cubre las semánticas de Stela y de Sillar, porque T7 y T8 se apoyan en ambas.
+- Glosario: 21 entradas nuevas con los nombres de los seis lenguajes y de los componentes, la mascota y el nombre del proyecto.
+
+### Corregido
+
+- La ficha de la especificación y el requisito `cnf-requisitos-5` seguían refiriéndose a versiones 0.y.z; ahora citan los prelanzamientos y la política de versiones.
+- Se revisó la edición de in-toto citada en los estándares adoptados: la 1.2.0 es la versión vigente, sin cambios.
+
+### Revisión de cierre de la fase 0
+
+Comprobaciones hechas sobre las 36 páginas: ningún identificador duplicado ni con huecos, ningún enlace ni ancla rotos, cadena de anterior y siguiente íntegra, índice completo, ninguna referencia a nombres anteriores, a palabras SHOULD o a lenguajes y destinos concretos, y coherencia entre la TCB, los teoremas T1–T9, las invariantes R1–R11, el Anexo A y las clases de conformidad. Los hallazgos están resueltos en las entradas anteriores.

@@ -17,6 +17,7 @@ Dubito es un proyecto de lenguajes de programación verificados: una plataforma 
 |---|---|
 | [`spec/`](spec/README.md) | La especificación, una página por archivo. Es la fuente normativa. |
 | [Sitio](https://dubitolang.github.io/dubito-spec/) | GitHub Pages lo genera automáticamente desde `spec/` con Jekyll en cada cambio de `main`. |
+| [`LICENSE`](LICENSE) | Licencia del texto de la especificación: CC BY-SA 4.0. |
 | [`CHANGELOG.md`](CHANGELOG.md) | Registro de cambios por versión. |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Cómo proponer cambios y el Developer Certificate of Origin. |
 | [`GOVERNANCE.md`](GOVERNANCE.md) | Quién decide y cómo se aprueban los cambios. |

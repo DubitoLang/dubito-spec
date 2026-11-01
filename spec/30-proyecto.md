@@ -135,6 +135,18 @@ La política sigue las Model Trademark Guidelines 1.0. Las marcas del proyecto s
 
 El proyecto está en la fase 0, [etapa de concepto](00-inicio.md#inicio-fase). Lo concreto (sintaxis, formatos, codificaciones, protocolos, herramientas y sus interfaces) se definirá en las etapas siguientes, sin contradecir esta especificación.
 
+**Criterios de salida de la fase 0.** La fase termina cuando el consejo de mantenedores declara cerrada la especificación conceptual, lo que exige que se cumplan todos estos criterios:
+
+1. Cada componente, lenguaje y servicio de la plataforma tiene su página, con su rol, sus garantías y lo que queda por definir.
+2. Cada requisito de una sección normativa lleva su identificador, y cada enlace y cada referencia a una invariante o a un teorema resuelve.
+3. Todo lo concreto que no está definido consta en el [anexo A](33-anexo-a.md), sin ningún hueco sin registrar.
+4. Cada estándar adoptado tiene su edición fijada en [Estándares adoptados](32-estandares.md), y no se redefine nada estandarizado.
+5. Se ha hecho una revisión de cierre de coherencia y de cobertura, y sus hallazgos están resueltos o registrados.
+6. Los nombres, las licencias y la política de marca están decididos, y el repositorio publica la licencia del texto, el código de conducta, la política de seguridad y el gobierno.
+7. Existe una versión etiquetada de la especificación, con su registro de cambios.
+
+La fase siguiente empieza con la definición concreta de lo que el anexo A deja abierto, por propuestas públicas según el [proceso de gobierno](#pro-gobierno).
+
 ## <a id="pro-compatibilidad"></a>Compatibilidad
 
 - <a id="pro-compatibilidad-1"></a>**Ediciones.** Una edición puede cambiar la sintaxis de un lenguaje y los valores predeterminados de la política, nunca la representación intermedia ni el significado de un programa compilado. Paquetes de ediciones distintas se combinan sin restricciones. Una migración entre ediciones es correcta solo si la representación intermedia resultante tiene la misma identidad que la original. `pro-compatibilidad-1`

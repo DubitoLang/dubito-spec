@@ -6,6 +6,8 @@ order: 35
 
 # Glosario
 
+**Amate.** Lenguaje lógico de la familia: hechos y reglas, con explicación de cada conclusión.
+
 **Atestación.** Documento firmado y determinista que certifica que un módulo, para un destino, superó la verificación, y enumera en qué confía.
 
 **Base de std.** Interfaz del sistema sobre la que se apoya std en hosted: las llamadas al sistema o la biblioteca del sistema.
@@ -14,11 +16,17 @@ order: 35
 
 **Característica obsoleta.** Característica que conserva su significado pero produce un aviso y se retirará en una versión mayor.
 
+**Ceiba.** Gestor de paquetes con dependencias por hash.
+
 **Certificado.** Prueba del solucionador que un comprobador revisa paso a paso.
+
+**Chinampa.** Biblioteca estándar en tres capas: core, alloc y std.
+
+**Cincel.** Backend: baja la representación verificada y genera el código del destino; su núcleo pertenece a la TCB.
 
 **Clase de archivo.** Ejecutable, de demostración o de pruebas; cada una llega a una parte distinta del módulo.
 
-**Clase de producto.** Tipo de producto que puede declararse conforme, con los requisitos que debe cumplir: módulo, frontend, verificador, herramienta de mutación, formateador, backend, especificación de destino, cadena de herramientas, biblioteca estándar, gestor de paquetes o registro.
+**Clase de producto.** Tipo de producto que puede declararse conforme, con los requisitos que debe cumplir: módulo, frontend, verificador, herramienta de mutación, formateador, backend, especificación de destino, cadena de herramientas, biblioteca estándar, gestor de paquetes, registro o herramienta de revisión.
 
 **Código fantasma.** Código de los archivos de demostración que aporta las demostraciones que el solucionador no encuentra solo; se verifica y se borra.
 
@@ -32,9 +40,13 @@ order: 35
 
 **Diff de significado.** Comparación entre versiones que reporta cambios de efectos, contratos, procedencia, errores, telemetría y confianza, no de texto.
 
+**Dintel.** Verificador de Stela y emisor de atestaciones; pertenece a la TCB.
+
 **Directiva.** Anotación dirigida a la cadena de herramientas; una sugerencia puede ignorarse y nunca cambia el significado, y una exigencia se verifica.
 
 **Doble compilación diversa.** Construir la cadena de herramientas por dos caminos independientes y exigir binarios idénticos.
+
+**dubito.** Cadena de herramientas de la familia (frontends, generación de VC y coordinación) y nombre del proyecto.
 
 **Edición.** Conjunto de cambios de sintaxis de un lenguaje; no cambia la representación intermedia.
 
@@ -43,6 +55,8 @@ order: 35
 **Especificación conceptual.** Documento de la etapa de concepto que define por completo el modelo abstracto y nada de lo concreto.
 
 **Especificación de destino.** Declaración de los intrínsecos, el arranque, el aborto y las capacidades de una plataforma. Parte de la TCB.
+
+**Estuco.** Formateador que da su forma canónica al código fuente.
 
 **Etapa de concepto.** Primera etapa del ciclo de vida de un sistema (ISO/IEC/IEEE 15288), en la que se establecen el concepto, su viabilidad y su conveniencia.
 
@@ -53,6 +67,8 @@ order: 35
 **Frontera asíncrona.** Conexión con algo que el programa no controla, mediante operaciones que van y vuelven, con un modelo de fallos declarado.
 
 **Frontera del sistema.** Interfaz que el sistema de un destino promete mantener estable; determina en qué se confía y qué puede aislarse.
+
+**Glosa.** Herramienta del diff de significado: compara dos versiones de un programa por su significado, no por su texto.
 
 **Idempotente.** Operación que, aplicada dos veces con los mismos argumentos, produce el mismo estado y la misma respuesta que una vez; se demuestra.
 
@@ -84,7 +100,11 @@ order: 35
 
 **Perfil de optimización.** Objetivo de la optimización de un binario (ninguno, velocidad o tamaño); no cambia el significado y queda en la atestación.
 
+**Plomada.** Validador de traducción: comprueba que la salida de cada pasada conserva el significado de su entrada; pertenece a la TCB.
+
 **Plugin.** Módulo verificado cargado en ejecución dentro de un techo de interfaz, efectos y confianza fijado al compilar.
+
+**Pochteca.** Registro público de paquetes y atestaciones, direccionado por contenido.
 
 **Presupuesto del solucionador.** Pasos deterministas que el solucionador dedica a una VC antes de declararla desconocida.
 
@@ -92,9 +112,27 @@ order: 35
 
 **Proveedor.** Implementación de un servicio (memoria dinámica, tareas, reloj, telemetría) que elige el paquete raíz de un binario.
 
+**Pulido.** Optimizador que no cambia el significado; ninguna de sus pasadas necesita confianza si Plomada la valida.
+
+**Quelonio.** Mascota del proyecto: una tortuga geométrica que lleva al centro del caparazón la raíz de confianza.
+
+**Relevo.** Lenguaje de la familia: actores aislados que se comunican por mensajes, con supervisión.
+
 **Requisito abierto.** Efecto o capacidad que un módulo usa sin proveer; se satisface al enlazar el binario.
 
+**Rumbo.** Nombre de las especificaciones de destino, que pertenecen a la TCB.
+
 **Selección de versión mínima.** Resolución de dependencias que elige, por paquete y versión mayor, el mayor de los mínimos pedidos.
+
+**Sillar.** IR de bajo nivel; véase IR de bajo nivel.
+
+**Solsticio.** Lenguaje funcional puro de la familia: expresiones, recursión y efectos algebraicos.
+
+**Speculum.** Herramienta de pruebas de mutación de contratos.
+
+**Stela.** Representación intermedia tipada que lleva su propia evidencia; se verifica y de ella se deriva la identidad del módulo.
+
+**Talud.** Lenguaje orientado a objetos de la familia, con herencia y diseño por contrato.
 
 **TCB.** Base de cómputo confiable: el verificador, el núcleo del backend con su validador de traducción y las especificaciones de destino, más toda pasada sin validación que un binario declare en su inventario.
 
@@ -111,6 +149,10 @@ order: 35
 **Variante por destino.** Archivo de un módulo que se compila solo para los destinos que cumplen su condición.
 
 **VC.** Condición de verificación: fórmula cuya validez implica que el código cumple una propiedad.
+
+**Voluta.** Lenguaje simbólico de la familia: código como dato, macros en compilación y tipos explícitos.
+
+**Zea.** Lenguaje de sistemas de la familia: imperativo y funcional, con ownership.
 
 ---
 

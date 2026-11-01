@@ -84,7 +84,7 @@ Stela es la representación intermedia de la plataforma: tipada, con control est
 
 ## <a id="stx-teoremas"></a>Teoremas de la plataforma
 
-<a id="stx-teoremas-1"></a>La mecanización de la semántica de Stela DEBE demostrar estos teoremas en un asistente de pruebas. Sus enunciados son normativos; su forma exacta se fija con la mecanización. `stx-teoremas-1`
+<a id="stx-teoremas-1"></a>La mecanización de las semánticas de Stela y de Sillar DEBE demostrar estos teoremas en un asistente de pruebas. Sus enunciados son normativos; su forma exacta se fija con la mecanización. `stx-teoremas-1`
 
 | Teorema                                             | Enunciado                                                                                                                                                          |
 |-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
