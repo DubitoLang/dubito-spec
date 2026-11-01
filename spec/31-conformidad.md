@@ -47,7 +47,7 @@ Qué productos pueden declararse conformes con esta especificación, qué requis
 - <a id="cnf-declaracion-7"></a>las decisiones concretas que tomó donde la especificación no las fija; `cnf-declaracion-7`
 - <a id="cnf-declaracion-8"></a>la fecha de la declaración. `cnf-declaracion-8`
 
-<a id="cnf-declaracion-9"></a>Una declaración vale solo para la versión que indica: ser conforme con una versión no implica serlo con otra. `cnf-declaracion-9`
+<a id="cnf-declaracion-9"></a>Una declaración se hace sobre la versión exacta que indica. Mientras esa versión sea un prelanzamiento, vale solo para ella. Desde la 1.0.0, sigue valiendo para las versiones posteriores con la misma versión mayor, que no invalidan las implementaciones conformes ([Versiones de la especificación](30-proyecto.md#pro-compat-especificacion)); una versión mayor nueva exige una declaración nueva. `cnf-declaracion-9`
 
 ## <a id="cnf-pruebas"></a>Conjunto de pruebas de conformidad
 
