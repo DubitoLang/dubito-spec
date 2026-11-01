@@ -53,4 +53,4 @@ El formato y la codificación de las especificaciones de destino (`anx-pendiente
 
 ---
 
-← [Glosa](18-glosa.md) · [Índice](README.md) · [Destinos](20-destinos.md) →
+← [Glosa](18-glosa.md) · [Índice](README.md) · [Destinos y perfiles](20-destinos.md) →

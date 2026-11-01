@@ -1,10 +1,10 @@
 ---
-title: "Destinos"
+title: "Destinos y perfiles"
 order: 20
 ---
 *Plataforma*
 
-# Destinos
+# Destinos y perfiles
 
 **Rol:** perfiles, disponibilidad y concurrencia en cada destino · **En la TCB:** sus especificaciones ([Rumbo](19-rumbo.md))
 

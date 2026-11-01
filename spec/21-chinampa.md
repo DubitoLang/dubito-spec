@@ -47,4 +47,4 @@ Los módulos, nombres y firmas de las tres capas (`anx-pendiente-7`). Todo está
 
 ---
 
-← [Destinos](20-destinos.md) · [Índice](README.md) · [Errores y aborto](22-errores.md) →
+← [Destinos y perfiles](20-destinos.md) · [Índice](README.md) · [Errores y aborto](22-errores.md) →

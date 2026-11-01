@@ -59,6 +59,6 @@ Alpha · especificación conceptual (fase 0). El texto normativo, una página po
 - [Proyecto e identidad](30-proyecto.md)
 - [Conformidad](31-conformidad.md)
 - [Estándares adoptados](32-estandares.md)
-- [Anexo A](33-anexo-a.md) (definido)
-- [Fundamentos](34-fundamentos.md) (anexo B)
+- [Anexo A](33-anexo-a.md) (definido y pendiente)
+- [Fundamentos de diseño](34-fundamentos.md) (anexo B)
 - [Glosario](35-glosario.md)

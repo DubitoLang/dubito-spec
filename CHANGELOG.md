@@ -39,6 +39,8 @@ Correcciones de la revisión independiente de cierre de la fase 0. La revisión 
 - Referencias del anexo A: `anx-destino-2` y `anx-destino-5` remiten también a la especificación de destino, `anx-implementacion-2` a `cnf-requisitos-5`, y `anx-implementacion-8` al nuevo requisito `cnf-requisitos-6` (límites de traducción), que antes no existía en la página a la que remitía.
 - Estándares: las ediciones de publicación continua rigen en la fecha que indica la tabla (no en la de la versión), y `ceiba-reglas-5` cita SPDX 3.0.1 y CycloneDX 1.7, como la tabla.
 - La introducción de la visión general omitía Sillar y Glosa entre los componentes de la plataforma.
+- Títulos coherentes entre páginas, índice y navegación: «Destinos y perfiles» y «Fundamentos de diseño»; el anexo A se etiqueta «definido y pendiente».
+
 
 
 
