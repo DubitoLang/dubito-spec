@@ -22,7 +22,7 @@ Lo que un programa reporta sobre sí mismo forma parte de su interfaz revisable.
 | Señal                   | Contenido                                                                       |
 |-------------------------|---------------------------------------------------------------------------------|
 | Evento `obs-senales-1`  | Un hecho con nivel de severidad y campos tipados.                               |
-| Métrica `obs-senales-2` | Contador, medidor o histograma, con unidad y atributos de cardinalidad acotada. |
+| Métrica `obs-senales-2` | Contador, medidor o histograma, con unidad y atributos cuyo tipo tiene un conjunto finito y declarado de valores (enumeraciones, booleanos o enteros de rango acotado). |
 | Span `obs-senales-3`    | Un intervalo de trabajo con atributos, que forma parte del contexto de traza.   |
 
 - <a id="obs-senales-4"></a>El span activo forma parte del estado de la tarea; una tarea hija hereda el de su padre, y esa herencia es explícita en la representación intermedia. Entre procesos, el contexto de traza viaja por la frontera. `obs-senales-4`

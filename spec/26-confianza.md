@@ -13,7 +13,7 @@ Ningún programa puede suspender sus garantías, pero todo programa se ejecuta s
 ## <a id="conf-principios"></a>Principios
 
 - <a id="conf-principios-1"></a>**Ninguna suspensión dentro del programa** (R8). `conf-principios-1`
-- <a id="conf-principios-2"></a>**Confianza mínima.** Entre las formas de hacer algo que el destino admite, la predeterminada es la que confía en menos. `conf-principios-2`
+- <a id="conf-principios-2"></a>**Confianza mínima.** Entre las formas de hacer algo que el destino admite, la predeterminada es la que confía en menos. La tabla de [opciones elegibles](#conf-opciones) fija cuál es para cada decisión, también cuando dos opciones no son comparables. `conf-principios-2`
 - <a id="conf-principios-3"></a>**Confianza declarada.** Lo que no se demuestra solo puede venir del destino o de una frontera declarada en el código. `conf-principios-3`
 - <a id="conf-principios-4"></a>**Confianza enumerada.** Cada atestación lista exactamente en qué confía, y el diff de significado marca todo aumento (R9). `conf-principios-4`
 - <a id="conf-principios-5"></a>**Aislar lo que no puede verificarse.** El código no verificado de terceros nunca comparte memoria con el programa si el destino ofrece una forma de separarlo; si no la ofrece, no se admite. `conf-principios-5`

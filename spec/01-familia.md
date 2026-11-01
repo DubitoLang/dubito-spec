@@ -26,8 +26,8 @@ Seis lenguajes independientes y del mismo rango, cada uno con un paradigma propi
 <a id="fam-sintaxis-1"></a>La sintaxis concreta de cada lenguaje no se define en esta fase. Cualquier sintaxis que se defina DEBE cumplir: `fam-sintaxis-1`
 
 - <a id="fam-sintaxis-2"></a>Todas las palabras del lenguaje (palabras reservadas, nombres de la biblioteca, valores predefinidos) están en inglés. `fam-sintaxis-2`
-- <a id="fam-sintaxis-3"></a>Palabras completas en todo punto donde un revisor toma decisiones: efectos, contratos, propagación de errores, mutabilidad y conversiones de procedencia. `fam-sintaxis-3`
-- <a id="fam-sintaxis-4"></a>Los argumentos de una llamada se nombran, salvo en los casos que el lenguaje justifique de forma uniforme. `fam-sintaxis-4`
+- <a id="fam-sintaxis-3"></a>Las construcciones de efectos, contratos, propagación de errores, mutabilidad y conversiones de procedencia se escriben con palabras reservadas completas, no con símbolos ni abreviaturas. `fam-sintaxis-3`
+- <a id="fam-sintaxis-4"></a>Los argumentos de una llamada se nombran. Las únicas excepciones son las que la gramática del lenguaje enumera, cada una aplicada igual en todas las llamadas y justificada en su propuesta de sintaxis. `fam-sintaxis-4`
 - <a id="fam-sintaxis-5"></a>Gramática libre de contexto, analizable con anticipación acotada. `fam-sintaxis-5`
 - <a id="fam-sintaxis-6"></a>Una única forma canónica para cada programa, aplicada por el formateador sin opciones. `fam-sintaxis-6`
 - <a id="fam-sintaxis-7"></a>Ningún comentario puede ocultar código: no hay comentarios de bloque. `fam-sintaxis-7`
@@ -52,7 +52,7 @@ Seis lenguajes independientes y del mismo rango, cada uno con un paradigma propi
 
 - <a id="fam-objetivos-9"></a>**Determinismo.** La gramática se analiza de forma determinista con anticipación acotada; un generador de analizadores la acepta sin conflictos. `fam-objetivos-9`
 - <a id="fam-objetivos-10"></a>**Ida y vuelta.** Imprimir un árbol de sintaxis con el formateador y volver a analizarlo produce el mismo árbol. `fam-objetivos-10`
-- <a id="fam-objetivos-11"></a>**Localidad.** Un cambio local de significado produce un cambio textual local en la forma canónica. `fam-objetivos-11`
+- <a id="fam-objetivos-11"></a>**Localidad.** Un cambio en una sola declaración modifica en la forma canónica solo las líneas de esa declaración y, si cambia su interfaz, las de sus usos. `fam-objetivos-11`
 - <a id="fam-objetivos-12"></a>**Visibilidad.** Cada elemento del diff de significado (efectos, contratos, conversiones de procedencia, propagación de errores, mutabilidad y directivas de exigencia) tiene una marca visible en el punto donde ocurre. `fam-objetivos-12`
 - <a id="fam-objetivos-13"></a>**Recuperación.** La gramática permite recuperarse de un error de análisis y localizar el diagnóstico en el punto del error. `fam-objetivos-13`
 - <a id="fam-objetivos-14"></a>**Coherencia.** Los conceptos comunes (efectos, contratos, procedencia, directivas) usan las mismas palabras en los seis lenguajes. `fam-objetivos-14`

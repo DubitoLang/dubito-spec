@@ -52,7 +52,7 @@ Qué productos pueden declararse conformes con esta especificación, qué requis
 ## <a id="cnf-pruebas"></a>Conjunto de pruebas de conformidad
 
 - <a id="cnf-pruebas-1"></a>El proyecto mantiene un conjunto público de pruebas de conformidad, documentado según ISO/IEC/IEEE 29119-3:2021. `cnf-pruebas-1`
-- <a id="cnf-pruebas-2"></a>Cada requisito con identificador tiene al menos una prueba, y cada prueba cita los identificadores que comprueba; la trazabilidad se publica en los dos sentidos. `cnf-pruebas-2`
+- <a id="cnf-pruebas-2"></a>Cada requisito con identificador tiene asignado uno de los métodos de verificación de ISO/IEC/IEEE 29148: inspección, análisis, demostración o prueba. Los que se verifican por prueba tienen al menos una en el conjunto, y cada prueba cita los identificadores que comprueba; la trazabilidad se publica en los dos sentidos. Los requisitos que obligan al proyecto o a su proceso (versiones, gobierno, admisión de especificaciones de destino), los que se cumplen en la mecanización y las filas descriptivas de las tablas de clasificación se verifican por inspección o por análisis, y la matriz de trazabilidad lo indica. `cnf-pruebas-2`
 - <a id="cnf-pruebas-3"></a>Las pruebas negativas, que exigen rechazar un módulo, son tan obligatorias como las positivas: un verificador que acepta lo que DEBE rechazar no es conforme. `cnf-pruebas-3`
 - <a id="cnf-pruebas-4"></a>Cada clase de debilidad del [modelo de amenazas](27-amenazas.md#ame-debilidades) tiene pruebas propias. `cnf-pruebas-4`
 - <a id="cnf-pruebas-5"></a>Pasar el conjunto es necesario pero no suficiente: la conformidad es con los requisitos, no con las pruebas. `cnf-pruebas-5`
