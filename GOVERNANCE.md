@@ -13,7 +13,7 @@ El proyecto adopta la plantilla de consejo de mantenedores de la CNCF. El texto 
 |---|---|
 | Xhunik Nikol Miguel Mutzutz | Fundador y mantenedor |
 
-En la fase 0, el fundador es el único mantenedor. Nuevos mantenedores se incorporan por decisión del consejo según sus contribuciones.
+Mientras no haya otros mantenedores, el fundador es el único. Nuevos mantenedores se incorporan por decisión del consejo según sus contribuciones.
 
 ## Toma de decisiones
 

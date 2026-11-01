@@ -106,7 +106,7 @@ Los nombres usan palabras de idiomas occidentales (latín, español, inglés) co
 
 ## <a id="pro-gobierno"></a>Gobierno *(Informativa)*
 
-- **Modelo.** El proyecto adopta la plantilla de consejo de mantenedores de la CNCF. En la fase 0, el fundador es el único mantenedor; nuevos mantenedores se incorporan por decisión del consejo según sus contribuciones.
+- **Modelo.** El proyecto adopta la plantilla de consejo de mantenedores de la CNCF. Mientras no haya otros mantenedores, el fundador es el único; nuevos mantenedores se incorporan por decisión del consejo según sus contribuciones.
 - **Cambios a la especificación.** Todo cambio sustantivo se propone por escrito y de forma pública, con un periodo de comentarios. Se acepta por consenso tácito: si ningún mantenedor objeta dentro del periodo, se aprueba; si hay objeciones, decide el consejo por mayoría.
 - **Invariantes.** Cambiar una de las invariantes R1–R11 exige el acuerdo de todos los mantenedores.
 - **Evolución.** Cuando el proyecto tenga varios mantenedores activos, el modelo puede pasar a un comité de dirección elegido, con la plantilla correspondiente de la CNCF.
@@ -136,7 +136,7 @@ La política sigue las Model Trademark Guidelines 1.0. Las marcas del proyecto s
 
 ## <a id="pro-fase"></a>Fases *(Informativa)*
 
-El proyecto está en la fase 0, [etapa de concepto](00-inicio.md#inicio-fase). Lo concreto (sintaxis, formatos, codificaciones, protocolos, herramientas y sus interfaces) se definirá en las etapas siguientes, sin contradecir esta especificación.
+La fase 0, [etapa de concepto](00-inicio.md#inicio-fase), quedó cerrada con la versión 1.0.0-alpha.2. Lo concreto (sintaxis, formatos, codificaciones, protocolos, herramientas y sus interfaces) se definirá en las etapas siguientes, sin contradecir esta especificación.
 
 **Criterios de salida de la fase 0.** La fase termina cuando el consejo de mantenedores declara cerrada la especificación conceptual, lo que exige que se cumplan todos estos criterios:
 
