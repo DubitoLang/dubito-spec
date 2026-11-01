@@ -8,7 +8,7 @@ mark_group: plat
 
 # Chinampa
 
-Chinampa, la biblioteca estándar, se divide en tres capas según lo que exige del destino. Se verifica como cualquier código y la usan los seis lenguajes. Añade capacidades, nunca garantías (R4). Su contenido concreto no se define en esta fase; aquí se fija solo lo que el lenguaje requiere de ella.
+Chinampa, la biblioteca estándar, se divide en tres capas según lo que exige del destino. Se verifica como cualquier código y la usan los seis lenguajes. Añade capacidades, nunca garantías (R4). Su contenido concreto no se define en esta fase y está registrado como pendiente en el [anexo A](33-anexo-a.md#anx-pendiente); aquí se fija solo lo que el lenguaje requiere de ella.
 
 ## <a id="std-capas"></a>Capas
 

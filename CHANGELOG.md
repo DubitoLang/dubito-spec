@@ -13,6 +13,8 @@ Correcciones de la revisión independiente de cierre de la fase 0.
 
 ### Cambiado
 
+- Anexo A: ahora distingue tres categorías (definido por el destino, por la implementación y pendiente de definir por la especificación) y registra todo lo concreto que faltaba: orden de bytes, punto flotante, aborto, formato ejecutable, protecciones de especulación, ventana especulativa, fronteras asíncronas y reducción de privilegios (destino); presupuesto de la evaluación en compilación (implementación); y dieciséis puntos pendientes, entre ellos la sintaxis, las codificaciones, los formatos de atestación, testigo, evidencia de mutación, especificación de destino, inventario, manifiestos y protocolo del registro, el contenido de Chinampa y el asistente de pruebas. Nuevos requisitos `anx-reglas-5` y `anx-reglas-6`.
+
 ### Corregido
 
 - Enlaces de comparación al final de este registro y etiqueta `v1.0.0-alpha.1` sobre el commit de la versión publicada.

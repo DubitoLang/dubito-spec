@@ -145,7 +145,7 @@ El proyecto está en la fase 0, [etapa de concepto](00-inicio.md#inicio-fase). L
 6. Los nombres, las licencias y la política de marca están decididos, y el repositorio publica la licencia del texto, el código de conducta, la política de seguridad y el gobierno.
 7. Existe una versión etiquetada de la especificación, con su registro de cambios.
 
-La fase siguiente empieza con la definición concreta de lo que el anexo A deja abierto, por propuestas públicas según el [proceso de gobierno](#pro-gobierno).
+La fase siguiente empieza con la definición concreta de lo que el [anexo A](33-anexo-a.md#anx-pendiente) registra como pendiente, por propuestas públicas según el [proceso de gobierno](#pro-gobierno).
 
 ## <a id="pro-compatibilidad"></a>Compatibilidad
 

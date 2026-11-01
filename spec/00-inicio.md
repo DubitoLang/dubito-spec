@@ -30,7 +30,7 @@ La plataforma está formada por una representación intermedia (Stela), un verif
 
 Dubito está en su **fase 0, la etapa de concepto** (*concept stage* en el ciclo de vida de ISO/IEC/IEEE 15288). No existe ninguna implementación.
 
-Este documento es la **especificación conceptual**: define por completo el modelo abstracto (la filosofía, las garantías, la semántica y las reglas que toda implementación debe cumplir) y no inventa nada concreto. Donde la industria ya tiene un estándar, se adopta por referencia. Lo concreto que no está estandarizado (la sintaxis de los lenguajes, los formatos propios, las herramientas y sus comandos, las extensiones de archivo, los códigos de diagnóstico y los valores numéricos) se decidirá en las etapas siguientes, siempre dentro de lo que aquí se fija.
+Este documento es la **especificación conceptual**: define por completo el modelo abstracto (la filosofía, las garantías, la semántica y las reglas que toda implementación debe cumplir) y no inventa nada concreto. Donde la industria ya tiene un estándar, se adopta por referencia. Lo concreto que no está estandarizado (la sintaxis de los lenguajes, los formatos propios, las herramientas y sus comandos, las extensiones de archivo, los códigos de diagnóstico y los valores numéricos) se decidirá en las etapas siguientes, siempre dentro de lo que aquí se fija; cada punto está registrado en el [anexo A](33-anexo-a.md).
 
 Donde ya existe un estándar de la industria, se adopta: la especificación lo cita en [Estándares adoptados](32-estandares.md) y nunca redefine algo estandarizado.
 
