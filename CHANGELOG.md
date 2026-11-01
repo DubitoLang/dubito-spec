@@ -12,11 +12,13 @@ Todos los cambios notables de la especificación se registran aquí. El formato 
 Correcciones de la revisión independiente de cierre de la fase 0. La revisión de cierre registrada en 1.0.0-alpha.1 la hizo el propio editor y afirmaba coherencias que no se cumplían; la revisión independiente verificó los siete criterios de salida sobre los archivos y sus hallazgos de gravedad alta, media y baja se resuelven en las entradas siguientes.
 
 ### Añadido
+
 - Cada página de lenguaje, componente y servicio tiene una sección informativa «Lo que queda por definir» que remite a los puntos del anexo A, y una línea de rol que dice si pertenece a la TCB (Estuco, Destinos, Chinampa, Errores, E/S, Observabilidad, Interoperabilidad, Ceiba y Pochteca). Nuevo punto pendiente `anx-pendiente-17` (formato del diff de significado).
 - Atestación de enlace (`dintel-atestacion-9`), que Dintel emite al enlazar, y atestación del binario (`dst-backend-6`), que emite el núcleo de Cincel después de Plomada. Antes no se decía quién emitía ni firmaba la atestación del binario.
 
 ### Cambiado
-- Anexo A: ahora distingue tres categorías (definido por el destino, por la implementación y pendiente de definir por la especificación) y registra todo lo concreto que faltaba: orden de bytes, punto flotante, aborto, formato ejecutable, protecciones de especulación, ventana especulativa, fronteras asíncronas y reducción de privilegios (destino); presupuesto de la evaluación en compilación (implementación); y dieciséis puntos pendientes, entre ellos la sintaxis, las codificaciones, los formatos de atestación, testigo, evidencia de mutación, especificación de destino, inventario, manifiestos y protocolo del registro, el contenido de Chinampa y el asistente de pruebas. Nuevos requisitos `anx-reglas-5` y `anx-reglas-6`.
+
+- Anexo A: ahora distingue tres categorías (definido por el destino, por la implementación y pendiente de definir por la especificación) y registra todo lo concreto que faltaba: orden de bytes, punto flotante, aborto, formato ejecutable, protecciones de especulación, ventana especulativa, fronteras asíncronas y reducción de privilegios (destino); presupuesto de la evaluación en compilación (implementación); y diecisiete puntos pendientes, entre ellos la sintaxis, las codificaciones, los formatos de atestación, testigo, evidencia de mutación, especificación de destino, inventario, manifiestos y protocolo del registro, el contenido de Chinampa y el asistente de pruebas. Nuevos requisitos `anx-reglas-5` y `anx-reglas-6`.
 - TCB: se define en un solo lugar, [Capas de confianza](spec/26-confianza.md#conf-capas), y ahora incluye la base de la mecanización (núcleo del asistente de pruebas y definiciones mecanizadas), nueva capa `conf-capas-6`. La visión general, Dintel (`dintel-tcb-2`, nuevo `dintel-tcb-5`), los niveles de representación y el glosario remiten a esa definición y hablan del núcleo de Cincel, no del backend entero. Nuevo requisito `conf-capas-7`.
 - Teoremas T6 y T7: se demuestran para cada destino sobre la semántica mecanizada de su arquitectura y su modelo de fugas. Toda especificación de destino de referencia o revisada incluye esa semántica, adoptada por referencia si existe una oficial (nuevo `dst-spec-14`); `stx-teoremas-1` y `anx-destino-7` lo recogen.
 - Perfiles: una especificación de destino declara freestanding o hosted; core es el perfil de los módulos que no invocan intrínsecos y se compilan para cualquier destino (nuevo `dst-perfiles-7`). Ese requisito define qué significa estar disponible en los tres perfiles (R11), y lo usan `dst-spec-2`, `pro-compatibilidad-10` y `cnf-requisitos-2`, que ahora exige a frontends y verificadores admitir los tres perfiles. Nueva entrada «Core» en el glosario.
@@ -41,20 +43,7 @@ Correcciones de la revisión independiente de cierre de la fase 0. La revisión 
 - La introducción de la visión general omitía Sillar y Glosa entre los componentes de la plataforma.
 - Títulos coherentes entre páginas, índice y navegación: «Destinos y perfiles» y «Fundamentos de diseño»; el anexo A se etiqueta «definido y pendiente».
 - Permisos escritos con PUEDE en mayúsculas donde se dirigen a una implementación (`bootstrap-1`, `cnf-requisitos-4`, `dst-backend-4`), y Glosa reporta los cambios en las directivas de exigencia (`review-1`), como exigen `directivas-3` y `fam-objetivos-12`.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Registro de cambios: la entrada de 1.0.0-alpha.1 contaba como «componentes» dos lenguajes y la mascota, y usaba una sección que no existe en Keep a Changelog; ambas cosas se corrigen sin cambiar su contenido.
 
 
 ## [1.0.0-alpha.1] - 2026-11-01
@@ -78,7 +67,7 @@ Primera versión de la línea oficial. La numeración 0.1.0 que se usó internam
 
 ### Cambiado
 
-- Los nombres de los trece componentes (Solsticio, Amate, Dintel, Estuco, Pochteca, Quelonio, Sillar, Plomada, Pulido, Cincel, Glosa, Rumbo y Chinampa) quedan confirmados por el editor. No se hizo una búsqueda formal de marcas; si más adelante aparece un conflicto, se cambia el nombre en una versión posterior.
+- Los trece nombres nuevos (los lenguajes Solsticio y Amate; los componentes Dintel, Estuco, Pochteca, Sillar, Plomada, Pulido, Cincel, Glosa, Rumbo y Chinampa; y la mascota Quelonio) quedan confirmados por el editor. No se hizo una búsqueda formal de marcas; si más adelante aparece un conflicto, se cambia el nombre en una versión posterior.
 - Conformidad: la clase Backend incluye ahora Sillar y Plomada entre sus requisitos, y existe la clase Herramienta de revisión (Glosa, R6).
 - Teoremas de la plataforma: la mecanización cubre las semánticas de Stela y de Sillar, porque T7 y T8 se apoyan en ambas.
 - Glosario: 21 entradas nuevas con los nombres de los seis lenguajes y de los componentes, la mascota y el nombre del proyecto.
@@ -88,9 +77,7 @@ Primera versión de la línea oficial. La numeración 0.1.0 que se usó internam
 - La ficha de la especificación y el requisito `cnf-requisitos-5` seguían refiriéndose a versiones 0.y.z; ahora citan los prelanzamientos y la política de versiones.
 - Se revisó la edición de in-toto citada en los estándares adoptados: la 1.2.0 es la versión vigente, sin cambios.
 
-### Revisión de cierre de la fase 0
-
-Comprobaciones hechas sobre las 36 páginas: ningún identificador duplicado ni con huecos, ningún enlace ni ancla rotos, cadena de anterior y siguiente íntegra, índice completo, ninguna referencia a nombres anteriores, a palabras SHOULD o a lenguajes y destinos concretos, y coherencia entre la TCB, los teoremas T1–T9, las invariantes R1–R11, el Anexo A y las clases de conformidad. Los hallazgos están resueltos en las entradas anteriores.
+**Revisión de cierre de la fase 0.** Comprobaciones hechas sobre las 36 páginas: ningún identificador duplicado ni con huecos, ningún enlace ni ancla rotos, cadena de anterior y siguiente íntegra, índice completo, ninguna referencia a nombres anteriores, a palabras SHOULD o a lenguajes y destinos concretos, y coherencia entre la TCB, los teoremas T1–T9, las invariantes R1–R11, el Anexo A y las clases de conformidad. Los hallazgos están resueltos en las entradas anteriores.
 
 [Sin publicar]: https://github.com/DubitoLang/dubito-spec/compare/v1.0.0-alpha.1...HEAD
 [1.0.0-alpha.1]: https://github.com/DubitoLang/dubito-spec/releases/tag/v1.0.0-alpha.1
