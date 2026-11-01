@@ -28,7 +28,7 @@ Correcciones de la revisión de cierre de la fase 0, que verificó los siete cri
 - Convenciones: la introducción de cada página y su línea de rol son informativas y solo resumen requisitos con identificador; antes solo lo era la de la visión general, lo que dejaba enunciados normativos sin identificador.
 
 ### Corregido
-- Enlaces de comparación al final de este registro y etiqueta `v1.0.0-alpha.1` sobre el commit de la versión publicada.
+- Enlaces de comparación al final de este registro, que apuntan a las etiquetas de versión.
 - `bootstrap-4` describía la doble compilación diversa como si dos cadenas independientes debieran producir los mismos bytes, lo que no puede cumplirse. Ahora sigue el método de Wheeler: lo que coincide bit a bit es la recompilación hecha por el compilador intermedio con el binario oficial. El glosario se corrige igual.
 - Dintel ya no busca: `dintel-pasos-8` comprueba la evidencia de mutación en lugar de repetir la mutación, `dintel-pasos-7` exige que toda suposición provenga de la especificación del destino, y `dintel-tcb-4` precisa que comprobar evidencia incluye evaluar contraejemplos pero nunca buscar. El contraejemplo de un mutante es una entrada que se comprueba evaluando con la semántica de Stela, sin generar código (`elk-criterio-1`), lo que elimina la dependencia circular con el backend. La comprobación de vacuidad pasa a la cadena de herramientas como diagnóstico (`nuc-limites-24`), y la consistencia de una especificación de destino se comprueba al admitirla (`dst-gobierno-6`).
 - Las convenciones seguían diciendo que los identificadores pueden cambiar «mientras la versión sea 0.y.z»; ahora siguen la política de prelanzamientos: pueden cambiar en `alpha` y son estables desde `beta`.
