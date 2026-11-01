@@ -12,11 +12,11 @@ Todos los cambios notables de la especificación se registran aquí. El formato 
 Correcciones de la revisión de cierre de la fase 0, que verificó los siete criterios de salida sobre los archivos.
 
 ### Añadido
-
 - Cada página de lenguaje, componente y servicio tiene una sección informativa «Lo que queda por definir» que remite a los puntos del anexo A, y una línea de rol que dice si pertenece a la TCB (Estuco, Destinos, Chinampa, Errores, E/S, Observabilidad, Interoperabilidad, Ceiba y Pochteca). Nuevo punto pendiente `anx-pendiente-17` (formato del diff de significado).
 - Atestación de enlace (`dintel-atestacion-9`), que Dintel emite al enlazar, y atestación del binario (`dst-backend-6`), que emite el núcleo de Cincel después de Plomada. Antes no se decía quién emitía ni firmaba la atestación del binario.
 - Glosario: entradas «Evidencia» y «Mecanización».
 - Anclas HTML para los 275 requisitos que solo tenían su identificador en una fila de tabla, y para cada invariante (`inv-r1` a `inv-r11`) y cada teorema (`teo-t1` a `teo-t9`), de modo que todos se pueden enlazar.
+- Licencias de la mecanización y de las especificaciones de destino del proyecto: AGPL-3.0-or-later, como la cadena de herramientas. Lo que se compila o verifica con ellas no hereda su licencia, y el código que una especificación de destino aporte a un binario se entrega como biblioteca estándar del destino, bajo su excepción.
 
 ### Cambiado
 - Anexo A: ahora distingue tres categorías (definido por el destino, por la implementación y pendiente de definir por la especificación) y registra todo lo concreto que faltaba: orden de bytes, punto flotante, aborto, formato ejecutable, protecciones de especulación, ventana especulativa, fronteras asíncronas y reducción de privilegios (destino); presupuesto de la evaluación en compilación (implementación); y diecisiete puntos pendientes, entre ellos la sintaxis, las codificaciones, los formatos de atestación, testigo, evidencia de mutación, especificación de destino, inventario, manifiestos y protocolo del registro, el contenido de Chinampa y el asistente de pruebas. Nuevos requisitos `anx-reglas-5` y `anx-reglas-6`.
