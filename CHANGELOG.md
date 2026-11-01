@@ -91,5 +91,5 @@ Primera versión de la línea oficial. La numeración 0.1.0 que se usó internam
 
 Comprobaciones hechas sobre las 36 páginas: ningún identificador duplicado ni con huecos, ningún enlace ni ancla rotos, cadena de anterior y siguiente íntegra, índice completo, ninguna referencia a nombres anteriores, a palabras SHOULD o a lenguajes y destinos concretos, y coherencia entre la TCB, los teoremas T1–T9, las invariantes R1–R11, el Anexo A y las clases de conformidad. Los hallazgos están resueltos en las entradas anteriores.
 
-[1.0.0-alpha.2]: https://github.com/DubitoLang/dubito-spec/compare/2256d6789f0665b41862c0e667eb787f324d3306...v1.0.0-alpha.2
-[1.0.0-alpha.1]: https://github.com/DubitoLang/dubito-spec/tree/2256d6789f0665b41862c0e667eb787f324d3306
+[1.0.0-alpha.2]: https://github.com/DubitoLang/dubito-spec/compare/v1.0.0-alpha.1...v1.0.0-alpha.2
+[1.0.0-alpha.1]: https://github.com/DubitoLang/dubito-spec/releases/tag/v1.0.0-alpha.1
