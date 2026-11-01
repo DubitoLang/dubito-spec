@@ -4,7 +4,7 @@ title: "Índice"
 
 # Especificación de Dubito 0.1.0
 
-Borrador de concepto (fase 0). El texto normativo, una página por archivo.
+Especificación conceptual (fase 0). El texto normativo, una página por archivo.
 
 ## Introducción
 
