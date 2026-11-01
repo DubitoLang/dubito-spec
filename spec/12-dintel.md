@@ -38,7 +38,9 @@ Dintel decide si un módulo puede convertirse en código máquina. Revisa la evi
 
 **Regla**
 
-<a id="dintel-atestacion-8"></a>El backend solo genera código para un módulo con atestación válida. `dintel-atestacion-8`
+<a id="dintel-atestacion-8"></a>El backend solo genera código para un módulo con atestación válida, y solo enlaza un binario con atestación de enlace válida. `dintel-atestacion-8`
+
+<a id="dintel-atestacion-9"></a>**Atestación de enlace.** Al enlazar un binario, Dintel comprueba que sus requisitos están contenidos en sus provisiones ([Disponibilidad](20-destinos.md#dst-disp)) y emite una atestación de enlace con la identidad y la atestación de cada módulo y el inventario de confianza del binario. La atestación del binario la completa el núcleo de Cincel ([Cincel](16-cincel.md#dst-backend)). `dintel-atestacion-9`
 
 ## <a id="dintel-tcb"></a>Base de cómputo confiable
 

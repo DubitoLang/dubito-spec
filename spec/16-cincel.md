@@ -19,6 +19,7 @@ Cincel es el backend de la plataforma: talla la representación verificada en c�
 - <a id="dst-backend-3"></a>Genera, a partir de los efectos de cada binario, un perfil para el mecanismo de reducción de privilegios del destino, como defensa adicional; la garantía es la estática (R1). `dst-backend-3`
 - <a id="dst-backend-4"></a>Puede sustituirse por otro backend conforme sin cambiar los lenguajes. `dst-backend-4`
 - <a id="dst-backend-5"></a>La convención de llamada interna no es estable entre versiones; la externa es la de la plataforma. `dst-backend-5`
+- <a id="dst-backend-6"></a>**Atestación del binario.** Al terminar, el núcleo de Cincel emite la atestación del binario, con el mismo marco, firma y resúmenes que las de Dintel: la identidad del binario, la atestación de enlace de Dintel, el perfil de optimización, el resultado de Plomada para cada pasada validada y las pasadas sin validación, que se suman al inventario de confianza. Sin una atestación de enlace válida no se emite. `dst-backend-6`
 
 ## <a id="cincel-pendiente"></a>Lo que queda por definir *(Informativa)*
 

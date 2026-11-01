@@ -12,8 +12,8 @@ Todos los cambios notables de la especificación se registran aquí. El formato 
 Correcciones de la revisión independiente de cierre de la fase 0.
 
 ### Añadido
-
 - Cada página de lenguaje, componente y servicio tiene una sección informativa «Lo que queda por definir» que remite a los puntos del anexo A, y una línea de rol que dice si pertenece a la TCB (Estuco, Destinos, Chinampa, Errores, E/S, Observabilidad, Interoperabilidad, Ceiba y Pochteca). Nuevo punto pendiente `anx-pendiente-17` (formato del diff de significado).
+- Atestación de enlace (`dintel-atestacion-9`), que Dintel emite al enlazar, y atestación del binario (`dst-backend-6`), que emite el núcleo de Cincel después de Plomada. Antes no se decía quién emitía ni firmaba la atestación del binario.
 
 ### Cambiado
 - Anexo A: ahora distingue tres categorías (definido por el destino, por la implementación y pendiente de definir por la especificación) y registra todo lo concreto que faltaba: orden de bytes, punto flotante, aborto, formato ejecutable, protecciones de especulación, ventana especulativa, fronteras asíncronas y reducción de privilegios (destino); presupuesto de la evaluación en compilación (implementación); y dieciséis puntos pendientes, entre ellos la sintaxis, las codificaciones, los formatos de atestación, testigo, evidencia de mutación, especificación de destino, inventario, manifiestos y protocolo del registro, el contenido de Chinampa y el asistente de pruebas. Nuevos requisitos `anx-reglas-5` y `anx-reglas-6`.
