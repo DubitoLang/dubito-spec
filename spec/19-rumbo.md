@@ -28,7 +28,9 @@ Rumbo es el conjunto de especificaciones de destino de la plataforma: cada desti
 - <a id="dst-spec-11"></a>Las fronteras asíncronas que provee, con su modelo de fallos. `dst-spec-11`
 - <a id="dst-spec-12"></a>El arranque que establece la máquina abstracta antes del primer código del programa. `dst-spec-12`
 
-<a id="dst-spec-13"></a>La especificación crece solo de forma explícita: una operación que no figura en ella no puede usarse, y añadirla es un cambio auditado de la TCB. Es declarativa (tipos, efectos e intrínsecos con contratos, sin cuerpos) y es el único lugar donde se admiten suposiciones. `dst-spec-13`
+<a id="dst-spec-13"></a>La especificación crece solo de forma explícita: una operación que no figura en ella no puede usarse, y añadirla es un cambio auditado de la TCB. Su parte de intrínsecos es declarativa (tipos, efectos e intrínsecos con contratos, sin cuerpos) y es el único lugar donde se admiten suposiciones. `dst-spec-13`
+
+<a id="dst-spec-14"></a>Toda especificación de destino de referencia o revisada incluye además la semántica operacional de la arquitectura, en la parte que usa el código que genera el backend, y el modelo de fugas de canal lateral que cubre la disciplina de tiempo constante, ambos mecanizados en el mismo asistente de pruebas que las semánticas de Stela y de Sillar. Si el responsable de la arquitectura publica una semántica formal oficial, se adopta por referencia. Sin esta semántica, T6 y T7 no pueden demostrarse para ese destino y figuran como supuestos en el inventario de confianza. `dst-spec-14`
 
 ## <a id="dst-gobierno"></a>Gobierno de las especificaciones
 

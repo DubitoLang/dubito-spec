@@ -84,7 +84,7 @@ Stela es la representación intermedia de la plataforma: tipada, con control est
 
 ## <a id="stx-teoremas"></a>Teoremas de la plataforma
 
-<a id="stx-teoremas-1"></a>La mecanización de las semánticas de Stela y de Sillar DEBE demostrar estos teoremas en un asistente de pruebas. Sus enunciados son normativos; su forma exacta se fija con la mecanización. `stx-teoremas-1`
+<a id="stx-teoremas-1"></a>La mecanización de las semánticas de Stela y de Sillar, junto con la semántica de la arquitectura y el modelo de fugas de cada destino ([Contenido de una especificación](19-rumbo.md#dst-spec)), DEBE demostrar estos teoremas en un asistente de pruebas. T6 y T7 se demuestran para cada destino. Sus enunciados son normativos; su forma exacta se fija con la mecanización. `stx-teoremas-1`
 
 | Teorema                                             | Enunciado                                                                                                                                                          |
 |-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -93,8 +93,8 @@ Stela es la representación intermedia de la plataforma: tipada, con control est
 | T3. Corrección de Dintel `stx-teoremas-4`           | Si Dintel acepta un módulo para un destino, toda ejecución cumple sus contratos y no ejerce efectos no declarados, suponiendo la especificación de ese destino.    |
 | T4. Corrección de los certificados `stx-teoremas-5` | Si Dintel acepta el certificado de una VC, la VC es válida.                                                                                                        |
 | T5. No interferencia `stx-teoremas-6`               | Los valores secretos no influyen en las salidas observables salvo a través de desclasificaciones justificadas.                                                     |
-| T6. Tiempo constante `stx-teoremas-7`               | El código bajo la disciplina de tiempo constante no depende de secretos en su duración, sus accesos a memoria ni sus saltos, según el modelo de fugas del destino. |
-| T7. Corrección de Cincel `stx-teoremas-8`           | El código del destino refina la semántica de Stela y preserva T5, T6, las protecciones de especulación y los borrados de secretos.                                 |
+| T6. Tiempo constante `stx-teoremas-7`               | El código bajo la disciplina de tiempo constante no depende de secretos en su duración, sus accesos a memoria ni sus saltos, según el modelo de fugas mecanizado del destino. |
+| T7. Corrección de Cincel `stx-teoremas-8`           | El código del destino, según la semántica mecanizada de su arquitectura, refina la semántica de Stela y preserva T5, T6, las protecciones de especulación y los borrados de secretos.                                 |
 | T8. Corrección de Plomada `stx-teoremas-9`          | Si Plomada valida una pasada, su salida refina su entrada y preserva las propiedades de T7.                                                                        |
 | T9. Determinismo `stx-teoremas-10`                  | El resultado de compilar depende solo de las fuentes, la cadena de herramientas, el destino y el perfil de optimización.                                           |
 
