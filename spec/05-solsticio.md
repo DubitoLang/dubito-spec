@@ -27,10 +27,10 @@ Solsticio es el lenguaje funcional puro de la familia: todo es una expresión, n
 
 ## <a id="cyc-modelo"></a>Modelo
 
-- <a id="cyc-modelo-1"></a>**Valores.** Semánticamente todo valor se copia. El compilador decide la representación: los que escapan o se comparten usan conteo de referencias, y una actualización sobre un valor con una sola referencia se hace en el lugar. Sin mutación no hay ciclos, así que el conteo libera toda la memoria. `cyc-modelo-1`
+- <a id="cyc-modelo-1"></a>**Valores.** Semánticamente todo valor se copia. El compilador decide la representación: los que escapan o se comparten usan conteo de referencias, y una actualización sobre un valor con una sola referencia se hace en el lugar. Sin mutación ni valores que dependan de sí mismos no hay ciclos, así que el conteo libera toda la memoria. `cyc-modelo-1`
 - <a id="cyc-modelo-2"></a>**Tipos algebraicos.** Sumas de variantes con campos nombrados y registros. La copia con campos cambiados es una operación explícita. `cyc-modelo-2`
 - <a id="cyc-modelo-3"></a>**Funciones.** Su cuerpo es una expresión. Las funciones anónimas declaran sus tipos y capturan por valor. Las llamadas en posición de cola nunca hacen crecer la pila. `cyc-modelo-3`
-- <a id="cyc-modelo-4"></a>**Pereza.** Un valor diferido se evalúa la primera vez que se pide y guarda su resultado; la expresión diferida no puede tener efectos. `cyc-modelo-4`
+- <a id="cyc-modelo-4"></a>**Pereza.** Un valor diferido se evalúa la primera vez que se pide y guarda su resultado; la expresión diferida no puede tener efectos ni depender, directa o indirectamente, del propio valor diferido. Una estructura infinita se describe con una función que produce cada parte al pedirla. `cyc-modelo-4`
 - <a id="cyc-modelo-5"></a>**Todo valor es transferible y compartible**, porque es inmutable. `cyc-modelo-5`
 
 ## <a id="cyc-manejadores"></a>Efectos del usuario
