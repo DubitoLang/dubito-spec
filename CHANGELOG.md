@@ -22,6 +22,8 @@ Correcciones de la revisión independiente de cierre de la fase 0.
 - Dintel ya no busca: `dintel-pasos-8` comprueba la evidencia de mutación en lugar de repetir la mutación, `dintel-pasos-7` exige que toda suposición provenga de la especificación del destino, y `dintel-tcb-4` precisa que comprobar evidencia incluye evaluar contraejemplos pero nunca buscar. El contraejemplo de un mutante es una entrada que se comprueba evaluando con la semántica de Stela, sin generar código (`elk-criterio-1`), lo que elimina la dependencia circular con el backend. La comprobación de vacuidad pasa a la cadena de herramientas como diagnóstico (`nuc-limites-24`), y la consistencia de una especificación de destino se comprueba al admitirla (`dst-gobierno-6`).
 - Las convenciones seguían diciendo que los identificadores pueden cambiar «mientras la versión sea 0.y.z»; ahora siguen la política de prelanzamientos: pueden cambiar en `alpha` y son estables desde `beta`.
 - `cnf-declaracion-9` decía que una declaración de conformidad vale solo para su versión exacta, contra `pro-compatibilidad-12` y la ficha. Ahora vale solo para su versión mientras sea un prelanzamiento, y desde la 1.0.0 para toda la misma versión mayor.
+- `pro-compatibilidad-7` definía el parche como ningún cambio en la interfaz pública, aunque la documentación forma parte de ella y cambiarla es un parche (`nuc-documentacion-2`). Ahora exceptúa la documentación.
+
 
 
 
