@@ -40,6 +40,8 @@ Correcciones de la revisión independiente de cierre de la fase 0. La revisión 
 - Estándares: las ediciones de publicación continua rigen en la fecha que indica la tabla (no en la de la versión), y `ceiba-reglas-5` cita SPDX 3.0.1 y CycloneDX 1.7, como la tabla.
 - La introducción de la visión general omitía Sillar y Glosa entre los componentes de la plataforma.
 - Títulos coherentes entre páginas, índice y navegación: «Destinos y perfiles» y «Fundamentos de diseño»; el anexo A se etiqueta «definido y pendiente».
+- Permisos escritos con PUEDE en mayúsculas donde se dirigen a una implementación (`bootstrap-1`, `cnf-requisitos-4`, `dst-backend-4`), y Glosa reporta los cambios en las directivas de exigencia (`review-1`), como exigen `directivas-3` y `fam-objetivos-12`.
+
 
 
 
