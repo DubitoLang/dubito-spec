@@ -29,7 +29,6 @@ Correcciones de la revisión independiente de cierre de la fase 0. La revisión 
 - Criterio de salida 5 de la fase 0: la revisión de cierre debe ser independiente de quien redactó el texto, y sus hallazgos quedan en el registro de cambios.
 
 ### Corregido
-
 - Enlaces de comparación al final de este registro y etiqueta `v1.0.0-alpha.1` sobre el commit de la versión publicada.
 - `bootstrap-4` describía la doble compilación diversa como si dos cadenas independientes debieran producir los mismos bytes, lo que no puede cumplirse. Ahora sigue el método de Wheeler: lo que coincide bit a bit es la recompilación hecha por el compilador intermedio con el binario oficial. El glosario se corrige igual.
 - Dintel ya no busca: `dintel-pasos-8` comprueba la evidencia de mutación en lugar de repetir la mutación, `dintel-pasos-7` exige que toda suposición provenga de la especificación del destino, y `dintel-tcb-4` precisa que comprobar evidencia incluye evaluar contraejemplos pero nunca buscar. El contraejemplo de un mutante es una entrada que se comprueba evaluando con la semántica de Stela, sin generar código (`elk-criterio-1`), lo que elimina la dependencia circular con el backend. La comprobación de vacuidad pasa a la cadena de herramientas como diagnóstico (`nuc-limites-24`), y la consistencia de una especificación de destino se comprueba al admitirla (`dst-gobierno-6`).
@@ -49,6 +48,8 @@ Correcciones de la revisión independiente de cierre de la fase 0. La revisión 
 - Registro de cambios: la entrada de 1.0.0-alpha.1 contaba como «componentes» dos lenguajes y la mascota, y usaba una sección que no existe en Keep a Changelog; ambas cosas se corrigen sin cambiar su contenido.
 - El aviso de derechos del código de conducta atribuía el texto solo al editor; ahora reconoce a los autores del Contributor Covenant y deja al proyecto la adaptación.
 - Solsticio: un valor diferido que guarda su resultado podía referirse a sí mismo y formar un ciclo que el conteo de referencias no libera; ahora no puede depender de sí mismo (`cyc-modelo-4`), y `cyc-modelo-1` lo recoge.
+- Al declarar informativas las introducciones de página, `stela-1` y la tabla de estándares adoptados quedaban dentro de una introducción; ahora tienen su propia sección («Definición normativa» y «Referencias normativas»).
+
 
 ## [1.0.0-alpha.1] - 2026-11-01
 

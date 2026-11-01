@@ -12,7 +12,7 @@ mark_group: plat
 
 Stela es la representación intermedia de la plataforma: tipada, con control estructurado, específica de un destino y portadora de su propia evidencia. Los seis lenguajes compilan a ella, el verificador la verifica y el backend la traduce a código nativo.
 
-**Definición normativa**
+## <a id="stx-definicion"></a>Definición normativa
 
 <a id="stela-1"></a>La semántica de Stela es operacional y DEBE mecanizarse en un asistente de pruebas; ante cualquier diferencia con esta descripción, prevalece la mecanización. `stela-1`
 
